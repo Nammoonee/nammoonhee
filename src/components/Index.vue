@@ -60,6 +60,7 @@ export default {};
 
 @media (max-width: 600px) {
   .section_home {
+    
     padding-bottom: 50px;   
   }
   .profile_photo_wrap{
