@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <v-main>
-      <v-app-bar>
-        <header id="header">
-          <div class="header_contents">
-            <h1 class="logo">LOGO</h1>
+      <h1 class="logo">남문희<span class="logo_smile">:)</span></h1>
+      <v-app-bar id="header_align">
+        <header id="header">        
+               
             <div class="hamburger_wrap">
               <button class="hamburger" @click="drawer">
                 <svg                  
@@ -29,12 +29,13 @@
               </ul>
               </transition>
             </div>
-          </div>
+         
         </header>
       </v-app-bar>
 
       <router-view />
-      <Introduce />
+        <Introduce />
+   
      
      
       <v-btn class="scroll_top" @click="scrollTop">TOP</v-btn>
@@ -45,12 +46,13 @@
 </template>
 
 <script>
-import Intro from '@/components/Introduce.vue'; // 경로는 프로젝트 구조에 맞게 수정
+import Introduce from './components/Introduce.vue';
 
 export default {
-   components: {
+       components: {
     Introduce
   },
+
   name: "App",
   data() {
     return {
@@ -82,6 +84,7 @@ export default {
 </script>
 <style>
 /*reset처리*/
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=East+Sea+Dokdo&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 html {
   font-family: "Noto Sans KR", sans-serif !important;
@@ -165,6 +168,8 @@ hr {
   font-weight: 500;
 }
 
+/*스킬 게이지 */
+
 
 
 
@@ -223,17 +228,20 @@ ul {
 
 
 
-/*header */
+/*모바일 header */
+
+
 .v-toolbar__content,
 .v-toolbar__extension {
   align-items: flex-start !important;
  
   margin: auto !important;
-  height: 400px !important;
+  height: auto !important;
 }
 .v-app-bar.v-toolbar:not(.v-toolbar--flat) {
   background: #ffffff00;
   box-shadow: none !important;
+  width: 80px !important;
 }
 .v-container {
   padding: 0 !important;
@@ -241,16 +249,26 @@ ul {
 #header {
   margin: 25px 12px 0;
   width: 100%;
+  
+}
+#header_align{
+    right: 0 !important;
+    left: auto !important;
 }
 
-.header_contents {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+
+
 .logo {
-  position: relative;
-  top: 0;
+  position: fixed;
+  top: 25px;
+  z-index: 5;
+}
+.logo_smile{
+   font-family: "Dokdo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  padding-left: 4px;
 }
 
 .hamburger_wrap {
@@ -358,11 +376,12 @@ ul {
   align-items: flex-start !important;
  
   margin: auto !important;
-  height: 400px !important;
+  height: auto !important;
 }
 .v-app-bar.v-toolbar:not(.v-toolbar--flat) {
   background: #ffffff00;
   box-shadow: none !important;
+    width: 100px !important;
 }
 .v-container {
   padding: 0 !important;
@@ -371,15 +390,24 @@ ul {
   margin: 25px 12px 0;
   width: 100%;
 }
-
-.header_contents {
-  display: flex;
-  justify-content: space-between;
- align-items: flex-start;
+#header_align{
+    right: 0 !important;
+    left: auto !important;
 }
+
+
 .logo {
-  position: relative;
-  top: 0;
+  position: fixed;
+  top: 25px;
+  z-index: 5;
+}
+.logo_smile{
+   font-family: "Dokdo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  padding: 0 0 2px 5px;
+  
 }
 
 .hamburger_wrap {
@@ -450,6 +478,8 @@ ul {
 
 
 /*PC 사이즈 */
+
+
 @media (min-width: 1024px) {
 /* common css */
 body,  .v-card-text  {
@@ -484,37 +514,48 @@ ul {
 }
 
 
-/*header */
+/* pc header */
 .v-toolbar__content,
 .v-toolbar__extension {
   align-items: flex-start !important;
  
   margin: auto !important;
-  height: 400px !important;
+  height: auto !important;
 }
 .v-app-bar.v-toolbar:not(.v-toolbar--flat) {
   background: #ffffff00;
   box-shadow: none !important;
+    width: 70px !important;
 }
 .v-container {
   padding: 0 !important;
 }
 #header {
-  margin: 25px 12px 0;
+  margin: 25px 0 0;
   width: 100%;
 }
 
 .header_contents {
   display: flex;
+
   justify-content: space-between;
   align-items: flex-start;
+  flex-direction: row-reverse;
   
   max-width: 1024px;
     margin: auto;
 }
+
+#header_align{
+    
+  left: calc(50% + 443px) !important
+}
+
 .logo {
-  position: relative;
-  top: 0;
+  position: fixed;
+  top: 25px;
+  right: calc(50% + 437px);
+  z-index: 50;
 }
 
 .hamburger_wrap {
@@ -580,6 +621,46 @@ ul {
  
   
 }
+
+}
+
+/*PC 사이즈(반응형헤더추가) */
+@media (min-width: 1024px) and (max-width: 1060px) {
+
+
+
+
+
+
+
+/* pc header */
+
+
+
+
+#header_align{
+      left: calc(50% + 42%) !important
+}
+
+.logo {
+  position: fixed;
+  top: 25px;
+  right: calc(50% + 41.3%);
+  z-index: 50;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0s, transform 0.2s;
+}
+.fade-enter, .fade-leave-to {
+ 
+  transform: translateY(0px); 
+}
+.fade-leave, .fade-enter-to {
+ 
+  transform: translateY(0px); 
+}
+
 
 }
 </style>

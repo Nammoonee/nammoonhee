@@ -6,7 +6,7 @@
         <v-tabs v-model="tab">
           <div class="tab_wrap">
             <v-tab class="tab" value="profile">프로필</v-tab>
-            <v-tab class="tab" value="skill">스킬</v-tab>
+            <v-tab class="tab" value="skill" @click="SkillGage">스킬</v-tab>
             <v-tab class="tab" value="edu">학력/교육</v-tab>
           </div>
         </v-tabs>
@@ -100,19 +100,147 @@
                 </div>
            
               </div>
-              <p>sfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsfsfsgvsdfdsfdsf</p>
-              
+   <div class="profile_text">
+                <div>
+                  <span class="strong_font">6년의 웹디자이너 경력</span>을
+                  토대로
+                </div>
+                <div>웹디자인, SNS 콘텐츠, SVG 아이콘 제작에 대한</div>
+                <div>실무 지식을 보유하고 있습니다.</div>
+
+                <div>
+                  2024년 봄, 직업능력개발 과정을 통해
+                  <span class="strong_font">퍼블리싱</span>
+                </div>
+
+                <div>능력을 강화하여 코딩까지 가능합니다.</div>
+              </div>              
                 
-                 
-                 
-             
-          
-             
             </v-window-item>
 
-            <v-window-item value="skill"> Two </v-window-item>
+            <v-window-item value="skill">
+            <div class="skill_gages">
+
+ 
+
+            
+          
+   <div class="skill_gage_wrap">
+    <div class="gage_box">
+       <v-progress-linear rounded
+         v-model="value1"
+         :buffer-value="bufferValue"
+       ></v-progress-linear>
+    </div>
+     
+    <div class="gage_box">
+       <v-progress-linear rounded
+         v-model="value2"
+         :buffer-value="bufferValue"
+         color="purple"
+       ></v-progress-linear>
+    </div>
+    
+   <div class="gage_box">
+      <v-progress-linear rounded
+        v-model="value3"
+        :buffer-value="bufferValue"
+        color="red-lighten-2"
+      ></v-progress-linear>
+   </div>
+   </div>
+   
+
+
+
+
+ <div class="skill_gage_wrap">
+    <div class="gage_box">
+       <v-progress-linear rounded
+         v-model="value2"
+         :buffer-value="bufferValue"
+         color="black"
+       ></v-progress-linear>
+    </div>
+    
+  <div class="gage_box">
+       <v-progress-linear rounded
+         v-model="value4"
+         :buffer-value="bufferValue"
+         color="black"
+       ></v-progress-linear>
+  </div>
+    
+   <div class="gage_box">
+      <v-progress-linear rounded
+        v-model="value3"
+        :buffer-value="bufferValue"
+        color="black"
+      ></v-progress-linear>
+   </div>
+ </div>
+
+
+  </div>
+            
+
+
+
+
+
+
+
+
+
+            </v-window-item>
 
             <v-window-item value="edu"> Three </v-window-item>
+          </v-window>
+        </v-card-text>
+      </v-card>
+
+        <v-card>
+        <v-tabs v-model="tab2">
+          <div class="tab_wrap">
+            <v-tab class="tab" value="i_am">자기소개서</v-tab>
+            <v-tab class="tab" value="i_will">입사포부</v-tab>
+          
+          </div>
+        </v-tabs>
+
+        <v-card-text>
+          <v-window v-model="tab2">
+            <v-window-item value="i_am">
+              <div class="i_am_align">
+                <p>
+                디자이너에게 있어서 중요한 역량은 시각적으로 직관적이면서 보기좋고 아름다운 콘텐츠를 만들어내는것이며 그것보다 더 중요한 것은 클라이언트나 팀원들과의 커뮤니케이션을 얼마나 잘 적용할 수 있는가에 달렸다고 생각합니다.</p>
+                <p>저는 6년간 웹디자이너로 재직하며 어도비 포토샵과 일러스트를 활용하여 디자인의 기초를 탄탄히 다지며 사용자들이 즐거움을 느끼고 편리한 경험을 제공할 수 있는 콘텐츠를 만들어왔습니다. 사이트의 메인 배너, 이벤트 배너, 팝업 배너 등을 디자인하고 SNS 이미지 콘텐츠 제작, 사이트 로고 제작, 인쇄물 스티커 제작 등의 경험을 쌓았습니다.</p>
+                  
+                  <p>이와 같이 정적인 디자인 업무를 맡아오다가 코딩의 필요성을 느끼게된 경험이 있습니다.
+앱 개발 프로젝트에서 디자이너로 참여하여 사이트 시안 및 아이콘 디자인을 담당하게 됐는데 웹접근성이나 개발에 대한 지식이 전혀 없었던 저는 개발팀과의 협업을 수월하게 진행할 수 없었습니다.</p>
+<p>
+그 후 직업능력개발 프로젝트개발자 양성 6개월과정을 성실히 수료받아 단순히 디자인만 할줄 알던 우물 안 개구리였던 제가 협업에 있어서 가장 중요한 '웹표준'을 알게되었고 이제는 원하는 디자인에 숨을 불어넣을 수 있는 코딩이 가능한 디자이너가 되었습니다.</p>
+
+이 모든 경험과 역량을 바탕으로 사용자들에게 더욱 흥미로운 경험을 제공하고 동시에 커뮤니케이션이 녹아있는 디자인을 제공할 것을 약속드립니다.
+              </div>
+                 
+                
+            </v-window-item>
+
+            <v-window-item value="i_will">
+              <div class="i_am_align">
+                <p>저는 성인이 되자마자 회사를 다니며 학원, 대학교 등의 학업을 병행했습니다. 시간이 걸리더라도 자기 발전을 게을리하지 않고, 스스로 일궈온 제 자신이 자랑스럽습니다.이와 같이 결심한 일은 끝까지 책임감 있게 완수하는 것이 제 성격입니다.</p>
+<p>디자인은 경력직이지만 코딩은 신입인만큼 항상 초심을 잃지 않고 발전하는 모습을 보여드리고 싶습니다.</p>
+<p>최신 트렌드를 놓치지 않고 세련된 디자인을 선보이기 위해 동료들과 소통하여 서로의 작업물을 피드백해주고 업계 동향을 주시하는것을 소홀히하지 않으며, 지속적인 자기계발을 통해 멈추지 않고 성장하는 디자이너의 모습을 보여드리겠습니다.</p>
+<p>마지막으로, 모든 일에 대한 결과는 생각의 결과라고 생각합니다.</p> 긍정적인 마음가짐으로 문제에 직면했을 때 감정에 휩싸이지 않고 합리적인 사고로 해결책을 모색하는 것이 옳다고 믿습니다. 맡은 직무에 대해 욕심을 가지고 열정적으로 임하며, 강인한 책임감을 보여드리겠습니다.
+
+              </div>
+
+
+
+            </v-window-item>
+
+           
           </v-window>
         </v-card-text>
       </v-card>
@@ -129,12 +257,107 @@
 export default {
   data: () => ({
     tab: null,
+    tab2: null,
+      value1: 10,
+        value2: 10,
+        value3: 10,
+        value4: 10,
+        bufferValue: 0,
+
+        interval: null,
+        maxValue1: 95, // 최대 값 설정
+        maxValue2: 85,
+        maxValue3: 50,
+        maxValue4: 70,
+ 
+
+  
   }),
+
+  mounted() {
+      this.startBuffer()
+    },
+    beforeUnmount() {
+      clearInterval(this.interval)
+    },
+    methods: {
+          SkillGage() {
+      // SkillGage 메소드의 내용을 여기에 추가
+      clearInterval(this.interval);
+      this.value1 = 10;
+      this.value2 = 10;
+      this.value3 = 10;
+      this.value4 = 10;
+      this.bufferValue1 = 0;
+      this.bufferValue2 = 0;
+      this.bufferValue3 = 0;
+      this.bufferValue4 = 0;
+      this.bufferValue5 = 0;
+      this.bufferValue6 = 0;
+      this.startBuffer();
+    },
+      startBuffer() {
+        this.interval = setInterval(() => {
+          this.value1 = Math.min(
+            this.value1 + Math.random() * 40,
+            this.maxValue1
+          )
+          this.value2 = Math.min(
+            this.value2 + Math.random() * 40,
+            this.maxValue2
+          )
+          this.value3 = Math.min(
+            this.value3 + Math.random() * 40,
+            this.maxValue3
+          )
+          this.value4 = Math.min(
+            this.value4 + Math.random() * 40,
+            this.maxValue4
+          )
+          this.bufferValue = Math.min(
+            this.bufferValue + Math.random() * 1,
+            this.maxValue1
+          )
+          this.bufferValue = Math.min(
+            this.bufferValue + Math.random() * 1,
+            this.maxValue2
+          )
+          this.bufferValue = Math.min(
+            this.bufferValue + Math.random() * 1,
+            this.maxValue3
+          )
+          this.bufferValue = Math.min(
+            this.bufferValue + Math.random() * 1,
+            this.maxValue4
+          )
+        }, 100)
+      },
+    },
+
+ 
+  
+  
 };
 </script>
 
 <style scoped>
+
 @media (max-width: 600px) {
+  .i_am_align{
+    text-align: justify;
+  }
+  .i_am_align p{
+margin-bottom: 25px;
+  }
+  .gage_box{
+    width: 30%;
+  }
+  .skill_gage_wrap{
+    display: flex;
+    margin: 20px 0;
+    gap: 20px;
+  }
+
   .section_intro {
     margin-top: 60px;
   }
@@ -148,7 +371,7 @@ export default {
     margin-top: 25px;
   }
   .v-tab.v-tab.v-btn {
-    background: red;
+    background: #797979;
     border-radius: 30px;
     height: 30px;
   }
@@ -222,5 +445,8 @@ export default {
     margin: 25px 0;
     text-align: center;
   }
+
+  /*스킬탭, 스킬게이지 */
+
 }
 </style>
