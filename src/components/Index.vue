@@ -125,7 +125,6 @@ export default {};
   }
   .v-btn {
     border-radius: 25px;
-    letter-spacing: 0;
   }
 }
 /*태블릿사이즈 */
@@ -197,7 +196,6 @@ export default {};
   }
   .v-btn {
     border-radius: 25px;
-    letter-spacing: 0;
   }
 }
 
@@ -297,7 +295,6 @@ export default {};
   }
   .v-btn {
     border-radius: 25px;
-    letter-spacing: 0;
   }
 }
 </style>

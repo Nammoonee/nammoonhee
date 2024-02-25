@@ -34,6 +34,8 @@
       </v-app-bar>
 
       <router-view />
+      <Introduce />
+     
      
       <v-btn class="scroll_top" @click="scrollTop">TOP</v-btn>
 
@@ -43,7 +45,12 @@
 </template>
 
 <script>
+import Intro from '@/components/Introduce.vue'; // 경로는 프로젝트 구조에 맞게 수정
+
 export default {
+   components: {
+    Introduce
+  },
   name: "App",
   data() {
     return {
@@ -143,21 +150,56 @@ button {
 hr {
   margin: 0;
 }
+.v-card-text{
+    letter-spacing: 0;
+}
+.v-btn{
+      letter-spacing: 0;
+
+}
+/*탭 선택 표시바 */
+.v-tab--selected .v-tab__slider{
+    opacity: 0 ;
+}
+.strong_font{
+  font-weight: 500;
+}
+
+
+
+
 
 
 /*모바일사이즈 */
 @media (max-width: 600px) {
 
 /* common css */
-body {
+body, .v-card-text {
   font-size: 15px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 300;  
 }
+.v-card-text {
+  font-size: 15px;
+ 
+  font-weight: 300;
+   letter-spacing: 0;
+   padding: 0;
+}
+.v-card .v-card-text{
+ line-height: 25px;
+ }
+
+
 h1 {
   font-size: 15px;
   line-height: 15px;
   font-weight: 800;
+}
+h2{
+   font-size: 20px;
+  line-height: 20px;
+
 }
 
 ul {
@@ -175,6 +217,10 @@ ul {
 .v-btn--variant-elevated{
   box-shadow: none !important;
 }
+.small_text{
+  font-size: 12px;
+}
+
 
 
 /*header */
@@ -276,9 +322,11 @@ ul {
 /*태블릿사이즈 */
 @media (min-width: 601px) {
 /* common css */
-body {
+body, .v-card-text  {
   font-size: 18px;
   line-height: 35px;
+  font-weight: 300;
+  letter-spacing: 0;
  
 }
 h1 {
@@ -404,9 +452,11 @@ ul {
 /*PC 사이즈 */
 @media (min-width: 1024px) {
 /* common css */
-body {
+body,  .v-card-text  {
   font-size: 18px;
   line-height: 35px;
+  font-weight: 300;
+  letter-spacing: 0;
  
 }
 h1 {

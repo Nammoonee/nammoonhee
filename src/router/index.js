@@ -1,13 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+
+
 const routes = [
   {
     path: '/',
     name: 'Index',
     component: function () {
-      return import('../components/Index.vue')
+      return import('@/components/Index.vue')
     }
   },
+
 
 ]
 
