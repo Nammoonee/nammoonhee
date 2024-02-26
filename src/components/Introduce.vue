@@ -24,8 +24,7 @@
                     <div class="icon_text_wrap">
                       <div class="icon_box">
                         <svg
-                          width="11"
-                          height="12"
+                         
                           viewBox="0 0 11 12"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +40,7 @@
                     <div class="icon_text_wrap">
                       <div class="icon_box">
                         <svg
-                          width="11"
-                          height="12"
+                          
                           viewBox="0 0 11 12"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +51,7 @@
                           />
                         </svg>
                       </div>
-                      1992.11.10 <span class="small_text">(만 31세)</span>
+                      1992.11.10 <span class="small_text ml-1">(만 31세)</span>
                     </div>
                   </div>
                 </div>
@@ -64,8 +62,7 @@
                     <div class="icon_text_wrap">
                       <div class="icon_box">
                         <svg
-                          width="11"
-                          height="12"
+                          
                           viewBox="0 0 11 12"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -82,8 +79,7 @@
                     <div class="icon_text_wrap">
                       <div class="icon_box">
                         <svg
-                          width="11"
-                          height="11"
+                         
                           viewBox="0 0 11 11"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -98,91 +94,293 @@
                     </div>
                   </div>
                 </div>
-           
               </div>
-   <div class="profile_text">
-                <div>
-                  <span class="strong_font">6년의 웹디자이너 경력</span>을
-                  토대로
-                </div>
-                <div>웹디자인, SNS 콘텐츠, SVG 아이콘 제작에 대한</div>
-                <div>실무 지식을 보유하고 있습니다.</div>
-
-                <div>
-                  2024년 봄, 직업능력개발 과정을 통해
-                  <span class="strong_font">퍼블리싱</span>
-                </div>
-
-                <div>능력을 강화하여 코딩까지 가능합니다.</div>
-              </div>              
+              <div class="profile_text">
                 
+              
+                  <span class="strong_font">6년의 웹디자이너 경력</span>을
+                  토대로<br>
+               
+             
+                웹디자인, SNS 콘텐츠, SVG 아이콘 제작에 대한 실무 지식을 보유하고 있습니다.<br>
+                2024년 봄, 직업능력개발 과정을 통해
+                   <span class="strong_font not_enter">퍼블리싱</span>
+                 
+                
+                  능력을 강화하여 코딩까지가능합니다.
+              
+              </div>
             </v-window-item>
 
             <v-window-item value="skill">
-            <div class="skill_gages">
+              <div class="skill_gages">
+                <div class="skill_gage_wrap">
+                  <div class="gage_box">
+                    <div class="skill_icon_wrap">
+                      <div class="skill_icon">
+                        <v-badge color="info" content="+">
+                          <svg
+                            class="mb-3"
+                            width="50"
+                            height="50"
+                            viewBox="0 0 50 50"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M48.8638 1.13647H1.13647V48.8638H48.8638V1.13647Z"
+                              fill="url(#paint0_radial_51_80)"
+                            />
+                            <path
+                              d="M50 50H0V0H50V50ZM2.27273 47.7273H47.7273V2.27273H2.27273V47.7273Z"
+                              fill="#00B5EF"
+                            />
+                            <path
+                              d="M15.909 38.6363H11.3635V11.3635L17.7766 11.3635C22.5218 11.3635 26.7674 14.8234 27.2282 19.5461C27.7569 24.9649 23.494 29.5453 18.1817 29.5453H15.909V38.6363ZM15.909 24.9999H18.1817C20.6886 24.9999 22.7272 22.9613 22.7272 20.4544C22.7272 17.9476 20.6886 15.909 18.1817 15.909H15.909V24.9999Z"
+                              fill="#00B5EF"
+                            />
+                            <path
+                              d="M32.3571 38.5846C29.6431 38.349 27.6389 37.3834 27.3926 37.2602L29.4257 33.1942C29.4323 33.1981 31.2904 34.0909 33.5372 34.0909C34.4694 34.0909 35.2274 33.3329 35.2274 32.4007C35.2274 31.6728 34.7635 31.028 34.0721 30.7983L32.9758 30.4332C30.6568 29.6608 28.802 27.7163 28.4696 25.2948C27.9443 21.4685 30.9184 18.1818 34.6448 18.1818C37.942 18.1818 40.5078 19.4171 40.7893 19.5578L38.7663 23.6283C38.7492 23.6198 36.8913 22.7272 34.6448 22.7272C33.7126 22.7272 32.9546 23.4852 32.9546 24.4173C32.9546 25.1453 33.4185 25.7901 34.1099 26.0198L35.5092 26.4859C38.2578 27.4021 40.0344 30.0921 39.7412 33.0332C39.3864 36.5935 35.9216 38.894 32.3571 38.5846Z"
+                              fill="#00B5EF"
+                            />
+                            <path
+                              d="M50 50H0V0H50V50Z"
+                              fill="url(#paint1_linear_51_80)"
+                            />
+                            <defs>
+                              <radialGradient
+                                id="paint0_radial_51_80"
+                                cx="0"
+                                cy="0"
+                                r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(17.8031 11.7425) scale(39.9733)"
+                              >
+                                <stop
+                                  stop-color="#193458"
+                                  stop-opacity="0.98"
+                                />
+                                <stop offset="0.933387" stop-color="#210021" />
+                              </radialGradient>
+                              <linearGradient
+                                id="paint1_linear_51_80"
+                                x1="-5.1104"
+                                y1="10.9593"
+                                x2="55.1104"
+                                y2="39.0407"
+                                gradientUnits="userSpaceOnUse"
+                              >
+                                <stop stop-color="white" stop-opacity="0.2" />
+                                <stop
+                                  offset="1"
+                                  stop-color="white"
+                                  stop-opacity="0"
+                                />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </v-badge>
+                      </div>
+
+                      <v-progress-linear
+                        class="mb-3"
+                        color="primary"
+                        rounded
+                        v-model="value1"
+                        :buffer-value="bufferValue"
+                      ></v-progress-linear>
+
+                      <div>포토샵</div>
+                    </div>
+                  </div>
+
+                  <div class="gage_box">
+                    <div class="skill_icon_wrap">
+                       <div class="skill_icon">
+                        <v-badge color="info" content="+">
+                         <svg class="mb-3" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M48.8636 1.13635H1.13635V48.8636H48.8636V1.13635Z" fill="url(#paint0_radial_51_86)"/>
+<path d="M50 50H0V0H50V50ZM2.27273 47.7273H47.7273V2.27273H2.27273V47.7273Z" fill="#F47521"/>
+<path d="M26.1364 27.2727H17.0455V31.8182H26.1364V27.2727Z" fill="#F47521"/>
+<path d="M39.7727 21.5909H35.2273V38.6364H39.7727V21.5909Z" fill="#F47521"/>
+<path d="M37.5 20.4545C38.7552 20.4545 39.7727 19.437 39.7727 18.1818C39.7727 16.9266 38.7552 15.9091 37.5 15.9091C36.2448 15.9091 35.2273 16.9266 35.2273 18.1818C35.2273 19.437 36.2448 20.4545 37.5 20.4545Z" fill="#F47521"/>
+<path d="M19.2044 11.3636L10.477 38.6364H15.2503L21.5909 18.821L27.9315 38.6364H32.7049L23.9774 11.3636H19.2044Z" fill="#F47521"/>
+<path d="M50 50H0V0H50V50Z" fill="url(#paint1_linear_51_86)"/>
+<defs>
+<radialGradient id="paint0_radial_51_86" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.803 11.7424) scale(39.9733)">
+<stop stop-color="#3C1605" stop-opacity="0.98"/>
+<stop offset="1" stop-color="#1A1107"/>
+</radialGradient>
+<linearGradient id="paint1_linear_51_86" x1="-5.1104" y1="10.9593" x2="55.1104" y2="39.0407" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
+
+                        </v-badge>
+                      </div>
+                    <v-progress-linear  class="mb-3"
+                      rounded
+                      v-model="value2"
+                      :buffer-value="bufferValue"
+                      color="grey-darken-1"
+                    ></v-progress-linear>
+                        <div>일러스트</div>
+                    </div>
+                  </div>
+
+                  <div class="gage_box">
+                     <div class="skill_icon_wrap">
+                       <div class="skill_icon">
+                        <v-badge color="info" content="+">
+                          <svg class="mb-3" width="34" height="50" viewBox="0 0 34 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.33333 49.9999C12.9333 49.9999 16.6667 46.2666 16.6667 41.6666V33.3333H8.33333C3.73333 33.3333 0 37.0666 0 41.6666C0 46.2666 3.73333 49.9999 8.33333 49.9999Z" fill="#0ACF83"/>
+<path d="M0 25C0 20.4 3.73333 16.6666 8.33333 16.6666H16.6667V33.3333H8.33333C3.73333 33.3333 0 29.6 0 25Z" fill="#A259FF"/>
+<path d="M0 8.33333C0 3.73333 3.73333 0 8.33333 0H16.6667V16.6667H8.33333C3.73333 16.6667 0 12.9333 0 8.33333Z" fill="#F24E1E"/>
+<path d="M16.6666 0H25C29.6 0 33.3333 3.73333 33.3333 8.33333C33.3333 12.9333 29.6 16.6667 25 16.6667H16.6666V0Z" fill="#FF7262"/>
+<path d="M33.3333 25C33.3333 29.6 29.6 33.3333 25 33.3333C20.4 33.3333 16.6666 29.6 16.6666 25C16.6666 20.4 20.4 16.6666 25 16.6666C29.6 16.6666 33.3333 20.4 33.3333 25Z" fill="#1ABCFE"/>
+</svg>
+
+                        </v-badge>
+                      </div>
+                    <v-progress-linear class="mb-3"
+                      rounded
+                      v-model="value3"
+                      :buffer-value="bufferValue"
+                      color="grey-darken-1"
+                    ></v-progress-linear>
+                     <div>피그마</div>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="skill_gage_wrap">
+                  <div class="gage_box">
+                    <div class="skill_icon_wrap">
+                       <div class="skill_icon">
+                        <v-badge color="info" content="+">
+                        <svg class="mb-3" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.7766 45.1391L25.0016 50L7.22656 45.1391L3.125 0H46.8781L42.7766 45.1391Z" fill="#E44D26"/>
+<path d="M25 3.125V46.4844L39.425 42.2L43.2625 3.125H25Z" fill="#FF6C39"/>
+<path d="M38.0672 9.375H11.8859L12.5 15.625L13.4672 26.5625H30.4734L29.9187 32.7875L25 34.3594L20.0891 32.7875L19.7625 29.6875H13.7547L14.4719 37.4797L25 40.6094L35.5125 37.4781L37.0594 20.3125H19.1437L18.7531 15.625H37.5L38.0672 9.375Z" fill="white"/>
+</svg>
+
+                        </v-badge>
+                      </div>
+                    <v-progress-linear class="mb-3"
+                      rounded
+                      v-model="value2"
+                      :buffer-value="bufferValue"
+                      color="grey-darken-1"
+                    ></v-progress-linear>
+                         <div>HTML5</div>
+                  </div>
+                  </div>
+
+                  <div class="gage_box">
+                          <div class="skill_icon_wrap">
+                       <div class="skill_icon">
+                        <v-badge color="info" content="+">
+                        <svg class="mb-3" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.7766 45.1391L25.0016 50L7.22656 45.1391L3.125 0H46.8781L42.7766 45.1391Z" fill="#1F62AE"/>
+<path d="M25 3.125V46.4844L39.425 42.2L43.2625 3.125H25Z" fill="#347DC6"/>
+<path d="M38.0672 9.375H11.8859L12.5 15.625H25L12.8906 20.2969L13.4672 26.5625H30.4719L29.9344 32.8125L25 34.3594L20.0953 32.7875L19.5828 29.6875H13.7547L14.4719 37.4797L25 40.6094L35.5125 37.4781L37.0609 20.2969H25.0406L37.5 15.625L38.0672 9.375Z" fill="white"/>
+</svg>
+
+                        </v-badge>
+                      </div>
+                    <v-progress-linear class="mb-3"
+                      rounded
+                      v-model="value4"
+                      :buffer-value="bufferValue"
+                      color="info"
+                    ></v-progress-linear>
+                          <div>CSS3</div>
+                  </div>
+                  
+                  </div>
+
+                  <div class="gage_box">
+                      <div class="skill_icon_wrap">
+                       <div class="skill_icon">
+                        <v-badge color="info" content="+">
+                       <svg class="mb-3" width="58" height="50" viewBox="0 0 58 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M29.2345 13.7409L21.5051 0H10.4409L29.2345 33.4109L48.0281 0H36.964L29.2345 13.7409Z" fill="black"/>
+<path d="M47.2967 0L28.8663 31.9216L10.4359 0H0L28.8663 50L57.7326 0H47.2967Z" fill="#49BD85"/>
+</svg>
+
+
+                        </v-badge>
+                      </div>
+                    <v-progress-linear class="mb-3"
+                      rounded
+                      v-model="value3"
+                      :buffer-value="bufferValue"
+                      color="green"
+                    ></v-progress-linear>
+                      <div>VUE</div>
+                  </div>
+                  
+                  
+                  </div>
+                </div>
+              </div>
+            </v-window-item>
+
+            <v-window-item value="edu">
+         
+
+           
+  <v-timeline side="end" truncate-line="start">
+    <v-timeline-item
+      dot-color="pink"
+      size="x-small"
+    >
+      <div class="d-flex">
+       <dl>
+                 <dt class="strong_font">프론트앤드 개발자 양성과정 수료</dt>
+                 <dd>그린컴퓨터아카데미 강남</dd>
+                 <dd class="small_text">2023.09 ~ 2024.03</dd>
+               </dl>
+      </div>
+    </v-timeline-item>
+
+    <v-timeline-item
+      dot-color="teal-lighten-3"
+      size="x-small"
+    >
+      <div class="d-flex">
+         <dl>
+                 <dt class="strong_font">커뮤니케이션디자인과 졸업</dt>
+                 <dd>명지전문대학교</dd>
+                 <dd class="small_text">2018.03 ~ 2020.03</dd>
+               </dl>
+      </div>
+    </v-timeline-item>
+
+    <v-timeline-item
+      dot-color="pink"
+      size="x-small"
+    >
+      <div class="d-flex">
+         <dl>
+                 <dt class="strong_font">관광경영과 졸업</dt>
+                 <dd>일산국제컨벤션고등학교</dd>
+                 <dd class="small_text">2008.03 ~ 2010.03</dd>
+               </dl>
+      </div>
+    </v-timeline-item>
 
  
+  </v-timeline>
 
-            
-          
-   <div class="skill_gage_wrap">
-    <div class="gage_box">
-       <v-progress-linear rounded
-         v-model="value1"
-         :buffer-value="bufferValue"
-       ></v-progress-linear>
-    </div>
-     
-    <div class="gage_box">
-       <v-progress-linear rounded
-         v-model="value2"
-         :buffer-value="bufferValue"
-         color="purple"
-       ></v-progress-linear>
-    </div>
-    
-   <div class="gage_box">
-      <v-progress-linear rounded
-        v-model="value3"
-        :buffer-value="bufferValue"
-        color="red-lighten-2"
-      ></v-progress-linear>
-   </div>
-   </div>
-   
+
+             
+              
 
 
 
-
- <div class="skill_gage_wrap">
-    <div class="gage_box">
-       <v-progress-linear rounded
-         v-model="value2"
-         :buffer-value="bufferValue"
-         color="black"
-       ></v-progress-linear>
-    </div>
-    
-  <div class="gage_box">
-       <v-progress-linear rounded
-         v-model="value4"
-         :buffer-value="bufferValue"
-         color="black"
-       ></v-progress-linear>
-  </div>
-    
-   <div class="gage_box">
-      <v-progress-linear rounded
-        v-model="value3"
-        :buffer-value="bufferValue"
-        color="black"
-      ></v-progress-linear>
-   </div>
- </div>
-
-
-  </div>
-            
 
 
 
@@ -193,18 +391,15 @@
 
 
             </v-window-item>
-
-            <v-window-item value="edu"> Three </v-window-item>
           </v-window>
         </v-card-text>
       </v-card>
 
-        <v-card>
+      <v-card>
         <v-tabs v-model="tab2">
           <div class="tab_wrap">
             <v-tab class="tab" value="i_am">자기소개서</v-tab>
             <v-tab class="tab" value="i_will">입사포부</v-tab>
-          
           </div>
         </v-tabs>
 
@@ -213,42 +408,71 @@
             <v-window-item value="i_am">
               <div class="i_am_align">
                 <p>
-                디자이너에게 있어서 중요한 역량은 시각적으로 직관적이면서 보기좋고 아름다운 콘텐츠를 만들어내는것이며 그것보다 더 중요한 것은 클라이언트나 팀원들과의 커뮤니케이션을 얼마나 잘 적용할 수 있는가에 달렸다고 생각합니다.</p>
-                <p>저는 6년간 웹디자이너로 재직하며 어도비 포토샵과 일러스트를 활용하여 디자인의 기초를 탄탄히 다지며 사용자들이 즐거움을 느끼고 편리한 경험을 제공할 수 있는 콘텐츠를 만들어왔습니다. 사이트의 메인 배너, 이벤트 배너, 팝업 배너 등을 디자인하고 SNS 이미지 콘텐츠 제작, 사이트 로고 제작, 인쇄물 스티커 제작 등의 경험을 쌓았습니다.</p>
-                  
-                  <p>이와 같이 정적인 디자인 업무를 맡아오다가 코딩의 필요성을 느끼게된 경험이 있습니다.
-앱 개발 프로젝트에서 디자이너로 참여하여 사이트 시안 및 아이콘 디자인을 담당하게 됐는데 웹접근성이나 개발에 대한 지식이 전혀 없었던 저는 개발팀과의 협업을 수월하게 진행할 수 없었습니다.</p>
-<p>
-그 후 직업능력개발 프로젝트개발자 양성 6개월과정을 성실히 수료받아 단순히 디자인만 할줄 알던 우물 안 개구리였던 제가 협업에 있어서 가장 중요한 '웹표준'을 알게되었고 이제는 원하는 디자인에 숨을 불어넣을 수 있는 코딩이 가능한 디자이너가 되었습니다.</p>
+                  디자이너에게 있어서 중요한 역량은 시각적으로 직관적이면서
+                  보기좋고 아름다운 콘텐츠를 만들어내는것이며 그것보다 더 중요한
+                  것은 클라이언트나 팀원들과의 커뮤니케이션을 얼마나 잘 적용할
+                  수 있는가에 달렸다고 생각합니다.
+                </p>
+                <p>
+                  저는 6년간 웹디자이너로 재직하며 어도비 포토샵과 일러스트를
+                  활용하여 디자인의 기초를 탄탄히 다지며 사용자들이 즐거움을
+                  느끼고 편리한 경험을 제공할 수 있는 콘텐츠를 만들어왔습니다.
+                  사이트의 메인 배너, 이벤트 배너, 팝업 배너 등을 디자인하고 SNS
+                  이미지 콘텐츠 제작, 사이트 로고 제작, 인쇄물 스티커 제작 등의
+                  경험을 쌓았습니다.
+                </p>
 
-이 모든 경험과 역량을 바탕으로 사용자들에게 더욱 흥미로운 경험을 제공하고 동시에 커뮤니케이션이 녹아있는 디자인을 제공할 것을 약속드립니다.
+                <p>
+                  이와 같이 정적인 디자인 업무를 맡아오다가 코딩의 필요성을
+                  느끼게된 경험이 있습니다. 앱 개발 프로젝트에서 디자이너로
+                  참여하여 사이트 시안 및 아이콘 디자인을 담당하게 됐는데
+                  웹접근성이나 개발에 대한 지식이 전혀 없었던 저는 개발팀과의
+                  협업을 수월하게 진행할 수 없었습니다.
+                </p>
+                <p>
+                  그 후 직업능력개발 프로젝트개발자 양성 6개월과정을 성실히
+                  수료받아 단순히 디자인만 할줄 알던 우물 안 개구리였던 제가
+                  협업에 있어서 가장 중요한 '웹표준'을 알게되었고 이제는 원하는
+                  디자인에 숨을 불어넣을 수 있는 코딩이 가능한 디자이너가
+                  되었습니다.
+                </p>
+
+                이 모든 경험과 역량을 바탕으로 사용자들에게 더욱 흥미로운 경험을
+                제공하고 동시에 커뮤니케이션이 녹아있는 디자인을 제공할 것을
+                약속드립니다.
               </div>
-                 
-                
             </v-window-item>
 
             <v-window-item value="i_will">
               <div class="i_am_align">
-                <p>저는 성인이 되자마자 회사를 다니며 학원, 대학교 등의 학업을 병행했습니다. 시간이 걸리더라도 자기 발전을 게을리하지 않고, 스스로 일궈온 제 자신이 자랑스럽습니다.이와 같이 결심한 일은 끝까지 책임감 있게 완수하는 것이 제 성격입니다.</p>
-<p>디자인은 경력직이지만 코딩은 신입인만큼 항상 초심을 잃지 않고 발전하는 모습을 보여드리고 싶습니다.</p>
-<p>최신 트렌드를 놓치지 않고 세련된 디자인을 선보이기 위해 동료들과 소통하여 서로의 작업물을 피드백해주고 업계 동향을 주시하는것을 소홀히하지 않으며, 지속적인 자기계발을 통해 멈추지 않고 성장하는 디자이너의 모습을 보여드리겠습니다.</p>
-<p>마지막으로, 모든 일에 대한 결과는 생각의 결과라고 생각합니다.</p> 긍정적인 마음가짐으로 문제에 직면했을 때 감정에 휩싸이지 않고 합리적인 사고로 해결책을 모색하는 것이 옳다고 믿습니다. 맡은 직무에 대해 욕심을 가지고 열정적으로 임하며, 강인한 책임감을 보여드리겠습니다.
-
+                <p>
+                  저는 성인이 되자마자 회사를 다니며 학원, 대학교 등의 학업을
+                  병행했습니다. 시간이 걸리더라도 자기 발전을 게을리하지 않고,
+                  스스로 일궈온 제 자신이 자랑스럽습니다.이와 같이 결심한 일은
+                  끝까지 책임감 있게 완수하는 것이 제 성격입니다.
+                </p>
+                <p>
+                  디자인은 경력직이지만 코딩은 신입인만큼 항상 초심을 잃지 않고
+                  발전하는 모습을 보여드리고 싶습니다.
+                </p>
+                <p>
+                  최신 트렌드를 놓치지 않고 세련된 디자인을 선보이기 위해
+                  동료들과 소통하여 서로의 작업물을 피드백해주고 업계 동향을
+                  주시하는것을 소홀히하지 않으며, 지속적인 자기계발을 통해
+                  멈추지 않고 성장하는 디자이너의 모습을 보여드리겠습니다.
+                </p>
+                <p>
+                  마지막으로, 모든 일에 대한 결과는 생각의 결과라고 생각합니다.
+                </p>
+                긍정적인 마음가짐으로 문제에 직면했을 때 감정에 휩싸이지 않고
+                합리적인 사고로 해결책을 모색하는 것이 옳다고 믿습니다. 맡은
+                직무에 대해 욕심을 가지고 열정적으로 임하며, 강인한 책임감을
+                보여드리겠습니다.
               </div>
-
-
-
             </v-window-item>
-
-           
           </v-window>
         </v-card-text>
       </v-card>
-
-
-   
-
-      
     </section>
   </v-container>
 </template>
@@ -258,30 +482,27 @@ export default {
   data: () => ({
     tab: null,
     tab2: null,
-      value1: 10,
-        value2: 10,
-        value3: 10,
-        value4: 10,
-        bufferValue: 0,
+    value1: 10,
+    value2: 10,
+    value3: 10,
+    value4: 10,
+    bufferValue: 0,
 
-        interval: null,
-        maxValue1: 95, // 최대 값 설정
-        maxValue2: 85,
-        maxValue3: 50,
-        maxValue4: 70,
- 
-
-  
+    interval: null,
+    maxValue1: 95, // 최대 값 설정
+    maxValue2: 85,
+    maxValue3: 50,
+    maxValue4: 70,
   }),
 
   mounted() {
-      this.startBuffer()
-    },
-    beforeUnmount() {
-      clearInterval(this.interval)
-    },
-    methods: {
-          SkillGage() {
+    this.startBuffer();
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
+  },
+  methods: {
+    SkillGage() {
       // SkillGage 메소드의 내용을 여기에 추가
       clearInterval(this.interval);
       this.value1 = 10;
@@ -296,66 +517,71 @@ export default {
       this.bufferValue6 = 0;
       this.startBuffer();
     },
-      startBuffer() {
-        this.interval = setInterval(() => {
-          this.value1 = Math.min(
-            this.value1 + Math.random() * 40,
-            this.maxValue1
-          )
-          this.value2 = Math.min(
-            this.value2 + Math.random() * 40,
-            this.maxValue2
-          )
-          this.value3 = Math.min(
-            this.value3 + Math.random() * 40,
-            this.maxValue3
-          )
-          this.value4 = Math.min(
-            this.value4 + Math.random() * 40,
-            this.maxValue4
-          )
-          this.bufferValue = Math.min(
-            this.bufferValue + Math.random() * 1,
-            this.maxValue1
-          )
-          this.bufferValue = Math.min(
-            this.bufferValue + Math.random() * 1,
-            this.maxValue2
-          )
-          this.bufferValue = Math.min(
-            this.bufferValue + Math.random() * 1,
-            this.maxValue3
-          )
-          this.bufferValue = Math.min(
-            this.bufferValue + Math.random() * 1,
-            this.maxValue4
-          )
-        }, 100)
-      },
+    startBuffer() {
+      this.interval = setInterval(() => {
+        this.value1 = Math.min(
+          this.value1 + Math.random() * 40,
+          this.maxValue1
+        );
+        this.value2 = Math.min(
+          this.value2 + Math.random() * 40,
+          this.maxValue2
+        );
+        this.value3 = Math.min(
+          this.value3 + Math.random() * 40,
+          this.maxValue3
+        );
+        this.value4 = Math.min(
+          this.value4 + Math.random() * 40,
+          this.maxValue4
+        );
+        this.bufferValue = Math.min(
+          this.bufferValue + Math.random() * 1,
+          this.maxValue1
+        );
+        this.bufferValue = Math.min(
+          this.bufferValue + Math.random() * 1,
+          this.maxValue2
+        );
+        this.bufferValue = Math.min(
+          this.bufferValue + Math.random() * 1,
+          this.maxValue3
+        );
+        this.bufferValue = Math.min(
+          this.bufferValue + Math.random() * 1,
+          this.maxValue4
+        );
+      }, 100);
     },
-
- 
-  
-  
+  },
 };
 </script>
 
 <style scoped>
-
 @media (max-width: 600px) {
-  .i_am_align{
+  .edu_conts{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .skill_icon_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .i_am_align {
     text-align: justify;
   }
-  .i_am_align p{
-margin-bottom: 25px;
+  .i_am_align p {
+    margin-bottom: 25px;
   }
-  .gage_box{
+  .gage_box {
     width: 30%;
   }
-  .skill_gage_wrap{
+  .skill_gage_wrap {
     display: flex;
-    margin: 20px 0;
-    gap: 20px;
+    margin: 25px 0;
+    gap: 25px;
   }
 
   .section_intro {
@@ -367,7 +593,7 @@ margin-bottom: 25px;
   }
   .v-card--variant-elevated {
     box-shadow: none;
-    background: rgba(255, 255, 255, 0);    
+    background: rgba(255, 255, 255, 0);
     margin-top: 25px;
   }
   .v-tab.v-tab.v-btn {
@@ -404,15 +630,19 @@ margin-bottom: 25px;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+   position: relative;
+    top: 1px;
   }
+  .icon_box svg{
+    height: 100%;
+
+}
   .icon_text_wrap {
     display: flex;
     align-items: baseline;
-    font-weight: 400;
+
   }
-  .small_text {
-    margin-left: 5px;
-  }
+  
   .icon_text_con_wrap {
     width: 100%;
     display: flex;
@@ -430,9 +660,9 @@ margin-bottom: 25px;
     display: flex;
     justify-content: center;
   }
-   .icon_text_con2 {
+  .icon_text_con2 {
     padding-right: 7%;
-   }
+  }
 
   .vertical_line {
     width: 1px;
@@ -442,11 +672,149 @@ margin-bottom: 25px;
   }
 
   .profile_text {
+    width: 80%;
+    margin: 25px auto;
+    text-align: center;
+  
+  }
+
+
+}
+
+/*태블릿사이즈 */
+
+@media (min-width: 601px) {
+  .skill_gages{
+    width: 90%;
+    margin: auto;
+  }
+  .not_enter{
+  white-space: nowrap;
+}
+  .introduce_ment_align{
+    display: flex;
+    justify-content: center;
+  }
+  .edu_conts{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .skill_icon_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .i_am_align {
+    text-align: justify;
+    margin-top: 20px;
+  }
+  .i_am_align p {
+    margin-bottom: 25px;
+  }
+  .gage_box {
+    width: 30%;
+  }
+  .skill_gage_wrap {
+    display: flex;
+    margin: 35px 0;
+    gap: 30px;
+  }
+
+  .section_intro {
+    margin-top: 60px;
+  }
+  /*상단 탭 */
+  .v-slide-group__content {
+    justify-content: center !important;
+  }
+  .v-card--variant-elevated {
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0);
+    margin-top: 25px;
+  }
+  .v-tab.v-tab.v-btn {
+    background: #797979;
+    border-radius: 30px;
+    height: 35px;
+  }
+  /*탭 제목(버튼) */
+  .tab_wrap {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .tab {
+    font-size: 18px;
+  }
+  /*탭컨텐츠-프로필 */
+  .profile_photo_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .profile {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: pink;
+  }
+  .icon_box {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    position: relative;
+    top: 1px;
+  }
+  .icon_box svg{
+    height: 80%;
+
+}
+  .icon_text_wrap {
+    display: flex;
+    align-items: baseline;
+  
+  }
+  
+  .icon_text_con_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 35px auto 0;
+  }
+  .icon_text_con_box {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .icon_text_con1,
+  .icon_text_con2 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+  }
+  .icon_text_con2 {
+    padding-right: 7%;
+  }
+
+  .vertical_line {
+    width: 1px;
+    height: 70px;
+    background: #c0c0c099;
+    margin: 0 5%;
+  }
+
+  .profile_text {
     margin: 25px 0;
     text-align: center;
   }
 
-  /*스킬탭, 스킬게이지 */
 
 }
 </style>

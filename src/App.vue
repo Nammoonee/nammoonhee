@@ -154,12 +154,14 @@ hr {
   margin: 0;
 }
 .v-card-text{
-    letter-spacing: 0;
+    letter-spacing: 0 !important;
+      padding: 0 !important;
 }
 .v-btn{
       letter-spacing: 0;
 
 }
+
 /*탭 선택 표시바 */
 .v-tab--selected .v-tab__slider{
     opacity: 0 ;
@@ -167,10 +169,6 @@ hr {
 .strong_font{
   font-weight: 500;
 }
-
-/*스킬 게이지 */
-
-
 
 
 
@@ -180,17 +178,11 @@ hr {
 
 /* common css */
 body, .v-card-text {
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 300;  
+  font-size: 15px !important;
+  line-height: 25px !important;
+  font-weight: 300 !important;  
 }
-.v-card-text {
-  font-size: 15px;
- 
-  font-weight: 300;
-   letter-spacing: 0;
-   padding: 0;
-}
+
 .v-card .v-card-text{
  line-height: 25px;
  }
@@ -335,18 +327,36 @@ ul {
  
   
 }
+/*학력/교육 bar */
+.v-timeline--vertical.v-timeline--justify-auto {
+    grid-template-columns: 0 min-content auto;
+}
+.v-timeline--vertical.v-timeline{
+  row-gap: 25px;
+}
+
+.v-timeline-divider{
+  top: -22px;
+}
+.v-timeline--vertical .v-timeline-divider__before, .v-timeline--vertical .v-timeline-divider__after{
+  width: 1px;
+}
 }
 
 /*태블릿사이즈 */
 @media (min-width: 601px) {
 /* common css */
+
 body, .v-card-text  {
-  font-size: 18px;
-  line-height: 35px;
-  font-weight: 300;
-  letter-spacing: 0;
+  font-size: 18px !important;
+  line-height: 35px !important;
+  font-weight: 300 !important;
+  letter-spacing: 0 !important;
  
 }
+.v-card .v-card-text{
+ line-height: 35px !important;
+ }
 h1 {
   font-size: 18px;
   line-height: 18px;
@@ -362,7 +372,7 @@ ul {
  width: 100%;
   background: rgb(236, 236, 236);
   margin: auto;
-  padding: 25px 12px;
+  padding: 35px 30px;
 }
 
 .v-btn--variant-elevated{
@@ -381,13 +391,13 @@ ul {
 .v-app-bar.v-toolbar:not(.v-toolbar--flat) {
   background: #ffffff00;
   box-shadow: none !important;
-    width: 100px !important;
+    width: 115px !important;
 }
 .v-container {
   padding: 0 !important;
 }
 #header {
-  margin: 25px 12px 0;
+  margin: 35px 30px 0 0;
   width: 100%;
 }
 #header_align{
@@ -398,7 +408,7 @@ ul {
 
 .logo {
   position: fixed;
-  top: 25px;
+  top: 35px;
   z-index: 5;
 }
 .logo_smile{
@@ -460,8 +470,8 @@ ul {
 .scroll_top{
   position: fixed;
   z-index: 50;
-  bottom: 25px;
-  right: 12px;
+  bottom: 35px;
+  right: 30px;
   letter-spacing: 0 !important;
   width: 40px !important;
   min-width: 40px !important;
@@ -473,6 +483,23 @@ ul {
   font-size: 12px;
  
   
+}
+.v-timeline--vertical.v-timeline{
+  row-gap: 35px;
+}
+/*학력/교육 bar */
+.v-timeline--vertical.v-timeline--justify-auto {
+    grid-template-columns: 0 min-content auto;
+}
+.v-timeline--vertical.v-timeline{
+  row-gap: 25px;
+}
+
+.v-timeline-divider{
+  top: -22px;
+}
+.v-timeline--vertical .v-timeline-divider__before, .v-timeline--vertical .v-timeline-divider__after{
+  width: 1px;
 }
 }
 
@@ -504,7 +531,7 @@ ul {
  width: 100%;
   background: rgb(236, 236, 236);
   margin: auto;
-  padding: 25px 12px;
+  padding: 35px 30px;
  
   
 }
@@ -531,7 +558,7 @@ ul {
   padding: 0 !important;
 }
 #header {
-  margin: 25px 0 0;
+  margin: 35px 0 0;
   width: 100%;
 }
 
@@ -553,7 +580,7 @@ ul {
 
 .logo {
   position: fixed;
-  top: 25px;
+  top: 35px;
   right: calc(50% + 437px);
   z-index: 50;
 }
@@ -625,7 +652,7 @@ ul {
 }
 
 /*PC 사이즈(반응형헤더추가) */
-@media (min-width: 1024px) and (max-width: 1060px) {
+@media (min-width: 1024px) and (max-width: 1098px) {
 
 
 
@@ -636,7 +663,10 @@ ul {
 /* pc header */
 
 
-
+#header {
+  margin: 35px 0 0;
+  width: 100%;
+}
 
 #header_align{
       left: calc(50% + 42%) !important
@@ -644,8 +674,8 @@ ul {
 
 .logo {
   position: fixed;
-  top: 25px;
-  right: calc(50% + 41.3%);
+  top: 35px;
+  right: calc(50% + 39.6%);
   z-index: 50;
 }
 
