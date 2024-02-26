@@ -35,6 +35,10 @@
 
       <router-view />
         <Introduce />
+        <Portfolio />
+        <Currier />
+        <Contact />
+        <Footer/>
    
      
      
@@ -47,10 +51,18 @@
 
 <script>
 import Introduce from './components/Introduce.vue';
+import Portfolio from './components/Portfolio.vue';
+import Currier from './components/Currier.vue';
+import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 
 export default {
        components: {
-    Introduce
+    Introduce,
+    Portfolio,
+    Currier,
+    Contact,
+    Footer
   },
 
   name: "App",
@@ -168,6 +180,14 @@ hr {
 }
 .strong_font{
   font-weight: 500;
+}
+
+/*edu bar */
+.v-timeline--vertical .v-timeline-divider__before, .v-timeline--vertical .v-timeline-divider__after{
+  width: 1px;
+}
+.v-timeline--horizontal .v-timeline-divider__before, .v-timeline--horizontal .v-timeline-divider__after{
+  height: 1px;
 }
 
 
@@ -362,6 +382,10 @@ h1 {
   line-height: 18px;
   
 }
+ h2{
+    font-size: 25px;
+    text-align: center;
+  }
 
 ul {
   font-size: 15px;
@@ -493,15 +517,42 @@ ul {
 }
 .v-timeline--vertical.v-timeline{
   row-gap: 25px;
+  margin-top: 22px;
 }
 
 .v-timeline-divider{
-  top: -22px;
+  top: -33px;
 }
-.v-timeline--vertical .v-timeline-divider__before, .v-timeline--vertical .v-timeline-divider__after{
-  width: 1px;
+
+.small_text{
+  font-size: 15px;
+  line-height: 25px;
 }
 }
+/*태블릿사이즈 반응형추가 */
+
+@media (min-width: 820px) {
+
+.v-timeline--horizontal.v-timeline.v-timeline--side-end .v-timeline-item .v-timeline-item__body {
+ 
+    padding-block-start: 0px;
+}
+.v-timeline-divider {
+    top: -25px;
+}
+.v-timeline--truncate-line-start .v-timeline-item:first-child .v-timeline-divider__after {
+    --v-timeline-line-size-offset: 50%;
+}
+
+}
+
+/*vue기본설정삭제 */
+@media (min-width: 960px) {
+  .v-container {
+    max-width: 1024px;
+  }
+}
+
 
 
 /*PC 사이즈 */
@@ -648,6 +699,7 @@ ul {
  
   
 }
+
 
 }
 

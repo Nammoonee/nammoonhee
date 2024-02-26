@@ -205,12 +205,6 @@ export default {
   }
 }
 
-/*vue기본설정삭제 */
-@media (min-width: 960px) {
-  .v-container {
-    max-width: 1024px;
-  }
-}
 
 /*PC사이즈 */
 

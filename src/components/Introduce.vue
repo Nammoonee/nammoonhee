@@ -332,14 +332,14 @@
          
 
            
-  <v-timeline side="end" truncate-line="start">
+  <v-timeline side="end" truncate-line="start"  :direction="timelineDirection">
     <v-timeline-item
       dot-color="pink"
       size="x-small"
     >
       <div class="d-flex">
        <dl>
-                 <dt class="strong_font">프론트앤드 개발자 양성과정 수료</dt>
+                 <dt class="strong_font">프론트앤드개발자양성과정 수료</dt>
                  <dd>그린컴퓨터아카데미 강남</dd>
                  <dd class="small_text">2023.09 ~ 2024.03</dd>
                </dl>
@@ -374,21 +374,6 @@
 
  
   </v-timeline>
-
-
-             
-              
-
-
-
-
-
-
-
-
-
-
-
 
             </v-window-item>
           </v-window>
@@ -480,6 +465,7 @@
 <script>
 export default {
   data: () => ({
+    timelineDirection: "vertical",
     tab: null,
     tab2: null,
     value1: 10,
@@ -494,14 +480,27 @@ export default {
     maxValue3: 50,
     maxValue4: 70,
   }),
+ 
 
   mounted() {
     this.startBuffer();
+     this.checkScreenSize();
+    window.addEventListener("resize", this.checkScreenSize);
+  },
+   destroyed() {
+    window.removeEventListener("resize", this.checkScreenSize);
   },
   beforeUnmount() {
     clearInterval(this.interval);
   },
   methods: {
+     checkScreenSize() {
+      if (window.innerWidth >= 820) {
+        this.timelineDirection = "horizontal";
+      } else {
+        this.timelineDirection = "vertical";
+      }
+    },
     SkillGage() {
       // SkillGage 메소드의 내용을 여기에 추가
       clearInterval(this.interval);
@@ -571,6 +570,7 @@ export default {
   }
   .i_am_align {
     text-align: justify;
+    margin: 7px 0 50px;
   }
   .i_am_align p {
     margin-bottom: 25px;
@@ -581,7 +581,7 @@ export default {
   .skill_gage_wrap {
     display: flex;
     margin: 25px 0;
-    gap: 25px;
+    justify-content: space-between;
   }
 
   .section_intro {
@@ -607,6 +607,7 @@ export default {
     display: flex;
     gap: 10px;
     justify-content: flex-start;
+  
   }
   .tab {
     font-size: 15px;
@@ -684,8 +685,9 @@ export default {
 /*태블릿사이즈 */
 
 @media (min-width: 601px) {
+ 
   .skill_gages{
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   .not_enter{
@@ -708,18 +710,18 @@ export default {
   }
   .i_am_align {
     text-align: justify;
-    margin-top: 20px;
+    margin: 20px 0 70px;
   }
   .i_am_align p {
     margin-bottom: 25px;
   }
   .gage_box {
-    width: 30%;
+    width: 28%;
   }
   .skill_gage_wrap {
     display: flex;
     margin: 35px 0;
-    gap: 30px;
+    justify-content: space-between;
   }
 
   .section_intro {
@@ -732,7 +734,7 @@ export default {
   .v-card--variant-elevated {
     box-shadow: none;
     background: rgba(255, 255, 255, 0);
-    margin-top: 25px;
+    margin-top: 35px;
   }
   .v-tab.v-tab.v-btn {
     background: #797979;
@@ -743,7 +745,7 @@ export default {
   .tab_wrap {
     width: 100%;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
   }
   .tab {
@@ -753,7 +755,7 @@ export default {
   .profile_photo_wrap {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 22px;
   }
   .profile {
     width: 140px;
@@ -811,9 +813,39 @@ export default {
   }
 
   .profile_text {
-    margin: 25px 0;
+    margin: 35px 0;
     text-align: center;
   }
+     v-timeline {
+        /* 수직 방향의 스타일 */
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+
+/*태블릿사이즈 미디어쿼리 추가 */
+
+@media (min-width: 820px) {
+  d-flex dt, dd{
+    text-align: center ;
+  }
+  .strong_font{
+    text-align: center;
+  }
+  .v-timeline--horizontal.v-timeline--justify-auto {
+    grid-template-rows: 30px min-content auto;
+    margin: 22px auto 35px;
+    width: 765px;
+}
+ .skill_gages{
+    width: 765px;
+    margin: auto;
+  }
+
+
 
 
 }
