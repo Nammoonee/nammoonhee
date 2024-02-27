@@ -190,6 +190,14 @@ hr {
 
 }
 
+/*칩메뉴 */
+ .v-chip-group .v-chip{
+    margin: 0;
+  }
+  .v-chip-group{
+    padding: 0;
+  }
+
 /*탭 선택 표시바 */
 .v-tab--selected .v-tab__slider {
   opacity: 0;
@@ -228,6 +236,38 @@ hr {
     line-height: 25px;
   }
 
+   /*칩 메뉴 */
+  .v-slide-group__content{
+    
+    gap: 10px;
+  }
+
+  /*포트폴리오-슬라이드버튼 */
+.prev_next_btn_wrap {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;      
+    top: -32px;
+    gap: 10px;
+    margin-right: 10px;    
+    opacity: 0.4;
+    height: 25px;
+}
+  .btn_prev ,.btn_next{
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50%;
+    min-width: 25px !important;
+    padding: 0 !important;
+   
+   
+  }
+  .btn_prev_mdi, .btn_next_mdi{
+    font-size: 20px !important;
+    
+ 
+  }
+
   /*v-chip탭 */
 
   .v-chip.v-chip--size-default {
@@ -236,6 +276,8 @@ hr {
     font-size: 15px;
 
   }
+
+ 
 
 
 
@@ -420,6 +462,51 @@ hr {
 
 /*태블릿사이즈 */
 @media (min-width: 601px) {
+  
+  /*포트폴리오-슬라이드버튼 */
+.prev_next_btn_wrap {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;      
+    top: -40px;
+    gap: 15px;
+    margin-right: 13px;    
+    opacity: 0.4;
+    height: 35px;
+}
+  .btn_prev ,.btn_next{
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    min-width: 30px !important;
+    padding: 0 !important;
+   
+   
+  }
+  .btn_prev_mdi, .btn_next_mdi{
+    font-size: 25px !important;
+    
+ 
+  }
+
+  /*v-chip탭 */
+  
+
+  .v-chip.v-chip--size-default {
+    --v-chip-height: 35px;
+    padding: 0 20px;
+    font-size: 18px;
+
+  }
+  .v-slide-group__content:first-of-type{
+    justify-content: center;
+  }
+  .v-slide-group__content{
+    
+    gap: 15px;
+  }
+
+
   /* common css */
 
   body,
@@ -634,6 +721,17 @@ hr {
   }
 }
 
+/*태블릿~PC 사이즈 반응형추가 */
+
+@media (min-width: 1000px) {
+  /*칩 메뉴 */
+  .v-slide-group__content{
+    justify-content: center !important;
+    gap: 15px;
+  }
+}
+
+
 
 
 /*PC 사이즈 */
@@ -675,6 +773,7 @@ hr {
   .v-btn--variant-elevated {
     box-shadow: none !important;
   }
+
 
 
   /* pc header */
