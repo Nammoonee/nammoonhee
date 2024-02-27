@@ -171,6 +171,7 @@ hr {
 }
 .v-btn{
       letter-spacing: 0;
+      font-weight: 300;
 
 }
 
@@ -202,10 +203,20 @@ body, .v-card-text {
   line-height: 25px !important;
   font-weight: 300 !important;  
 }
-
 .v-card .v-card-text{
  line-height: 25px;
  }
+
+/*v-chip탭 */
+
+.v-chip.v-chip--size-default{
+  --v-chip-height: 30px;
+  padding: 0 20px;
+  font-size: 15px;
+
+}
+
+
 
 
 h1 {
@@ -216,6 +227,7 @@ h1 {
 h2{
    font-size: 20px;
   line-height: 20px;
+  margin-bottom: 25px;
 
 }
 
@@ -385,6 +397,7 @@ h1 {
  h2{
     font-size: 25px;
     text-align: center;
+    margin-bottom: 35px;
   }
 
 ul {

@@ -384,7 +384,7 @@
         <v-tabs v-model="tab2">
           <div class="tab_wrap">
             <v-tab class="tab" value="i_am">자기소개서</v-tab>
-            <v-tab class="tab" value="i_will">입사포부</v-tab>
+            <v-tab class="tab" value="i_will">입사포부</v-tab>          
           </div>
         </v-tabs>
 
@@ -740,6 +740,7 @@ export default {
     background: #797979;
     border-radius: 30px;
     height: 35px;
+    min-width: 117px
   }
   /*탭 제목(버튼) */
   .tab_wrap {
