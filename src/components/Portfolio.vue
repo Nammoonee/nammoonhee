@@ -3,6 +3,7 @@
     <h2>
         포트폴리오
     </h2>
+    <img style="width: 100px; height: 100px;" src="./images/pofolgif/nanji_ppt_1.gif" alt="">
     <div class="strong_font">포트폴리오용 사이트제작</div>
 
     <v-chip-group mandatory v-model="selectedTab" align-with-title>
@@ -12,7 +13,21 @@
     </v-chip-group>
 
     <div v-if="selectedTab === 0 || selectedTab === null">
-      1
+      <div class="slider">
+    <div class="slide" v-for="(image, index) in images" :key="index">
+      <img :src="image.src" :alt="image.alt">
+    </div>
+  </div>
+  
+
+      
+
+
+
+
+
+
+
 </div>
 
 <div v-else-if="selectedTab === 1">
@@ -38,6 +53,11 @@
 export default {
   data: () => ({ 
     selectedTab: 0, // 초기값을 0으로 설정
+    images: [
+        { src: '../assets/logo.png', alt: '난지캠핑장ppt1' },
+        { src: '../assets/logo.png', alt: '난지캠핑장ppt2' },
+        // Add more image objects as needed
+      ]
 
 
       
@@ -55,6 +75,21 @@ export default {
 <style scoped>
 .v-row{
   margin: 0 !important;
+}
+.slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 600px) {
