@@ -207,6 +207,11 @@ hr {
   font-weight: 500;
 }
 
+.point_color{
+  color: tomato;
+  font-weight: 500;
+}
+
 /*edu bar */
 .v-timeline--vertical .v-timeline-divider__before,
 .v-timeline--vertical .v-timeline-divider__after {
