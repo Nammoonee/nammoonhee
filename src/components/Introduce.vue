@@ -596,8 +596,7 @@ export default {
     background: rgba(255, 255, 255, 0);
     margin-top: 25px;
   }
-  .v-tab.v-tab.v-btn {
-    background: #797979;
+  .v-tab.v-tab.v-btn {  
     border-radius: 30px;
     height: 30px;
   }
@@ -625,8 +624,8 @@ export default {
     background: pink;
   }
   .icon_box {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -55,7 +55,10 @@
 
           
             </div>
-            빠른 예약완료를 목표로한 PWA 웹앱 사이트입니다.
+            빠른 예약완료가 가능한 캠징장 예약앱입니다.<br>
+            직관적이고 심플하게 디자인하고 VUE2 프로젝트로 제작했습니다.<br>            
+            Firebase에 호스팅해 로컬PC가 아닌 환경에서도 사이트를 열어볼 수 있습니다.<br>
+            ServiceWorker, Manifest를 사용해 PC나 모바일에 PWA웹앱을 설치할 수 있습니다.
           </div>
 
        
@@ -68,7 +71,7 @@
 
           
             </div>
-            HTML, CSS, JAVASCRIPT, VUE2, GIT hub
+            HTML, CSS, JAVASCRIPT, VUE2, GIT hub, Firebase
           </div>
 
            
@@ -162,8 +165,9 @@
 
   
     </div>
-    기존 사이트의 가독성, 디자인, 기능 등의 단점을 보완한 팀프로젝트 사이트입니다.<br>
-    3명의 멤버가 파트를 분배해 각자 작업 Google 시트를 통해 진행상황을 공유하고 Git hub를 통해 병합했습니다.<br>
+    팀프로젝트로 제작한 컴포즈커피 리뉴얼 사이트입니다.<br>
+    기존 사이트의 가독성, 디자인, 기능 등의 단점을 보완했습니다.<br>
+    3명의 멤버가 파트를 분배해 Google 시트를 통해 작업 진행상황을 공유하고 Git hub를 통해 병합했습니다.<br>
 
   </div>
 
@@ -177,7 +181,7 @@
 
   
     </div>
-    HTML, CSS, JAVASCRIPT, GIT hub
+    HTML, CSS, JAVASCRIPT, JQWERY, GIT hub
   </div>
 
    
@@ -200,7 +204,25 @@
 
   
     </div>
-    개인 <span class="point_color">33%</span>
+   <div>
+     개인<span class="point_color">33%</span>
+   </div>
+  </div>
+
+  <div class="icon_text_wrap icon_page_wrap">
+    <div class="icon_box">
+      <svg class="icon_page" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25 10.1875V11.2812C11.25 11.5547 11.0156 11.75 10.7812 11.75H4.21875C3.94531 11.75 3.75 11.5547 3.75 11.2812V10.1875C3.75 9.95312 3.94531 9.71875 4.21875 9.71875H10.7812C11.0156 9.71875 11.25 9.95312 11.25 10.1875ZM10.7812 13C11.0156 13 11.25 13.2344 11.25 13.4688V14.5625C11.25 14.8359 11.0156 15.0312 10.7812 15.0312H4.21875C3.94531 15.0312 3.75 14.8359 3.75 14.5625V13.4688C3.75 13.2344 3.94531 13 4.21875 13H10.7812ZM15 5.65625V18.625C15 19.6797 14.1406 20.5 13.125 20.5H1.875C0.820312 20.5 0 19.6797 0 18.625V2.375C0 1.35938 0.820312 0.5 1.875 0.5H9.84375C10.3125 0.5 10.8203 0.734375 11.1719 1.08594L14.4141 4.32812C14.7656 4.67969 15 5.1875 15 5.65625ZM10 2.53125V5.5H12.9688L10 2.53125ZM13.125 18.625V7.375H9.0625C8.51562 7.375 8.125 6.98438 8.125 6.4375V2.375H1.875V18.625H13.125Z" fill="black"/>
+</svg>
+
+
+
+  
+    </div>
+   <div class="page_text_align">
+     
+     1.로고 리뉴얼 2.헤더 3.메인(SNS섹션) 4.서브페이지(고객의소리, 프랜차이즈, 로그인, 회원가입) 5.PPT탬플릿 디자인 <v-chip class="mb-1" :size="chipSize" @click="slideMoon">담당 페이지</v-chip>
+   </div>
   </div>
 
   
@@ -362,6 +384,8 @@
 <script>
 export default {
   data: () => ({
+    chipSize: 'x-small' ,
+    isDisabled: false,
     selectedTab: 0, // 초기값을 0으로 설정
     images: [
       { src: "./images/pofolgif/nanji_ppt_1.gif", alt: "난지캠핑장ppt1" },
@@ -411,7 +435,24 @@ export default {
     currentIndex: 0,
     currentIndex2: 0,
   }),
+  mounted() {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize(); // 초기에 한 번 호출하여 현재 창 크기에 맞게 설정
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.handleResize);
+  },
   methods: {
+     slideMoon: function() {
+     this.currentIndex2 = 5;
+        
+      }
+    ,
+     handleResize() {
+      // 현재 창의 너비를 확인하여 chipSize 업데이트
+      const screenWidth = window.innerWidth;
+      this.chipSize = screenWidth <= 600 ? 'x-small' : 'small';
+    },
  
 
     changeTab(index) {
@@ -533,23 +574,42 @@ export default {
     overflow-x: hidden;
   }
   /**icon과텍스트(포트폴리오설명) */
+  .icon_text_con_box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
   .icon_text_wrap {
     display: flex;
     align-items: flex-start;
+    text-align: justify;
   }
-  .icon_box {
-    width: 13px;
-    height: 13px;
+   .icon_box {
+   
+    width: 14px;
+    height: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 13px;
     position: relative;
-    top: 7px;
+    top: 6px;
   }
   .icon_box svg {
     height: 100%;
+  }
+
+  .icon_page_wrap{
+     position: relative;
+    left: 2px;
+
+  }
+
+  .page_text_align{
+    position: relative;
+    left: 2px;
+   
   }
  
 
@@ -598,6 +658,19 @@ export default {
   .icon_box svg {
     height: 80%;
   }
+   .icon_page_wrap{
+     position: relative;
+    left: 3px;
+
+  }
+
+  .page_text_align{
+    position: relative;
+    left: 2px;
+   
+  }
+ 
+ 
 
 }
 
@@ -613,6 +686,19 @@ export default {
 
 
 @media (min-width: 1024px) {
+
+   .icon_page_wrap{
+     position: relative;
+    left: 0;
+
+  }
+
+  .page_text_align{
+    position: relative;
+    left: 0px;
+   
+  }
+ 
   
 
  

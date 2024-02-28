@@ -52,6 +52,9 @@
       <v-btn class="scroll_top" @click="scrollTop">TOP</v-btn>
 
 
+      
+
+
     </v-main>
   </v-app>
 </template>
@@ -184,10 +187,31 @@ hr {
   padding: 0 !important;
 }
 
+/*버튼들 컬러 */
+.v-tab.v-tab.v-btn{
+  background: #347DC6;
+}
+
 .v-btn {
   letter-spacing: 0;
   font-weight: 300;
 
+ 
+
+}
+
+/*아코디언 */
+.v-expansion-panel__shadow{
+  box-shadow: none !important;
+}
+.v-expansion-panel{
+  border-radius: 7px;
+}
+.v-expansion-panel-title{
+ padding: 16px 10px 16px 15px;
+}
+.v-expansion-panel-text__wrapper{
+  padding: 8px 15px 16px;
 }
 
 /*칩메뉴 */
@@ -208,7 +232,7 @@ hr {
 }
 
 .point_color{
-  color: tomato;
+  color: tomato ; /*#00bbff */
   font-weight: 500;
 }
 
@@ -223,6 +247,11 @@ hr {
   height: 1px;
 }
 
+
+/*텍스트 정렬 */
+.align_justify{
+  text-align: justify;
+}
 
 
 
@@ -308,7 +337,7 @@ hr {
 
   .v-main {
     width: 100%;
-    background: rgb(236, 236, 236);
+    /* background: rgb(236, 236, 236); */
     margin: auto;
     padding: 25px 12px;
   }
