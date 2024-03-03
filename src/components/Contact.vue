@@ -1,4 +1,6 @@
 <template>
+<v-container>
+  <section id="section_contact">
   <h2>
     연락처
   </h2>
@@ -23,7 +25,7 @@
     </div>
   
   
-     <div>
+     <div class="email_wrap">
       <div class="strong_font">이메일</div>
        <div class="call_wrap">
       <div>bimil323@naver.com</div>
@@ -43,6 +45,9 @@
     </div>
 </div>
 
+</section>
+</v-container>
+
   
 
   
@@ -60,6 +65,9 @@ export default {
 </script>
 
 <style scoped>
+#section_contact{
+  height: 50vh;
+}
 /*모바일 */
 
 @media (max-width: 600px) {
@@ -77,7 +85,7 @@ export default {
     gap: 25px;
   }
 
-/*통화버튼 */
+/*통화, 메일버튼 */
 .call_wrap{
   display: flex;
   align-items: center;
@@ -112,6 +120,73 @@ background: #347DC6;
 .icon_box svg{
   width: 100%;
 }
+
+}
+
+
+/*태블릿 */
+@media (min-width: 601px) {
+  h2{
+    margin-top: 60px;
+  }
+
+  
+/*통화, 메일버튼 */
+.call_wrap{
+  display: flex;
+  align-items: center;
+}
+.call_btn, .mail_btn{
+  border-radius: 50% !important;
+  min-width: 30px !important;
+  padding: 0 !important;
+ 
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 12px;
+    display: flex;
+  align-items: center;
+}
+
+.call_btn{
+background: #63AF48;
+}
+
+
+.mail_btn{
+background: #347DC6;
+}
+.icon_box{
+  width: 15px;
+  height: 15px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_box svg{
+  width: 100%;
+}
+
+ .contact_btn_wrap{
+    display: flex;   
+    gap: 60px;
+    justify-content: space-evenly;
+  }
+  
+
+
+  .email_wrap::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 70px;
+    background: #7979795b;
+
+    position: absolute;
+    left: 50%;
+    right: 50%;
+
+  }
 
 }
 

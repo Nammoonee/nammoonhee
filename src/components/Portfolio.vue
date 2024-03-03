@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <section id="section_portfolio">
     <h2>포트폴리오</h2>
 
     <div class="strong_font sub_title">포트폴리오용 사이트제작</div>
@@ -372,6 +373,8 @@
        
     </div>
 
+    </section>
+
 
 
 
@@ -528,6 +531,7 @@ export default {
 </script>
 
 <style scoped>
+
 .icon_text_wrap a{
   text-decoration: underline #797979
 }

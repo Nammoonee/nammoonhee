@@ -19,9 +19,11 @@ export default {};
 <style scoped>
 
 
-  /*footer */
+
  
-.footer_text {
+/*모바일 */
+@media (max-width: 600px){
+  .footer_text {
   text-align: center;
  
 
@@ -35,7 +37,7 @@ font-weight: 200;
 
 }
 .footer_bg{
- background: #3e3e3e;
+ background: #2b2a40;
   width: calc(100% + 24px);
   margin-left: -12px; /* 너비의 절반을 왼쪽으로 이동하여 가운데 정렬 */
   margin-right: -12px;
@@ -48,6 +50,40 @@ font-weight: 200;
 .x_small_text {
   font-size: 10px;
   font-weight: 100;
+}
+}
+
+
+/*태블릿 */
+@media (min-width: 601px){
+  .footer_text {
+  text-align: center;
+ 
+
+  color: #fff;
+  font-size: 15px;
+  padding: 20px 0 0 0;
+margin-top: 50px;
+width: 100%;
+height: 115px;
+font-weight: 200;
+
+}
+.footer_bg{
+    background: #2b2a40;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-right: -30px;
+    height: calc(145px + 0px);
+    margin-bottom: -34px;
+  
+
+}
+
+.x_small_text {
+  font-size: 12px;
+  font-weight: 100;
+}
 }
 
 </style>

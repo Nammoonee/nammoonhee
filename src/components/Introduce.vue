@@ -1,13 +1,13 @@
 <template>
   <v-container>
-    <section class="section_intro">
+    <section id="section_intro">
       <h2>자기소개</h2>
       <v-card>
         <v-tabs v-model="tab">
           <div class="tab_wrap">
             <v-tab class="tab" value="profile">프로필</v-tab>
-            <v-tab class="tab" value="skill" @click="SkillGage">스킬</v-tab>
-            <v-tab class="tab" value="edu">학력/교육</v-tab>
+            <v-tab class="tab"  value="skill" @click="SkillGage">스킬</v-tab>
+            <v-tab class="tab"  value="edu">학력/교육</v-tab>
           </div>
         </v-tabs>
 
@@ -15,7 +15,9 @@
           <v-window v-model="tab">
             <v-window-item value="profile">
               <div class="profile_photo_wrap">
-                <div class="profile"></div>
+                <div class="profile">
+                  <img src="./images/me.jpg" alt="">
+                </div>
               </div>
 
               <div class="icon_text_con_wrap">
@@ -557,6 +559,8 @@ export default {
 </script>
 
 <style scoped>
+
+
 @media (max-width: 600px) {
   .edu_conts{
     display: flex;
@@ -586,6 +590,7 @@ export default {
 
   .section_intro {
     margin-top: 60px;
+   
   }
   /*상단 탭 */
   .v-slide-group__content {
@@ -622,7 +627,16 @@ export default {
     height: 100px;
     border-radius: 50%;
     background: pink;
-  }
+      overflow: hidden; /* 이미지가 원형 모양에 맞게 잘려 나오도록 설정 */
+    display: flex; /* 내부 요소들을 가로로 정렬하기 위해 flex 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: flex-start; /* 세로 중앙 정렬 */
+}
+
+.profile img {
+  text-align: center;
+    max-width: 100%; /* 이미지가 부모 요소에 맞게 최대 너비로 설정 */
+}
   .icon_box {
     width: 14px;
     height: 14px;
@@ -660,14 +674,24 @@ export default {
     display: flex;
     justify-content: center;
   }
+ 
   .icon_text_con2 {
     padding-right: 7%;
   }
 
-  .vertical_line {
+  .icon_text_con2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    right: 50%;
     width: 1px;
     height: 50px;
-    background: #c0c0c099;
+    background: #79797950;
+  }
+
+  .vertical_line {    
+    height: 50px;    
     margin: 0 5%;
   }
 
@@ -725,6 +749,7 @@ export default {
 
   .section_intro {
     margin-top: 60px;
+   
   }
   /*상단 탭 */
   .v-slide-group__content {
@@ -736,7 +761,7 @@ export default {
     margin-top: 35px;
   }
   .v-tab.v-tab.v-btn {
-    background: #797979;
+   
     border-radius: 30px;
     height: 35px;
     min-width: 117px
@@ -762,7 +787,19 @@ export default {
     height: 140px;
     border-radius: 50%;
     background: pink;
+    overflow: hidden; /* 이미지가 원형 모양에 맞게 잘려 나오도록 설정 */
+    display: flex; /* 내부 요소들을 가로로 정렬하기 위해 flex 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: flex-start; /* 세로 중앙 정렬 */
   }
+
+
+.profile img {
+  text-align: center;
+    max-width: 100%; /* 이미지가 부모 요소에 맞게 최대 너비로 설정 */
+}
+
+
   .icon_box {
     width: 20px;
     height: 20px;
@@ -805,12 +842,23 @@ export default {
     padding-right: 7%;
   }
 
-  .vertical_line {
+    .icon_text_con2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    right: 50%;
     width: 1px;
     height: 70px;
-    background: #c0c0c099;
+    background: #79797950;
+  }
+
+  .vertical_line {    
+    height: 70px;    
     margin: 0 5%;
   }
+
+
 
   .profile_text {
     margin: 35px 0;

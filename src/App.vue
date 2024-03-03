@@ -16,19 +16,19 @@
             <transition name="fade">
 
               <ul class="hamburger_drawer" v-if="isDrawerOpen">
-                <li>
+                <li @click="scrollIndex">
                   <div class="bottom_line">HOME</div>
                 </li>
-                <li>
+                <li @click="scrollIntroduce">
                   <div class="bottom_line">자기소개</div>
                 </li>
-                <li>
+                <li @click="scrollPortfolio">
                   <div class="bottom_line">포트폴리오</div>
                 </li>
-                <li>
+                <li @click="scrollCurrier">
                   <div class="bottom_line">경력사항</div>
                 </li>
-                <li>
+                <li @click="scrollContact">
                   <div class="bottom_line">연락처</div>
                 </li>
               </ul>
@@ -82,6 +82,36 @@ export default {
     };
   },
   methods: {
+    scrollIndex(){
+    const section_home_wrap = document.getElementById('section_home_wrap');
+      if (section_home_wrap) {
+        section_home_wrap.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+    scrollIntroduce(){
+    const section_intro = document.getElementById('section_intro');
+      if (section_intro) {
+        section_intro.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+        scrollPortfolio(){
+    const section_portfolio = document.getElementById('section_portfolio');
+      if (section_portfolio) {
+        section_portfolio.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+      scrollCurrier(){
+    const section_currier = document.getElementById('section_currier');
+      if (section_currier) {
+        section_currier.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+          scrollContact(){
+    const section_contact = document.getElementById('section_contact');
+      if (section_contact) {
+        section_contact.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
     drawer() {
       this.isDrawerOpen = !this.isDrawerOpen;
     },
@@ -188,10 +218,6 @@ hr {
 }
 
 /*버튼들 컬러 */
-.v-tab.v-tab.v-btn{
-  background: #347DC6;
-}
-
 .v-btn {
   letter-spacing: 0;
   font-weight: 300;
@@ -199,8 +225,27 @@ hr {
  
 
 }
+.active-tab{
+  background: tomato !important;
+}
+ 
+
+.v-tab.v-tab.v-btn{
+  background: #797979;
+  color: #fff;
+}
+.v-tab.v-tab.v-btn:hover{
+  background: rgb(157, 107, 98);
+  color: #fff;
+}
+.v-tab.v-tab.v-btn:active{
+  background: tomato !important;
+  color: #fff;
+}
+
 
 /*아코디언 */
+
 .v-expansion-panel__shadow{
   box-shadow: none !important;
 }
@@ -209,6 +254,7 @@ hr {
 }
 .v-expansion-panel-title{
  padding: 16px 10px 16px 15px;
+ font-size: inherit;
 }
 .v-expansion-panel-text__wrapper{
   padding: 8px 15px 16px;
@@ -216,7 +262,7 @@ hr {
 
 /*칩메뉴 */
  .v-chip-group .v-chip{
-    margin: 0;
+    margin: 0 !important;
   }
   .v-chip-group{
     padding: 0;
@@ -257,6 +303,7 @@ hr {
 
 /*모바일사이즈 */
 @media (max-width: 600px) {
+  
 
   /* common css */
   body,
@@ -275,6 +322,8 @@ hr {
     
     gap: 10px;
   }
+
+
 
   /*포트폴리오-슬라이드버튼 */
 .prev_next_btn_wrap {
@@ -337,9 +386,10 @@ hr {
 
   .v-main {
     width: 100%;
-    /* background: rgb(236, 236, 236); */
+    background: #eceefb57;
     margin: auto;
     padding: 25px 12px;
+ 
   }
 
   .v-btn--variant-elevated {
@@ -468,11 +518,9 @@ hr {
     height: 40px !important;
     border-radius: 50% !important;
     opacity: 0.4;
-    background: #797979;
+    background: #8d8cce;
     color: #fff !important;
     font-size: 12px;
-
-
   }
 
   /*학력/교육 bar */
@@ -496,6 +544,16 @@ hr {
 
 /*태블릿사이즈 */
 @media (min-width: 601px) {
+
+  /*아코디언 */
+  .v-expansion-panel-text__wrapper{
+  padding: 8px 25px 16px;
+}
+.v-expansion-panel-title{
+ padding: 16px 16px 16px 25px;
+ font-size: inherit;
+}
+
   
   /*포트폴리오-슬라이드버튼 */
 .prev_next_btn_wrap {
@@ -576,7 +634,7 @@ hr {
 
   .v-main {
     width: 100%;
-    background: rgb(236, 236, 236);
+    background: #eceefb57;
     margin: auto;
     padding: 35px 30px;
   }
@@ -698,7 +756,7 @@ hr {
     height: 40px !important;
     border-radius: 50% !important;
     opacity: 0.4;
-    background: #797979;
+    background: #8d8cce;
     color: #fff !important;
     font-size: 12px;
 
@@ -797,7 +855,7 @@ hr {
 
   .v-main {
     width: 100%;
-    background: rgb(236, 236, 236);
+     background: #eceefb57;
     margin: auto;
     padding: 35px 30px;
 
@@ -916,19 +974,14 @@ hr {
     position: fixed;
     z-index: 50;
     bottom: 25px;
-    right: 12px;
-    letter-spacing: 0 !important;
-    width: 40px !important;
-    min-width: 40px !important;
-    height: 40px !important;
-    border-radius: 50% !important;
-    opacity: 0.4;
-    background: #797979;
-    color: #fff !important;
+    right: 12px;    
     font-size: 12px;
-
-
   }
+  /*아코디언 */
+  .v-expansion-panels{
+  margin: auto;
+  width: 1024px;
+}
 
 
 }
@@ -936,6 +989,13 @@ hr {
 /*PC 사이즈(반응형헤더추가) */
 @media (min-width: 1024px) and (max-width: 1098px) {
 
+
+
+  /*아코디언 */
+  .v-expansion-panels{
+   margin: 35px 0 0;
+  width: 100%;
+}
 
 
 

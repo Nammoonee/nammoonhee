@@ -1,4 +1,7 @@
 <template>
+<v-container>
+  <section id="section_currier">
+
   <div>
     <h2 class="currier_title_wrap">경력사항   <span class="small_font strong_font">총 6년 6개월</span></h2>
   
@@ -183,7 +186,7 @@
         <div class="accordion_title">
           <div class="strong_font dotdotdot">룩스미디어</div>
           <div class="small_text">
-            2022.08 ~ 2023.09 <span class="title_date">1년 2개월</span>
+            2020.05 ~ 2021.01 <span class="title_date">9개월</span>
           </div>
         </div>
       </template>
@@ -213,28 +216,10 @@
 </svg>
 
               </div>
-              <span>웹사이트 배너 제작</span>
+              <span>SNS 카드뉴스 콘텐츠 디자인</span>
             </div>
 
-                <div class="icon_text_wrap">
-              <div class="icon_box_small">
-            <svg viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.7071 0.292923C14.0976 0.683487 14.0976 1.31776 13.7071 1.70833L5.70796 9.70708C5.31738 10.0976 4.68307 10.0976 4.29249 9.70708L0.292936 5.7077C-0.0976453 5.31714 -0.0976453 4.68286 0.292936 4.2923C0.683517 3.90173 1.31782 3.90173 1.7084 4.2923L5.00179 7.58241L12.2947 0.292923C12.6853 -0.097641 13.3196 -0.097641 13.7102 0.292923H13.7071Z" fill="black"/>
-</svg>
 
-              </div>
-              <span>SNS 콘텐츠 디자인</span>
-            </div>
-
-                <div class="icon_text_wrap">
-              <div class="icon_box_small">
-            <svg viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.7071 0.292923C14.0976 0.683487 14.0976 1.31776 13.7071 1.70833L5.70796 9.70708C5.31738 10.0976 4.68307 10.0976 4.29249 9.70708L0.292936 5.7077C-0.0976453 5.31714 -0.0976453 4.68286 0.292936 4.2923C0.683517 3.90173 1.31782 3.90173 1.7084 4.2923L5.00179 7.58241L12.2947 0.292923C12.6853 -0.097641 13.3196 -0.097641 13.7102 0.292923H13.7071Z" fill="black"/>
-</svg>
-
-              </div>
-              <span>앱개발프로젝트에서 디자이너 담당</span>
-            </div>
 
             <div class="icon_text_wrap tool_margin">
               <div class="icon_box">
@@ -314,33 +299,14 @@
                                 </linearGradient>
                               </defs>
                             </svg></div>
-              <!--일러스트아이콘-->
-              <div class="tool_icon_box">
-              <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M48.8636 1.13635H1.13635V48.8636H48.8636V1.13635Z" fill="url(#paint0_radial_51_86)"/>
-  <path d="M50 50H0V0H50V50ZM2.27273 47.7273H47.7273V2.27273H2.27273V47.7273Z" fill="#F47521"/>
-  <path d="M26.1364 27.2727H17.0455V31.8182H26.1364V27.2727Z" fill="#F47521"/>
-  <path d="M39.7727 21.5909H35.2273V38.6364H39.7727V21.5909Z" fill="#F47521"/>
-  <path d="M37.5 20.4545C38.7552 20.4545 39.7727 19.437 39.7727 18.1818C39.7727 16.9266 38.7552 15.9091 37.5 15.9091C36.2448 15.9091 35.2273 16.9266 35.2273 18.1818C35.2273 19.437 36.2448 20.4545 37.5 20.4545Z" fill="#F47521"/>
-  <path d="M19.2044 11.3636L10.477 38.6364H15.2503L21.5909 18.821L27.9315 38.6364H32.7049L23.9774 11.3636H19.2044Z" fill="#F47521"/>
-  <path d="M50 50H0V0H50V50Z" fill="url(#paint1_linear_51_86)"/>
-  <defs>
-  <radialGradient id="paint0_radial_51_86" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.803 11.7424) scale(39.9733)">
-  <stop stop-color="#3C1605" stop-opacity="0.98"/>
-  <stop offset="1" stop-color="#1A1107"/>
-  </radialGradient>
-  <linearGradient id="paint1_linear_51_86" x1="-5.1104" y1="10.9593" x2="55.1104" y2="39.0407" gradientUnits="userSpaceOnUse">
-  <stop stop-color="white" stop-opacity="0.2"/>
-  <stop offset="1" stop-color="white" stop-opacity="0"/>
-  </linearGradient>
-  </defs>
-  </svg></div>
+       
 </div>
 
 <!-- <div class="divider_line"></div> -->
 
 <div class="align_justify">
-  여행 정보를 제공하는 스타트업 회사에서 디자이너로 재직했습니다. 사이트에 사용할 메인배너를 디자인하고, 여행지 정보나 각국가별 코로나 규제완화 등의 주요 여행정보를 카드뉴스로 제작해 sns에 업로드했습니다. 본부장님이 기획하신대로 웹사이트와 앱을 디자인한 후 웹개발 수주업체에게 전송할 파일, 아이콘을 제작했습니다.
+강진군청, 완주군청, 장성군청 3개 군청 SNS 담당 디자이너로 재직하며 각 군청별 정책, 행사, 주요 소식 등을 문서로 받아 SNS 콘텐츠로 디자인하여 인스타그램, 페이스북, 블로그에 매일 1-3개씩 업로드하는 업무를 했습니다. 공기관에서 지역주민을 위해 기획하는 문화관광 콘텐츠와 복지정책들이 굉장히 체계적이었는데 긴 텍스트로 전달받은 정책정보를 한눈에 이해하기 쉽게 요약하고 보기에도 예쁘게 디자인하는 카드뉴스제작 업무가 굉장히 재밌게 느껴졌습니다. 연말에는 서울의 한 컨벤션회관에서 공기업을 비롯한 모든 기업들의 SNS콘텐츠대상 시상식이 있었는데 제가 맡았던 강진군청이 최우수상을 수상해 굉장히 뿌듯한 경험이었습니다.
+그 외에 각 군청 블로그 관리, 계절별 스킨 수정을 했습니다.
 </div>
 
 
@@ -396,7 +362,7 @@
 </svg>
 
               </div>
-              <span>SNS 콘텐츠 디자인</span>
+              <span>상세페이지 디자인</span>
             </div>
 
                 <div class="icon_text_wrap">
@@ -406,7 +372,7 @@
 </svg>
 
               </div>
-              <span>앱개발프로젝트에서 디자이너 담당</span>
+              <span>인쇄 풍선 시안 디자인</span>
             </div>
 
             <div class="icon_text_wrap tool_margin">
@@ -513,7 +479,7 @@
 <!-- <div class="divider_line"></div> -->
 
 <div class="align_justify">
-  여행 정보를 제공하는 스타트업 회사에서 디자이너로 재직했습니다. 사이트에 사용할 메인배너를 디자인하고, 여행지 정보나 각국가별 코로나 규제완화 등의 주요 여행정보를 카드뉴스로 제작해 sns에 업로드했습니다. 본부장님이 기획하신대로 웹사이트와 앱을 디자인한 후 웹개발 수주업체에게 전송할 파일, 아이콘을 제작했습니다.
+파티를 꾸미기 위한 풍선, 가랜드, LED장식 등 신상품을 온라인에 업로드하기 위해 상품을 촬영하고 상세페이지를 제작했습니다. 사이트 메인화면에 들어갈 배너를 디자인 및 업로드 하고 매일매일 주문 관리, 텍베포장 및 송장입력, CS 관리, 방문고객 응대 등 쇼핑몰 전반적인 업무를 했습니다. 그리고 기업의 행사나 홍보를 위한 인쇄풍선 주문이 들어오면 디자인 시안을 제작해 기업 담당자에게 컨펌 후 공장에 제작을 의뢰했습니다. 올리브영, 신세계프리미엄아울렛 등 크고 작은 회사의 담당자들과 메일을 주고 받고 통화하며 커뮤니케이션디자인과의 전공을 살릴 수 있었던 값진 경험이었습니다.
 </div>
 
 
@@ -559,7 +525,7 @@
 </svg>
 
               </div>
-              <span>웹사이트 배너 제작</span>
+              <span>제품 촬영</span>
             </div>
 
                 <div class="icon_text_wrap">
@@ -569,7 +535,7 @@
 </svg>
 
               </div>
-              <span>SNS 콘텐츠 디자인</span>
+              <span>누끼 및 합성</span>
             </div>
 
                 <div class="icon_text_wrap">
@@ -579,7 +545,7 @@
 </svg>
 
               </div>
-              <span>앱개발프로젝트에서 디자이너 담당</span>
+              <span>상세페이지 제작</span>
             </div>
 
             <div class="icon_text_wrap tool_margin">
@@ -660,33 +626,13 @@
                                 </linearGradient>
                               </defs>
                             </svg></div>
-              <!--일러스트아이콘-->
-              <div class="tool_icon_box">
-              <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M48.8636 1.13635H1.13635V48.8636H48.8636V1.13635Z" fill="url(#paint0_radial_51_86)"/>
-  <path d="M50 50H0V0H50V50ZM2.27273 47.7273H47.7273V2.27273H2.27273V47.7273Z" fill="#F47521"/>
-  <path d="M26.1364 27.2727H17.0455V31.8182H26.1364V27.2727Z" fill="#F47521"/>
-  <path d="M39.7727 21.5909H35.2273V38.6364H39.7727V21.5909Z" fill="#F47521"/>
-  <path d="M37.5 20.4545C38.7552 20.4545 39.7727 19.437 39.7727 18.1818C39.7727 16.9266 38.7552 15.9091 37.5 15.9091C36.2448 15.9091 35.2273 16.9266 35.2273 18.1818C35.2273 19.437 36.2448 20.4545 37.5 20.4545Z" fill="#F47521"/>
-  <path d="M19.2044 11.3636L10.477 38.6364H15.2503L21.5909 18.821L27.9315 38.6364H32.7049L23.9774 11.3636H19.2044Z" fill="#F47521"/>
-  <path d="M50 50H0V0H50V50Z" fill="url(#paint1_linear_51_86)"/>
-  <defs>
-  <radialGradient id="paint0_radial_51_86" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.803 11.7424) scale(39.9733)">
-  <stop stop-color="#3C1605" stop-opacity="0.98"/>
-  <stop offset="1" stop-color="#1A1107"/>
-  </radialGradient>
-  <linearGradient id="paint1_linear_51_86" x1="-5.1104" y1="10.9593" x2="55.1104" y2="39.0407" gradientUnits="userSpaceOnUse">
-  <stop stop-color="white" stop-opacity="0.2"/>
-  <stop offset="1" stop-color="white" stop-opacity="0"/>
-  </linearGradient>
-  </defs>
-  </svg></div>
+           
 </div>
 
 <!-- <div class="divider_line"></div> -->
 
 <div class="align_justify">
-  여행 정보를 제공하는 스타트업 회사에서 디자이너로 재직했습니다. 사이트에 사용할 메인배너를 디자인하고, 여행지 정보나 각국가별 코로나 규제완화 등의 주요 여행정보를 카드뉴스로 제작해 sns에 업로드했습니다. 본부장님이 기획하신대로 웹사이트와 앱을 디자인한 후 웹개발 수주업체에게 전송할 파일, 아이콘을 제작했습니다.
+해외모델사진에 의류나 악세서리를 합성해 판매하는 쇼핑몰입니다. 옷에 어울리는 배경과 인물사진을 써칭하고, 그 자세를 피팅 모델이 재현하게해 촬영 후 써칭한 사진에 합성했습니다. 의류만 따로 직접 촬영하고 옷사진을 색감보정, 모양 보정 후 누끼따는 업무를 맡았습니다. 포토샵을 능숙하게 다룰 줄 몰랐던 제가 발전할 수 있었던 소중한 1년이었습니다.
 </div>
 
 
@@ -732,7 +678,7 @@
 </svg>
 
               </div>
-              <span>웹사이트 배너 제작</span>
+              <span>상품 촬영</span>
             </div>
 
                 <div class="icon_text_wrap">
@@ -742,7 +688,7 @@
 </svg>
 
               </div>
-              <span>SNS 콘텐츠 디자인</span>
+              <span>상세페이지 제작</span>
             </div>
 
                 <div class="icon_text_wrap">
@@ -752,7 +698,7 @@
 </svg>
 
               </div>
-              <span>앱개발프로젝트에서 디자이너 담당</span>
+              <span>상품 업로드</span>
             </div>
 
             <div class="icon_text_wrap tool_margin">
@@ -833,33 +779,13 @@
                                 </linearGradient>
                               </defs>
                             </svg></div>
-              <!--일러스트아이콘-->
-              <div class="tool_icon_box">
-              <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M48.8636 1.13635H1.13635V48.8636H48.8636V1.13635Z" fill="url(#paint0_radial_51_86)"/>
-  <path d="M50 50H0V0H50V50ZM2.27273 47.7273H47.7273V2.27273H2.27273V47.7273Z" fill="#F47521"/>
-  <path d="M26.1364 27.2727H17.0455V31.8182H26.1364V27.2727Z" fill="#F47521"/>
-  <path d="M39.7727 21.5909H35.2273V38.6364H39.7727V21.5909Z" fill="#F47521"/>
-  <path d="M37.5 20.4545C38.7552 20.4545 39.7727 19.437 39.7727 18.1818C39.7727 16.9266 38.7552 15.9091 37.5 15.9091C36.2448 15.9091 35.2273 16.9266 35.2273 18.1818C35.2273 19.437 36.2448 20.4545 37.5 20.4545Z" fill="#F47521"/>
-  <path d="M19.2044 11.3636L10.477 38.6364H15.2503L21.5909 18.821L27.9315 38.6364H32.7049L23.9774 11.3636H19.2044Z" fill="#F47521"/>
-  <path d="M50 50H0V0H50V50Z" fill="url(#paint1_linear_51_86)"/>
-  <defs>
-  <radialGradient id="paint0_radial_51_86" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.803 11.7424) scale(39.9733)">
-  <stop stop-color="#3C1605" stop-opacity="0.98"/>
-  <stop offset="1" stop-color="#1A1107"/>
-  </radialGradient>
-  <linearGradient id="paint1_linear_51_86" x1="-5.1104" y1="10.9593" x2="55.1104" y2="39.0407" gradientUnits="userSpaceOnUse">
-  <stop stop-color="white" stop-opacity="0.2"/>
-  <stop offset="1" stop-color="white" stop-opacity="0"/>
-  </linearGradient>
-  </defs>
-  </svg></div>
+            
 </div>
 
 <!-- <div class="divider_line"></div> -->
 
 <div class="align_justify">
-  여행 정보를 제공하는 스타트업 회사에서 디자이너로 재직했습니다. 사이트에 사용할 메인배너를 디자인하고, 여행지 정보나 각국가별 코로나 규제완화 등의 주요 여행정보를 카드뉴스로 제작해 sns에 업로드했습니다. 본부장님이 기획하신대로 웹사이트와 앱을 디자인한 후 웹개발 수주업체에게 전송할 파일, 아이콘을 제작했습니다.
+한국 물품을 해외에 수출하는 회사에서 웹디자이너로 재직했습니다. 해외에 판매할 한국물품을 써칭하고 직접 촬영 후 상세페이지를 디자인해 쇼핑몰에 업로드했습니다.
 </div>
 
 
@@ -870,6 +796,11 @@
       </template>
     </v-expansion-panel>
   </v-expansion-panels>
+  </section>
+
+  </v-container>
+
+
 </template>
 
 <script>
@@ -901,14 +832,17 @@ export default {};
   align-items: center;
   justify-content: space-between;
 }
+
+
 .small_text::before {
-     content: "|";
+      content: '';
+    width: 1px;
+    height: 13px;
     display: inline-block;
-    color: #797979b0;
+    background: #7979798a;
     margin: 0 11px;
-    position: relative;    
-    font-weight: 200;
-    bottom: 0px;
+    position: relative;
+    top: 2px;
 }
 .title_date::before {
   content: "";
@@ -970,7 +904,7 @@ export default {};
 
   .icon_text_wrap {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     text-align: justify;
   }
   .icon_box {
@@ -980,8 +914,7 @@ export default {};
     align-items: center;
     justify-content: center;
     margin-right: 10px;
-    position: relative;
-    top: 6px;
+  
   }
   .icon_box svg {
     height: 100%;
@@ -995,8 +928,112 @@ export default {};
     align-items: center;
     justify-content: center;
     margin: 0 12px 0 2px;
+   
+  }
+
+}
+
+/*태블릿 */
+@media (min-width: 601px) {
+
+/*타이틀 */
+.currier_title_wrap{
+  display: flex;
+    flex-direction: column;
+}
+ .small_font {
+    font-size: 15px;
+  
+  }
+
+  .small_text::before {
+     content: '';
+    width: 1px;
+    height: 16px;
+    display: inline-block;
+    background: #7979798a;
+    margin: 0 13px;
     position: relative;
-    top: 8px;
+    top: 3px;
+}
+.title_date::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #797979b0;
+  position: relative;
+  bottom: 3px;
+  margin: 0 10px;
+}
+
+.accordion_title {
+
+  margin-right: 10px;
+
+}
+
+
+
+  /*본문 위아래 여백 */
+  .align_justify{
+    margin: 30px 0 9px;
+    padding-top: 19px;
+    box-sizing: border-box;
+     border-top: 1px solid #e7e7e7;  
+  }
+  /*사용툴 아이콘 */
+  .tool_icon_wrap{
+    display: flex;
+    gap: 7px;
+    margin-left: 30px;
+    margin-top: 8px;
+  }
+  .tool_icon_box{
+    width: 30px;
+    height: 30px;
+  }
+  .tool_icon_box svg{
+    height: 100%;
+  }
+  /**icon과텍스트(포트폴리오설명) */
+  .work_margin{
+    margin-top: 17px;
+
+  }
+  .tool_margin{
+    margin-top: 30px;
+
+  }
+
+  .icon_text_wrap {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+  }
+  .icon_box {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    
+  }
+  .icon_box svg {
+    height: 80%;
+  }
+
+  .icon_box_small{
+    opacity: 0.4;
+    width: 13px;
+    height: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 12px 0 2px;
+
   }
 
 }
