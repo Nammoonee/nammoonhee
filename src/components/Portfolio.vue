@@ -5,7 +5,7 @@
 
     <div class="strong_font sub_title">포트폴리오용 사이트제작</div>
 
-    <v-chip-group mandatory v-model="selectedTab" align-with-title>
+    <v-chip-group color="white" mandatory v-model="selectedTab" align-with-title>
       <v-chip @click="changeTab(0)" :class="{ active: selectedTab === 0 }"
         >난지캠핑장 예약앱</v-chip
       >
@@ -222,7 +222,7 @@
     </div>
    <div class="page_text_align">
      
-     1.로고 리뉴얼 2.헤더 3.메인(SNS섹션) 4.서브페이지(고객의소리, 프랜차이즈, 로그인, 회원가입) 5.PPT탬플릿 디자인 <v-chip class="mb-1" :size="chipSize" @click="slideMoon">담당 페이지</v-chip>
+     1.로고 리뉴얼 2.헤더 3.메인(SNS섹션) 4.서브페이지(고객의소리, 프랜차이즈, 로그인, 회원가입) 5.PPT탬플릿 디자인 <v-chip class="mb-1 sub_btn" :size="chipSize" @click="slideMoon">담당 페이지</v-chip>
    </div>
   </div>
 
@@ -260,7 +260,7 @@
 
       <div class="strong_font sub_title">실무 작업물</div>
 
-    <v-chip-group mandatory v-model="selectedTab2" align-with-title>
+    <v-chip-group color="white" mandatory v-model="selectedTab2" align-with-title>
       <v-chip @click="changeTab2(0)" :class="{ active: selectedTab2 === 0 }"
         >여행플랫폼 웹배너</v-chip
       >
@@ -280,7 +280,7 @@
         >인쇄물</v-chip
       >
     </v-chip-group>
-    <div class="image_slide_margin">
+    <div class="image_slide_margin2">
       <div v-if="selectedTab2 === 0 || selectedTab2 === null">
         <!--여기가 이미지 슬라이드-->
         <div class="slider">
@@ -306,26 +306,7 @@
         </div>
 
         <div class="icon_text_con_box">
-          <!-- <div class="icon_text_wrap">
-            <div class="icon_box">
-              <svg viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.57143 0C2.83862 0 3.05357 0.229883 3.05357 0.515625V1.375H5.94643V0.515625C5.94643 0.229883 6.16138 0 6.42857 0C6.69576 0 6.91071 0.229883 6.91071 0.515625V1.375H7.71429C8.42344 1.375 9 1.9916 9 2.75V3.09375V4.125V9.625C9 10.3834 8.42344 11 7.71429 11H1.28571C0.576563 11 0 10.3834 0 9.625V4.125V3.09375V2.75C0 1.9916 0.576563 1.375 1.28571 1.375H2.08929V0.515625C2.08929 0.229883 2.30424 0 2.57143 0ZM8.03571 4.125H0.964286V9.625C0.964286 9.81406 1.10893 9.96875 1.28571 9.96875H7.71429C7.89107 9.96875 8.03571 9.81406 8.03571 9.625V4.125ZM6.60938 6.38086L4.35938 8.78711C4.17054 8.98906 3.86518 8.98906 3.67835 8.78711L2.39263 7.41211C2.20379 7.21016 2.20379 6.88359 2.39263 6.68379C2.58147 6.48398 2.88683 6.48184 3.07366 6.68379L4.01786 7.69355L5.92634 5.65254C6.11518 5.45059 6.42054 5.45059 6.60737 5.65254C6.7942 5.85449 6.79621 6.18105 6.60737 6.38086H6.60938Z" fill="black"/>
-              </svg>
-          
-            </div>
-            근무기간 : 2024.01.15 ~ 2024.02.14
-          </div>
-
-          <div class="icon_text_wrap">
-            <div class="icon_box">
-              <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.51889 11.9889L8.06722 9.47556C8.775 8.95556 9.26611 8.14667 9.36722 7.22222H12.2778C12.155 9.21556 11.0861 10.9489 9.51889 11.9889ZM7.22222 2.91056V0C10.3278 0.187778 12.8122 2.67222 13 5.77778H10.0894C9.92333 4.26833 8.73167 3.07667 7.22222 2.91056ZM2.88889 6.86111C2.88889 7.32333 2.98278 7.76389 3.16333 8.16111L0.65 9.61278C0.231111 8.78222 0 7.85056 0 6.86111C0 3.58944 2.55667 0.917222 5.77778 0.722222V3.63278C4.15278 3.81333 2.88889 5.18556 2.88889 6.86111ZM6.13889 13C3.99389 13 2.10889 11.9167 1.01111 10.2411L3.52444 8.78944C4.11667 9.59111 5.05556 10.1111 6.13889 10.1111C6.60111 10.1111 7.04167 10.0172 7.43889 9.83667L8.89056 12.35C8.06 12.7689 7.12833 13 6.13889 13Z" fill="black"/>
-</svg>
-
-          
-            </div>
-            개인 100%
-          </div> -->
+     
             <div class="icon_text_wrap">
             <div class="icon_box">
              <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -562,6 +543,13 @@ export default {
 /*모바일 */
 
 @media (max-width: 600px) {
+  #section_portfolio{
+  
+   padding-top: 65px;
+    box-sizing: border-box;
+   
+  
+  }
  
   .sub_title{
     margin-bottom: 5px;
@@ -572,6 +560,9 @@ export default {
   /*이미지슬라이드 */
   .image_slide_margin {
     margin: 25px 0 50px;
+  }
+   .image_slide_margin2 {
+    margin: 25px 0 0;
   }
   .slider {
     display: flex;
@@ -623,6 +614,10 @@ export default {
 /*태블릿 */
 
 @media (min-width: 601px) {
+     #section_portfolio{
+     padding-top: 75px;
+    box-sizing: border-box;
+  }
   
    .sub_title{
     margin-bottom: 10px;
@@ -632,7 +627,7 @@ export default {
 
   /*이미지슬라이드 */
   .image_slide_margin {
-    margin: 35px 0 70px;
+    margin: 35px 0 0px;
   }
   .slider {
     display: flex;

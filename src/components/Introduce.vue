@@ -3,7 +3,7 @@
     <section id="section_intro">
       <h2>자기소개</h2>
       <v-card>
-        <v-tabs v-model="tab">
+        <v-tabs color="white" v-model="tab">
           <div class="tab_wrap">
             <v-tab class="tab" value="profile">프로필</v-tab>
             <v-tab class="tab"  value="skill" @click="SkillGage">스킬</v-tab>
@@ -57,7 +57,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="vertical_line"></div>
+                
 
                 <div class="icon_text_con2">
                   <div class="icon_text_con_box">
@@ -383,7 +383,7 @@
       </v-card>
 
       <v-card>
-        <v-tabs v-model="tab2">
+        <v-tabs color="white" v-model="tab2">
           <div class="tab_wrap">
             <v-tab class="tab" value="i_am">자기소개서</v-tab>
             <v-tab class="tab" value="i_will">입사포부</v-tab>          
@@ -574,7 +574,7 @@ export default {
   }
   .i_am_align {
     text-align: justify;
-    margin: 7px 0 50px;
+    margin: 7px 0 0;
   }
   .i_am_align p {
     margin-bottom: 25px;
@@ -588,8 +588,9 @@ export default {
     justify-content: space-between;
   }
 
-  .section_intro {
-    margin-top: 60px;
+  #section_intro {
+   padding-top: 65px;
+    box-sizing: border-box;
    
   }
   /*상단 탭 */
@@ -690,10 +691,7 @@ export default {
     background: #79797950;
   }
 
-  .vertical_line {    
-    height: 50px;    
-    margin: 0 5%;
-  }
+ 
 
   .profile_text {
     width: 80%;
@@ -708,6 +706,10 @@ export default {
 /*태블릿사이즈 */
 
 @media (min-width: 601px) {
+     #section_intro{
+     padding-top: 75px;
+    box-sizing: border-box;
+  }
  
   .skill_gages{
     width: 100%;
@@ -733,7 +735,7 @@ export default {
   }
   .i_am_align {
     text-align: justify;
-    margin: 20px 0 70px;
+    margin: 20px 0 0;
   }
   .i_am_align p {
     margin-bottom: 25px;
@@ -823,8 +825,9 @@ export default {
   .icon_text_con_wrap {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 60px;
     margin: 35px auto 0;
   }
   .icon_text_con_box {
@@ -832,16 +835,21 @@ export default {
     flex-direction: column;
     
   }
-  .icon_text_con1,
-  .icon_text_con2 {
-    width: 45%;
+  .icon_text_con1{
+     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+    box-sizing: border-box;
   }
   .icon_text_con2 {
-    padding-right: 7%;
+    width: 50%;
+    display: flex;
+  justify-content: flex-start;
+   
   }
 
+  
     .icon_text_con2::before{
     content: '';
     display: block;
@@ -853,11 +861,7 @@ export default {
     background: #79797950;
   }
 
-  .vertical_line {    
-    height: 70px;    
-    margin: 0 5%;
-  }
-
+ 
 
 
   .profile_text {
@@ -896,5 +900,15 @@ export default {
 
 
 
+}
+
+
+/*pc */
+@media (min-width: 1024px) {
+
+
+ 
+
+ 
 }
 </style>

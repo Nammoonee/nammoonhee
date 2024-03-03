@@ -859,6 +859,10 @@ export default {};
 /*모바일 */
 
 @media (max-width: 600px) {
+  #section_currier{
+     padding-top: 65px;
+    box-sizing: border-box;
+  }
 /*타이틀 */
 .currier_title_wrap{
   display: flex;
@@ -935,6 +939,10 @@ export default {};
 
 /*태블릿 */
 @media (min-width: 601px) {
+    #section_currier{
+     padding-top: 75px;
+    box-sizing: border-box;
+  }
 
 /*타이틀 */
 .currier_title_wrap{

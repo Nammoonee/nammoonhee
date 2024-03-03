@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <h1 class="logo">남문희<span class="logo_smile">:)</span></h1>
+      <h1 class="logo" @click="scrollTop">남문희<span class="logo_smile">:)</span></h1>
       <v-app-bar id="header_align">
         <header id="header">
 
@@ -16,7 +16,7 @@
             <transition name="fade">
 
               <ul class="hamburger_drawer" v-if="isDrawerOpen">
-                <li @click="scrollIndex">
+                <li @click="scrollTop">
                   <div class="bottom_line">HOME</div>
                 </li>
                 <li @click="scrollIntroduce">
@@ -82,12 +82,7 @@ export default {
     };
   },
   methods: {
-    scrollIndex(){
-    const section_home_wrap = document.getElementById('section_home_wrap');
-      if (section_home_wrap) {
-        section_home_wrap.scrollIntoView({ behavior: 'smooth' });
-      }
-    },
+  
     scrollIntroduce(){
     const section_intro = document.getElementById('section_intro');
       if (section_intro) {
@@ -217,31 +212,52 @@ hr {
   padding: 0 !important;
 }
 
+
+
+/*header common */
+h1, .hamburger_drawer li{
+  cursor: pointer;
+}
+
 /*버튼들 컬러 */
+.sub_btn{
+  background: #8d8cce !important;
+}
+.v-slide-group__container{
+  contain: none;
+}
 .v-btn {
   letter-spacing: 0;
   font-weight: 300;
-
- 
-
+ }
+ .text-white {
+    color: #fff !important;
+    background: #8d8cce !important;
 }
-.active-tab{
-  background: tomato !important;
-}
- 
 
-.v-tab.v-tab.v-btn{
-  background: #797979;
+.v-chip{
+  font-weight: 300;
+}
+.v-chip:hover{
+    background: #797979b7;
+  color: #fff;
+}
+.v-chip-group .v-chip.v-chip--selected:not(.v-chip--disabled) .v-chip__overlay, .v-chip--variant-tonal .v-chip__underlay {
+    background: none;
+    opacity: 0;
+   
+}
+
+
+.v-chip--variant-tonal, .v-tab.v-tab.v-btn{
+  background: #797979e7;
   color: #fff;
 }
 .v-tab.v-tab.v-btn:hover{
-  background: rgb(157, 107, 98);
+  background: #797979b7;
   color: #fff;
 }
-.v-tab.v-tab.v-btn:active{
-  background: tomato !important;
-  color: #fff;
-}
+
 
 
 /*아코디언 */
@@ -278,7 +294,7 @@ hr {
 }
 
 .point_color{
-  color: tomato ; /*#00bbff */
+  color: #8d8cce ; /*#00bbff */
   font-weight: 500;
 }
 

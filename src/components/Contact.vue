@@ -71,14 +71,15 @@ export default {
 /*모바일 */
 
 @media (max-width: 600px) {
-
-
-
-
-
-  h2{
-    margin-top: 50px;
+  #section_contact{
+     padding-top: 65px;
+    box-sizing: border-box;
   }
+
+
+
+
+
   .contact_btn_wrap{
     display: flex;
     flex-direction: column;
@@ -126,9 +127,11 @@ background: #347DC6;
 
 /*태블릿 */
 @media (min-width: 601px) {
-  h2{
-    margin-top: 60px;
+   #section_contact{
+     padding-top: 75px;
+    box-sizing: border-box;
   }
+
 
   
 /*통화, 메일버튼 */

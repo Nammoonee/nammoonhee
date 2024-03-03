@@ -31,7 +31,7 @@
             </div>
             <div>이력서, 포트폴리오 사이트입니다.</div>
           </div>
-          <v-btn>포트폴리오 바로가기</v-btn>
+       <v-btn @click="scrollPortfolio">포트폴리오 바로가기</v-btn>
         </div>
       </section>
     </div>
@@ -44,6 +44,14 @@
 
 
 export default {
+  methods: {
+          scrollPortfolio(){
+    const section_portfolio = document.getElementById('section_portfolio');
+      if (section_portfolio) {
+        section_portfolio.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+  }
 
 };
 </script>
@@ -79,6 +87,8 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+     padding-top: 65px;
+    box-sizing: border-box;
   }
   .section_home {
     
@@ -166,6 +176,7 @@ export default {
 /*태블릿사이즈 */
 @media (min-width: 601px) {
     #section_home_wrap{
+     
    height: 100vh;
     display: flex;
     flex-direction: column;
@@ -223,7 +234,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 75px 0 0;
+    margin: 65px 0 0;
   }
   .MyName svg {
     position: relative;
@@ -284,6 +295,9 @@ export default {
     width: 385px;
     height: 385px;
     margin: 0;
+    display: flex;
+    
+    justify-content: flex-end;
   }
 
     @keyframes imageSize{
