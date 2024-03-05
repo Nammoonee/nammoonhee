@@ -7,10 +7,10 @@
 
     <v-chip-group color="white" mandatory v-model="selectedTab" align-with-title>
       <v-chip @click="changeTab(0)" :class="{ active: selectedTab === 0 }"
-        >난지캠핑장 예약앱</v-chip
+        >이력서 홈페이지</v-chip
       >
       <v-chip @click="changeTab(1)" :class="{ active: selectedTab === 1 }"
-        >이력서 홈페이지</v-chip
+        >난지캠핑장 예약앱</v-chip
       >
       <v-chip @click="changeTab(2)" :class="{ active: selectedTab === 2 }"
         >컴포즈커피 팀과제</v-chip
@@ -18,9 +18,14 @@
     </v-chip-group>
     <div class="image_slide_margin">
       <div v-if="selectedTab === 0 || selectedTab === null">
-        <!--여기가 이미지 슬라이드-->
+    
+        1
+      </div>
+
+      <div v-else-if="selectedTab === 1">
+          <!--여기가 이미지 슬라이드-->
         
-        <div class="slider">
+          <div class="slider">
           <div
             class="slide"
             v-for="(image, index) in images"
@@ -120,10 +125,6 @@
 
 
         </div>
-      </div>
-
-      <div v-else-if="selectedTab === 1">
-      2
       
       </div>
 
@@ -627,6 +628,9 @@ export default {
 
   /*이미지슬라이드 */
   .image_slide_margin {
+    margin: 35px 0 0px;
+  }
+  .image_slide_margin2 {
     margin: 35px 0 0px;
   }
   .slider {

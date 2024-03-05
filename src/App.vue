@@ -261,6 +261,10 @@ h1, .hamburger_drawer li{
 
 
 /*아코디언 */
+.accordion_shadow{
+  border-radius: 7px;
+  box-shadow: 3px 3px 9px -6px #797979;
+}
 
 .v-expansion-panel__shadow{
   box-shadow: none !important;

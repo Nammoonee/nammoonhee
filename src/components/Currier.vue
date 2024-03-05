@@ -7,7 +7,7 @@
   
   </div>
 
-  <v-expansion-panels variant="accordion">
+  <v-expansion-panels variant="accordion" class="accordion_shadow">
     <v-expansion-panel>
       <template v-slot:title>
         <div class="accordion_title">
@@ -820,7 +820,7 @@ export default {};
   white-space: nowrap; /* 텍스트가 넘치는 경우 줄 바꿈을 방지합니다. */
   overflow: hidden; /* 텍스트가 넘칠 경우 숨깁니다. */
   text-overflow: ellipsis;
-  width: 32%;  
+  width: 26%;  
 }
 
 
