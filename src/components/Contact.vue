@@ -71,16 +71,30 @@ export default {
   },
   methods: {
     sendSMS() {
-      const phoneNumber = "010-4342-4356"; // 문자를 보내고자 하는 번호
+  const phoneNumber = "010-4342-4356"; // 문자를 보내고자 하는 번호
 
-      // sms: URI 스키마를 사용하여 SMS 앱을 열고 지정된 번호로 이동합니다.
-      const smsLink = `sms:${phoneNumber}`;
-      window.location.href = smsLink;
-    },
+  // 모바일 환경인지 확인
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // 모바일 환경인 경우 SMS 앱을 열고 지정된 번호로 이동합니다.
+    const smsLink = `sms:${phoneNumber}`;
+    window.location.href = smsLink;
+  } else {
+    // 모바일 환경이 아닌 경우 알림 창을 띄웁니다.
+    alert('모바일에서 실행해주세요.');
+  }
+},
     connectCall() {
       const phoneNumber = "010-4342-4356"; // 전화를 걸고자 하는 번호
-      const telLink = "tel:" + phoneNumber;
+
+      // 모바일 환경인지 확인
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    const telLink = "tel:" + phoneNumber;
       window.location.href = telLink;
+  } else {
+    // 모바일 환경이 아닌 경우 알림 창을 띄웁니다.
+    alert('모바일에서 실행해주세요.');
+  }
+  
     },
     copyEmail() {
       // 텍스트를 클립보드에 복사하는 함수
