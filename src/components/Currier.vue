@@ -1,5 +1,5 @@
 <template>
-<v-container>
+<v-main>
   <section id="section_currier">
 
   <div>
@@ -764,7 +764,7 @@
   </v-expansion-panels>
   </section>
 
-  </v-container>
+  </v-main>
 
 
 </template>
@@ -774,6 +774,9 @@ export default {};
 </script>
 
 <style scoped>
+.v-main{
+  background: #eceefb57;
+}
 /*hr클래스 */
 /* .divider_line{
   width: 100%;
@@ -800,6 +803,8 @@ export default {};
 }
 
 
+
+
 .small_text::before {
       content: '';
     width: 1px;
@@ -822,9 +827,9 @@ export default {};
   margin: 0 5px;
 }
 /*더작은 모바일 */
-@media (max-width: 480px) {
+@media (max-width: 599px) {
   #section_currier{
-     padding-top: 65px;
+     padding: 50px 12px ;
     box-sizing: border-box;
   }
 /*타이틀 */
@@ -832,16 +837,19 @@ export default {};
   display: flex;
   justify-content: space-between; 
 }
- .small_font {
-    font-size: 12px;    
-  }
+
+
+  .small_text{
+  letter-spacing: -1px;
+}
 
 
 
-  /*본문 위아래 여백 */
+  /*본문 여백 */
   .align_justify{
-    margin: 25px 0 9px;
-    padding-top: 19px;
+    margin: 15px 0 0;
+    padding: 15px 0;  
+   
     box-sizing: border-box;
      border-top: 1px solid #e7e7e7;  
   }
@@ -904,7 +912,7 @@ export default {};
 
 @media (max-width: 600px) {
   #section_currier{
-     padding-top: 65px;
+     padding: 50px 12px ;
     box-sizing: border-box;
   }
 /*타이틀 */
@@ -920,8 +928,9 @@ export default {};
 
   /*본문 위아래 여백 */
   .align_justify{
-    margin: 25px 0 9px;
-    padding-top: 19px;
+    margin: 15px 0 0;
+    padding: 15px 0;
+   
     box-sizing: border-box;
      border-top: 1px solid #e7e7e7;  
   }
@@ -983,7 +992,7 @@ export default {};
 /*태블릿 */
 @media (min-width: 601px) {
     #section_currier{
-     padding-top: 75px;
+    padding: 70px 30px;
     box-sizing: border-box;
   }
 
@@ -1029,8 +1038,9 @@ export default {};
 
   /*본문 위아래 여백 */
   .align_justify{
-    margin: 30px 0 9px;
-    padding-top: 19px;
+    margin: 25px 0 0;
+    padding: 25px 0;
+   
     box-sizing: border-box;
      border-top: 1px solid #e7e7e7;  
   }

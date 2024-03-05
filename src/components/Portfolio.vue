@@ -684,7 +684,7 @@ export default {
 @media (max-width: 600px) {
   #section_portfolio{
   
-   padding-top: 65px;
+   padding: 50px 12px;
     box-sizing: border-box;
    
   
@@ -754,7 +754,7 @@ export default {
 
 @media (min-width: 601px) {
      #section_portfolio{
-     padding-top: 75px;
+    padding: 70px 30px;
     box-sizing: border-box;
   }
   
@@ -815,18 +815,8 @@ export default {
 
 }
 
-@media (min-width: 640px) {
-  
- 
-  
-   
-
-}
-
-/*PC 사이즈 */
-
-
-@media (min-width: 1024px) {
+/*pc추가 */
+@media (min-width: 1024px) and (max-width: 1098px){
 
    .icon_page_wrap{
      position: relative;
@@ -837,6 +827,49 @@ export default {
   .page_text_align{
     position: relative;
     left: 0px;
+   
+  }
+ 
+     #section_portfolio{
+      width: 100%;
+    padding: 70px 30px;
+    box-sizing: border-box;
+     margin: auto;
+  }
+  .slider{
+    width: 100%;
+   
+  }
+ 
+}
+
+
+
+/*PC 사이즈 */
+
+
+@media (min-width: 1098px) {
+
+   .icon_page_wrap{
+     position: relative;
+    left: 0;
+
+  }
+
+  .page_text_align{
+    position: relative;
+    left: 0px;
+   
+  }
+ 
+     #section_portfolio{
+      width: 1024px;
+    padding: 70px 0;
+    box-sizing: border-box;
+     margin: auto;
+  }
+  .slider{
+    width: 100%;
    
   }
  

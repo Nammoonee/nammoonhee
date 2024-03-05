@@ -114,14 +114,12 @@ export default {
 </script>
 
 <style scoped>
-#section_contact{
-  height: 50vh;
-}
+
 /*모바일 */
 
 @media (max-width: 600px) {
   #section_contact{
-     padding-top: 65px;
+    padding: 50px 12px;
     box-sizing: border-box;
   }
 
@@ -183,7 +181,7 @@ background: #347DC6;
 /*태블릿 */
 @media (min-width: 601px) {
    #section_contact{
-     padding-top: 75px;
+     padding: 70px 30px;
     box-sizing: border-box;
   }
 

@@ -213,6 +213,7 @@ button {
 .hide {
   opacity:0 !important;
   transition: opacity 0.3s ease;
+  text-indent: -9999px;
 }
 
 hr {
@@ -236,13 +237,10 @@ h1 {
    background: #f9f9fe3d;
   
 }
-.hamburger_drawer {
 
-  border-radius: 5px;
-}
 .hamburger_drawer li{
   cursor: pointer;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 
@@ -434,9 +432,10 @@ h1 {
 
   .v-main {
     width: 100%;
-    background: #eceefb57;
-    margin: auto;
-    padding: 25px 12px;
+    /* background: #eceefb57; */
+    margin: 0 auto;
+     padding: 0;
+   
  
   }
 
@@ -487,6 +486,7 @@ h1 {
   .logo {
     position: fixed;
     top: 25px;
+    left: 12px;
     z-index: 5;
   }
 
@@ -682,9 +682,10 @@ h1 {
 
   .v-main {
     width: 100%;
-    background: #eceefb57;
-    margin: auto;
-    padding: 35px 30px;
+    /* background: #eceefb57; */
+    margin: 0 auto;
+     padding: 0;
+  
   }
 
   .v-btn--variant-elevated {
@@ -725,6 +726,7 @@ h1 {
   .logo {
     position: fixed;
     top: 35px;
+    left: 30px;
     z-index: 5;
   }
 
@@ -857,7 +859,8 @@ h1 {
 /*vue기본설정삭제 */
 @media (min-width: 960px) {
   .v-container {
-    max-width: 1024px;
+    width: 100%;
+    max-width: 1080px;
   }
 }
 
@@ -872,12 +875,93 @@ h1 {
 }
 
 
+/*PC 사이즈(반응형헤더추가) */
+@media (min-width: 1024px) and (max-width: 1098px){
 
+
+
+  /*아코디언 */
+  .v-expansion-panels{
+   margin: 35px 0 0;
+  width: 100%;
+}
+
+
+
+
+
+
+  /* pc header */
+
+
+  #header {
+    margin: 5px 0 0;
+    width: 100%;
+  }
+
+  #header_align {
+  
+    margin: 0 30px 0 0;
+  }
+  .hamburger {
+ 
+    display: none;
+  }
+
+  .logo {
+    position: fixed;
+    top: 35px;
+    left: 30px;
+    z-index: 50;
+  }
+
+
+
+   .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+
+    transform: translateY(0px);
+  }
+
+  .fade-leave,
+  .fade-enter-to {
+
+    transform: translateY(0px);
+  }
+  
+
+
+
+
+
+  .v-main {
+    width: 100%;
+     /* background: #eceefb57; */
+    margin: 0 auto;
+     padding: 0;
+
+
+
+  }
+
+   .scroll_top {
+
+right: 30px;
+bottom: 35px;
+}
+
+
+}
 
 /*PC 사이즈 */
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1099px) {
 
   /* common css */
   body,
@@ -903,9 +987,10 @@ h1 {
 
   .v-main {
     width: 100%;
-     background: #eceefb57;
-    margin: auto;
-    padding: 35px 30px;
+     /* background: #eceefb57; */
+    margin: 0 auto;
+    padding: 0;
+ 
 
 
   }
@@ -935,8 +1020,8 @@ h1 {
     padding: 0 !important;
   }
 
-  #header {
-    margin: 35px 0 0;
+#header {
+    margin: 5px 0 0;
     width: 100%;
   }
 
@@ -953,74 +1038,39 @@ h1 {
 
   #header_align {
 
-    left: calc(50% + 443px) !important
+   right: calc(50% - 514px) !important;
   }
+
+
+  
  .scroll_top {
 
-left: calc(50% + 473px) !important
+left: calc(50% + 473px) !important ;
+bottom: 35px
 }
 
   .logo {
     position: fixed;
     top: 35px;
-    right: calc(50% + 437px);
+    left: calc(50% - 512px);
     z-index: 50;
+   
   }
 
-  .hamburger_wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
+
 
   .hamburger {
-    width: 20px;
-    height: 20px;
+ 
     display: none;
   }
 
-  .hamburger svg {
-    width: 20px;
-    height: 17px;
-  }
+ 
+  
 
-  .hamburger_drawer {
-    z-index: 5;
-    position: relative;
-    top: -25px;
-  }
 
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 0s, transform 0.2s;
-  }
 
-  .fade-enter,
-  .fade-leave-to {
 
-    transform: translateY(0px);
-  }
-
-  .fade-leave,
-  .fade-enter-to {
-
-    transform: translateY(0px);
-  }
-
-  .hamburger_drawer li {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    margin-top: 21px;
-  }
-
-  .bottom_line {
-    height: 25px;
-    display: flex;
-    border-bottom: 1px solid #797979;
-    align-items: center;
-  }
+ 
 
   .scroll_top {
     position: fixed;
@@ -1038,57 +1088,7 @@ left: calc(50% + 473px) !important
 
 }
 
-/*PC 사이즈(반응형헤더추가) */
-@media (min-width: 1024px) and (max-width: 1098px) {
 
 
 
-  /*아코디언 */
-  .v-expansion-panels{
-   margin: 35px 0 0;
-  width: 100%;
-}
-
-
-
-
-
-
-  /* pc header */
-
-
-  #header {
-    margin: 35px 0 0;
-    width: 100%;
-  }
-
-  #header_align {
-    left: calc(50% + 42%) !important
-  }
-
-  .logo {
-    position: fixed;
-    top: 35px;
-    right: calc(50% + 39.6%);
-    z-index: 50;
-  }
-
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 0s, transform 0.2s;
-  }
-
-  .fade-enter,
-  .fade-leave-to {
-
-    transform: translateY(0px);
-  }
-
-  .fade-leave,
-  .fade-enter-to {
-
-    transform: translateY(0px);
-  }
-
-
-}</style>
+</style>

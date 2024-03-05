@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-main>
     
     <section id="section_intro">
       <h2>자기소개</h2>
@@ -465,7 +465,7 @@
     </section>
     
   
-  </v-container>
+  </v-main>
 </template>
 
 <script>
@@ -563,6 +563,9 @@ export default {
 </script>
 
 <style scoped>
+.v-main{
+  background: #eceefb57;
+}
 
 
 
@@ -596,18 +599,10 @@ export default {
 
 
   #section_intro{
-    padding: 60px 12px 30px;
+    padding: 50px 12px ;
 
     box-sizing: border-box;
-    background: #fff;
-
-
-    width: calc(100% + 24px);
-    margin: 0 -12px;
-  
- 
-
-
+   
 
   }
 
@@ -725,24 +720,11 @@ export default {
 /*태블릿사이즈 */
 
 @media (min-width: 601px) {
-  .intro_bg{
-    background: #fff;
-    width: calc(100% + 60px);
-    margin-left: -30px;
-    margin-right: -30px;
-    height: calc(145px + 0px);
-    margin-bottom: -34px;
 
-  }
      #section_intro{
-     padding-top: 70px;
-     padding-bottom: 35px;
+ padding: 70px 30px;
     box-sizing: border-box;
-    background: #fff;
-
-
-    width: calc(100% + 60px);
-    margin: 0 -30px;
+ 
   
  
 
@@ -775,8 +757,7 @@ export default {
     gap: 5px;
   }
   .i_am_align {     
-    width: 100%;
-    padding: 0 30px;
+   
     text-align: justify;
     margin: 20px auto 0;
   }
@@ -907,7 +888,7 @@ export default {
   .profile_text {
    
     margin: 35px 0;
-    padding: 0 30px;
+    
     text-align: center;
   }
      v-timeline {
@@ -945,37 +926,26 @@ export default {
 
 
 }
-
-
-/*pc */
-@media (min-width: 1024px) {
-  .i_am_align{
-    width: 1024px;
-    padding: 0;
-  }
-  #section_intro{
-
-
-
-    width: calc(100% + 100%);
-  
+/*pc추가 */
+@media (min-width: 1023px) and (max-width: 1097px) {
  
-  margin-left: -50%; /* 너비의 절반을 왼쪽으로 이동하여 가운데 정렬 */
-  margin-right: -50%;
-
-
-  }
-
-  @media (min-width: 1024px) and (max-width: 1098px) {
     .i_am_align {     
-    width: 100%;
-    padding: 0 20px;
+ 
     text-align: justify;
     margin: 20px auto 0;
   }
     
 
   }
+
+/*pc */
+@media (min-width: 1098px) {
+  .i_am_align{
+    width: 1024px;
+    padding: 0;
+  }
+
+  
 
 
 

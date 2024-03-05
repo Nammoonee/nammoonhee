@@ -87,13 +87,11 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-     padding-top: 65px;
+    padding: 50px 0 ;
     box-sizing: border-box;
-  }
-  .section_home {
     
-    padding-bottom: 50px;   
   }
+  
   .profile_photo_wrap{
    
     margin: auto;
@@ -181,11 +179,10 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 70px 0 ;
+    box-sizing: border-box;
   }
-  .section_home {
-    padding-bottom: 50px;   
-
-  }
+  
   .profile_photo_wrap{
     width: 270px;
     height: 270px;
@@ -264,12 +261,9 @@ export default {
   }
 }
 
-
-/*PC사이즈 */
-
-@media (min-width: 1024px) {
-  
-  #section_home_wrap {
+/*pc추가 */
+@media (min-width: 1024px) and (max-width: 1098px){
+   #section_home_wrap {
     margin-top: 15px;
     display: flex;
     align-items: center;    
@@ -279,10 +273,12 @@ export default {
 
   .section_home {
     width: 100%;
-    max-width: 1024px;
+    
     margin: auto;
     display: flex;
-    padding-bottom: 50px;
+    padding: 0 30px;
+    box-sizing: border-box;
+   
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
@@ -290,6 +286,9 @@ export default {
  
  
   }
+
+
+  
 
    .profile_photo_wrap{
     width: 385px;
@@ -360,5 +359,107 @@ width: 360px;
   .v-btn {
     border-radius: 25px;
   }
+
+}
+
+/*PC사이즈 */
+
+@media (min-width: 1099px) {
+   #section_home_wrap {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;    
+    animation: fadeInOut 0.3s;
+    height: 100vh;
+  }
+
+  .section_home {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+   
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+   
+ 
+ 
+  }
+
+
+  
+
+   .profile_photo_wrap{
+    width: 385px;
+    height: 415px;
+    margin: 0;
+    display: flex;
+    
+    justify-content: flex-end;
+  }
+
+    @keyframes imageSize{
+        0%{
+            width: 225px;
+            height: 225px;
+        }
+      
+        100%{
+            width: 385px;
+            height: 385px;
+        }
+    }
+
+  .profile {
+width: 360px;
+    height: 385px;
+    background: pink;
+    border-radius: 185px 185px 0 0;
+    margin: 0;
+    animation: imageSize 0.3s;
+    transform-origin: center center;
+  }
+
+  .MyName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    gap: 13px;
+  }
+  .MyName svg {
+    position: relative;
+    top: -17px;
+  }
+  h4 {
+    font-size: 48px;
+    width: 200px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+     z-index: 1;
+
+  }
+  .main_ment {
+    text-align: left;
+    margin: 10px 0 55px;
+  }
+  .ment_1_2 {
+    display: flex;
+    gap: 5px;
+  }
+  .v-btn--size-default {
+    --v-btn-size: 18px;
+    padding: 10px;
+    width: 230px;
+    height: 45px;
+  }
+  .v-btn {
+    border-radius: 25px;
+  }
+  
+ 
 }
 </style>
