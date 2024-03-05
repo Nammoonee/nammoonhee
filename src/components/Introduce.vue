@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    
     <section id="section_intro">
       <h2>자기소개</h2>
       <v-card>
@@ -186,7 +187,7 @@
 
                       <v-progress-linear
                         class="mb-3"
-                        color="primary"
+                        color="grey-lighten-1"
                         rounded
                         v-model="value1"
                         :buffer-value="bufferValue"
@@ -226,7 +227,7 @@
                       rounded
                       v-model="value2"
                       :buffer-value="bufferValue"
-                      color="grey-darken-1"
+                      color="grey-lighten-1"
                     ></v-progress-linear>
                         <div>일러스트</div>
                     </div>
@@ -250,7 +251,7 @@
                       rounded
                       v-model="value3"
                       :buffer-value="bufferValue"
-                      color="grey-darken-1"
+                      color="grey-lighten-1"
                     ></v-progress-linear>
                      <div>피그마</div>
                   </div>
@@ -274,7 +275,7 @@
                       rounded
                       v-model="value2"
                       :buffer-value="bufferValue"
-                      color="grey-darken-1"
+                      color="grey-lighten-1"
                     ></v-progress-linear>
                          <div>HTML5</div>
                   </div>
@@ -296,7 +297,7 @@
                       rounded
                       v-model="value4"
                       :buffer-value="bufferValue"
-                      color="info"
+                      color="grey-lighten-1"
                     ></v-progress-linear>
                           <div>CSS3</div>
                   </div>
@@ -319,7 +320,7 @@
                       rounded
                       v-model="value3"
                       :buffer-value="bufferValue"
-                      color="green"
+                      color="grey-lighten-1"
                     ></v-progress-linear>
                       <div>VUE</div>
                   </div>
@@ -336,7 +337,7 @@
            
   <v-timeline side="end" truncate-line="start"  :direction="timelineDirection">
     <v-timeline-item
-      dot-color="pink"
+      dot-color="#dbd5ad"
       size="x-small"
     >
       <div class="d-flex">
@@ -349,7 +350,7 @@
     </v-timeline-item>
 
     <v-timeline-item
-      dot-color="teal-lighten-3"
+      dot-color="#8d8cce96"
       size="x-small"
     >
       <div class="d-flex">
@@ -362,7 +363,7 @@
     </v-timeline-item>
 
     <v-timeline-item
-      dot-color="pink"
+      dot-color="#8d8cce96"
       size="x-small"
     >
       <div class="d-flex">
@@ -460,7 +461,10 @@
           </v-window>
         </v-card-text>
       </v-card>
+    
     </section>
+    
+  
   </v-container>
 </template>
 
@@ -561,6 +565,7 @@ export default {
 <style scoped>
 
 
+
 @media (max-width: 600px) {
   .edu_conts{
     display: flex;
@@ -573,6 +578,7 @@ export default {
     align-items: center;
   }
   .i_am_align {
+    
     text-align: justify;
     margin: 7px 0 0;
   }
@@ -588,11 +594,24 @@ export default {
     justify-content: space-between;
   }
 
-  #section_intro {
-   padding-top: 65px;
+
+  #section_intro{
+    padding: 60px 12px 30px;
+
     box-sizing: border-box;
-   
+    background: #fff;
+
+
+    width: calc(100% + 24px);
+    margin: 0 -12px;
+  
+ 
+
+
+
   }
+
+
   /*상단 탭 */
   .v-slide-group__content {
     justify-content: center !important;
@@ -706,10 +725,32 @@ export default {
 /*태블릿사이즈 */
 
 @media (min-width: 601px) {
-     #section_intro{
-     padding-top: 75px;
-    box-sizing: border-box;
+  .intro_bg{
+    background: #fff;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-right: -30px;
+    height: calc(145px + 0px);
+    margin-bottom: -34px;
+
   }
+     #section_intro{
+     padding-top: 70px;
+     padding-bottom: 35px;
+    box-sizing: border-box;
+    background: #fff;
+
+
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+  
+ 
+
+
+
+  }
+
+
  
   .skill_gages{
     width: 100%;
@@ -733,9 +774,11 @@ export default {
     align-items: center;
     gap: 5px;
   }
-  .i_am_align {
+  .i_am_align {     
+    width: 100%;
+    padding: 0 30px;
     text-align: justify;
-    margin: 20px 0 0;
+    margin: 20px auto 0;
   }
   .i_am_align p {
     margin-bottom: 25px;
@@ -749,10 +792,7 @@ export default {
     justify-content: space-between;
   }
 
-  .section_intro {
-    margin-top: 60px;
-   
-  }
+
   /*상단 탭 */
   .v-slide-group__content {
     justify-content: center !important;
@@ -865,7 +905,9 @@ export default {
 
 
   .profile_text {
+   
     margin: 35px 0;
+    padding: 0 30px;
     text-align: center;
   }
      v-timeline {
@@ -900,11 +942,41 @@ export default {
 
 
 
+
+
 }
 
 
 /*pc */
 @media (min-width: 1024px) {
+  .i_am_align{
+    width: 1024px;
+    padding: 0;
+  }
+  #section_intro{
+
+
+
+    width: calc(100% + 100%);
+  
+ 
+  margin-left: -50%; /* 너비의 절반을 왼쪽으로 이동하여 가운데 정렬 */
+  margin-right: -50%;
+
+
+  }
+
+  @media (min-width: 1024px) and (max-width: 1098px) {
+    .i_am_align {     
+    width: 100%;
+    padding: 0 20px;
+    text-align: justify;
+    margin: 20px auto 0;
+  }
+    
+
+  }
+
 
 
  

@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <v-main>
-      <h1 class="logo" @click="scrollTop">남문희<span class="logo_smile">:)</span></h1>
-      <v-app-bar id="header_align">
+      <h1 class="logo" @click="scrollTop" :class="{ hide: isHeaderHidden }">남문희<span class="logo_smile">:)</span></h1>
+      <v-app-bar id="header_align"  :class="{ hide: isHeaderHidden }"><!--여기까지 되돌리기-->
         <header id="header">
 
           <div class="hamburger_wrap">
@@ -49,7 +49,7 @@
 
 
 
-      <v-btn class="scroll_top" @click="scrollTop">TOP</v-btn>
+      <v-btn class="scroll_top" @click="scrollTop"  :class="{ hide: isHeaderHidden }">TOP</v-btn>
 
 
       
@@ -78,11 +78,26 @@ export default {
   name: "App",
   data() {
     return {
-      isDrawerOpen: window.innerWidth >= 1024
+      isDrawerOpen: window.innerWidth >= 1024,
+      isHeaderHidden: false,
+    lastScrollTop: 0
     };
   },
   methods: {
   
+    handleScroll() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > this.lastScrollTop) {
+      // 스크롤을 아래로 내릴 때
+      this.isHeaderHidden = true;
+    } else {
+      // 스크롤을 위로 올릴 때
+      this.isHeaderHidden = false;
+    }
+
+    this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  },
     scrollIntroduce(){
     const section_intro = document.getElementById('section_intro');
       if (section_intro) {
@@ -122,9 +137,11 @@ export default {
   },
   mounted() {
     window.addEventListener('resize', this.handleResize);
+    window.addEventListener('scroll', this.handleScroll);
   },
   beforeUnmount() {
     window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 };
 
@@ -194,13 +211,8 @@ button {
 }
 
 .hide {
-  position: absolute;
-  width: 0 !important;
-  height: 0 !important;
-  overflow: hidden;
-  margin: -1px;
-  text-indent: -9999px;
-  border: 0 none !important;
+  opacity:0 !important;
+  transition: opacity 0.3s ease;
 }
 
 hr {
@@ -211,14 +223,29 @@ hr {
   letter-spacing: 0 !important;
   padding: 0 !important;
 }
+/*자기소개-스킬바 */
 
+.v-progress-linear__background{
+  opacity: 0.25;
+}
 
 
 /*header common */
-h1, .hamburger_drawer li{
+h1 {
   cursor: pointer;
-  background: #f9f9fe;
+   background: #f9f9fe3d;
+  
 }
+.hamburger_drawer {
+
+  border-radius: 5px;
+}
+.hamburger_drawer li{
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
 
 /*버튼들 컬러 */
 .sub_btn{
@@ -244,8 +271,8 @@ h1, .hamburger_drawer li{
   color: #fff;
 }
 .v-chip-group .v-chip.v-chip--selected:not(.v-chip--disabled) .v-chip__overlay, .v-chip--variant-tonal .v-chip__underlay {
-    background: none;
-    opacity: 0;
+    background: none !important;
+    opacity: 0 !important;
    
 }
 
@@ -928,6 +955,10 @@ h1, .hamburger_drawer li{
 
     left: calc(50% + 443px) !important
   }
+ .scroll_top {
+
+left: calc(50% + 473px) !important
+}
 
   .logo {
     position: fixed;

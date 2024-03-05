@@ -80,7 +80,7 @@ export default {
     window.location.href = smsLink;
   } else {
     // 모바일 환경이 아닌 경우 알림 창을 띄웁니다.
-    alert('모바일에서 실행해주세요.');
+    alert('모바일에서 실행할 수 있습니다.');
   }
 },
     connectCall() {
@@ -92,7 +92,7 @@ export default {
       window.location.href = telLink;
   } else {
     // 모바일 환경이 아닌 경우 알림 창을 띄웁니다.
-    alert('모바일에서 실행해주세요.');
+    alert('모바일에서 실행할 수 있습니다.');
   }
   
     },

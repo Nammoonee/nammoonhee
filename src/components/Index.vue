@@ -293,7 +293,7 @@ export default {
 
    .profile_photo_wrap{
     width: 385px;
-    height: 385px;
+    height: 415px;
     margin: 0;
     display: flex;
     
