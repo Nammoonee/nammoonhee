@@ -35,9 +35,9 @@
      <div class="email_wrap">
       <div class="strong_font">이메일</div>
        <div class="call_wrap">
-      <div>123@gmail.com</div>
+      <div>{{ emailAddress }}</div>
 
-      <v-btn class="mail_btn" @click="sendEmail">        
+      <v-btn class="mail_btn" @click="copyEmail">        
         <div class="icon_box">
         <svg viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M1.5 0C0.671875 0 0 0.671875 0 1.5C0 1.97187 0.221875 2.41562 0.6 2.7L7.4 7.8C7.75625 8.06563 8.24375 8.06563 8.6 7.8L15.4 2.7C15.7781 2.41562 16 1.97187 16 1.5C16 0.671875 15.3281 0 14.5 0H1.5ZM0 3.5V10C0 11.1031 0.896875 12 2 12H14C15.1031 12 16 11.1031 16 10V3.5L9.2 8.6C8.4875 9.13438 7.5125 9.13438 6.8 8.6L0 3.5Z" fill="white"/>
@@ -64,6 +64,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      emailAddress: "bimil323@naver.com" // 이메일을 받을 주소
+    };
+  },
   methods: {
     sendSMS() {
       const phoneNumber = "010-4342-4356"; // 문자를 보내고자 하는 번호
@@ -77,8 +82,17 @@ export default {
       const telLink = "tel:" + phoneNumber;
       window.location.href = telLink;
     },
-    sendEmail() {
+    copyEmail() {
+      // 텍스트를 클립보드에 복사하는 함수
+      const textField = document.createElement('textarea');
+      textField.innerText = this.emailAddress;
+      document.body.appendChild(textField);
+      textField.select();
+      document.execCommand('copy');
+      textField.remove();
 
+      // 복사가 되었다는 팝업 메시지 출력
+      alert('이메일 주소가 복사되었습니다.');
     }
 
   },
