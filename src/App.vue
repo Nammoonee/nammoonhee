@@ -217,6 +217,7 @@ hr {
 /*header common */
 h1, .hamburger_drawer li{
   cursor: pointer;
+  background: #f9f9fe;
 }
 
 /*버튼들 컬러 */
