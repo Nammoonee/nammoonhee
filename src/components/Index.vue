@@ -63,6 +63,9 @@ export default {
 </script>
 
 <style scoped>
+h4{
+  color: #fff;
+}
 
 .main_ment{
   color: #fff;

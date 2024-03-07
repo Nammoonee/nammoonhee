@@ -250,6 +250,7 @@ hr {
 /*header common */
 h1 {
   cursor: pointer;
+
  
   
 }
