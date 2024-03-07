@@ -186,8 +186,7 @@
                       </div>
 
                       <v-progress-linear
-                        class="mb-3"
-                        color="grey-lighten-1"
+                        class="mb-3"                     
                         rounded
                         v-model="value1"
                         :buffer-value="bufferValue"
@@ -227,7 +226,7 @@
                       rounded
                       v-model="value2"
                       :buffer-value="bufferValue"
-                      color="grey-lighten-1"
+                     
                     ></v-progress-linear>
                         <div>일러스트</div>
                     </div>
@@ -251,7 +250,6 @@
                       rounded
                       v-model="value3"
                       :buffer-value="bufferValue"
-                      color="grey-lighten-1"
                     ></v-progress-linear>
                      <div>피그마</div>
                   </div>
@@ -275,7 +273,6 @@
                       rounded
                       v-model="value2"
                       :buffer-value="bufferValue"
-                      color="grey-lighten-1"
                     ></v-progress-linear>
                          <div>HTML5</div>
                   </div>
@@ -297,7 +294,6 @@
                       rounded
                       v-model="value4"
                       :buffer-value="bufferValue"
-                      color="grey-lighten-1"
                     ></v-progress-linear>
                           <div>CSS3</div>
                   </div>
@@ -320,7 +316,6 @@
                       rounded
                       v-model="value3"
                       :buffer-value="bufferValue"
-                      color="grey-lighten-1"
                     ></v-progress-linear>
                       <div>VUE</div>
                   </div>
@@ -432,7 +427,7 @@
             </v-window-item>
 
             <v-window-item value="i_will">
-              <div class="i_am_align">
+              <div class="i_am_align">             
                 <p>
                   저는 성인이 되자마자 회사를 다니며 학원, 대학교 등의 학업을
                   병행했습니다. 시간이 걸리더라도 자기 발전을 게을리하지 않고,
@@ -563,8 +558,9 @@ export default {
 </script>
 
 <style scoped>
+
 .v-main{
-  background: #eceefb57;
+  background: #f9f9f9f0;
 }
 
 

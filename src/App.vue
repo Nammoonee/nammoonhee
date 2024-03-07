@@ -1,13 +1,14 @@
 <template>
   <v-app>
     <v-main>
-      <h1 class="logo" @click="scrollTop" :class="{ hide: isHeaderHidden }">남문희<span class="logo_smile">:)</span></h1>
-      <v-app-bar id="header_align"  :class="{ hide: isHeaderHidden }"><!--여기까지 되돌리기-->
+      <h1  class="logo" @click="scrollTop" :class="{ hide: isHeaderHidden, font_fff: isScrolledWithinRange }"
+>남문희<span class="logo_smile">:)</span></h1>
+      <v-app-bar id="header_align"  :class="{ hide: isHeaderHidden }">
         <header id="header">
 
           <div class="hamburger_wrap">
             <button class="hamburger" @click="drawer">
-              <svg viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg  viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" >
                 <path
                   d="M0 1.07143C0 0.478795 0.478795 0 1.07143 0H13.9286C14.5212 0 15 0.478795 15 1.07143C15 1.66406 14.5212 2.14286 13.9286 2.14286H1.07143C0.478795 2.14286 0 1.66406 0 1.07143ZM0 6.42857C0 5.83594 0.478795 5.35714 1.07143 5.35714H13.9286C14.5212 5.35714 15 5.83594 15 6.42857C15 7.0212 14.5212 7.5 13.9286 7.5H1.07143C0.478795 7.5 0 7.0212 0 6.42857ZM15 11.7857C15 12.3783 14.5212 12.8571 13.9286 12.8571H1.07143C0.478795 12.8571 0 12.3783 0 11.7857C0 11.1931 0.478795 10.7143 1.07143 10.7143H13.9286C14.5212 10.7143 15 11.1931 15 11.7857Z"
                   fill="black" />
@@ -15,21 +16,21 @@
             </button>
             <transition name="fade">
 
-              <ul class="hamburger_drawer" v-if="isDrawerOpen">
+              <ul class="hamburger_drawer" v-if="isDrawerOpen"  :class="{ 'font_fff':  isScrolledWithinRange   }">
                 <li @click="scrollTop">
-                  <div class="bottom_line">HOME</div>
-                </li>
+    <div class="bottom_line"  :class="{ 'bottom_line_fff':  isScrolledWithinRange   }">HOME</div>
+</li>
                 <li @click="scrollIntroduce">
-                  <div class="bottom_line">자기소개</div>
+                  <div class="bottom_line" :class="{ 'bottom_line_fff':  isScrolledWithinRange   }">자기소개</div>
                 </li>
                 <li @click="scrollPortfolio">
-                  <div class="bottom_line">포트폴리오</div>
+                  <div class="bottom_line" :class="{ 'bottom_line_fff':  isScrolledWithinRange   }">포트폴리오</div>
                 </li>
                 <li @click="scrollCurrier">
-                  <div class="bottom_line">경력사항</div>
+                  <div class="bottom_line" :class="{ 'bottom_line_fff':  isScrolledWithinRange   }">경력사항</div>
                 </li>
                 <li @click="scrollContact">
-                  <div class="bottom_line">연락처</div>
+                  <div class="bottom_line" :class="{ 'bottom_line_fff':  isScrolledWithinRange   }">연락처</div>
                 </li>
               </ul>
             </transition>
@@ -80,12 +81,15 @@ export default {
     return {
       isDrawerOpen: window.innerWidth >= 1024,
       isHeaderHidden: false,
-    lastScrollTop: 0
+    lastScrollTop: 0,
+    isScrolledWithinRange: false
     };
   },
   methods: {
+    
   
     handleScroll() {
+      
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > this.lastScrollTop) {
@@ -97,6 +101,11 @@ export default {
     }
 
     this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    const scrollPosition = window.scrollY;
+    
+    // 스크롤 위치가 0에서 300px 사이에 있는지 확인
+    this.isScrolledWithinRange = scrollPosition >= 0 && scrollPosition <= window.innerHeight * 0.8;
+
   },
     scrollIntroduce(){
     const section_intro = document.getElementById('section_intro');
@@ -138,6 +147,9 @@ export default {
   mounted() {
     window.addEventListener('resize', this.handleResize);
     window.addEventListener('scroll', this.handleScroll);
+    this.handleScroll();
+  
+  window.addEventListener('scroll', this.handleScroll);
   },
   beforeUnmount() {
     window.removeEventListener('resize', this.handleResize);
@@ -227,14 +239,18 @@ hr {
 /*자기소개-스킬바 */
 
 .v-progress-linear__background{
-  opacity: 0.25;
+  opacity: 0.5;
+  background: #dbd5ad;
+}
+.v-progress-linear__determinate, .v-progress-linear__indeterminate{
+  background: linear-gradient(to right top, #c3c3ec, #8d8cce 60% ) ;
 }
 
 
 /*header common */
 h1 {
   cursor: pointer;
-   background: #f9f9fe3d;
+ 
   
 }
 
@@ -258,14 +274,14 @@ h1 {
  }
  .text-white {
     color: #fff !important;
-    background: #8d8cce !important;
+    background: linear-gradient(45deg, #ff873c, #ffac79 ) !important;
 }
 
 .v-chip{
   font-weight: 300;
 }
 .v-chip:hover{
-    background: #797979b7;
+    background: #797979ec;
   color: #fff;
 }
 .v-chip-group .v-chip.v-chip--selected:not(.v-chip--disabled) .v-chip__overlay, .v-chip--variant-tonal .v-chip__underlay {
@@ -276,11 +292,11 @@ h1 {
 
 
 .v-chip--variant-tonal, .v-tab.v-tab.v-btn{
-  background: #797979e7;
+  background: #797979c9;
   color: #fff;
 }
 .v-tab.v-tab.v-btn:hover{
-  background: #797979b7;
+  background: #797979ec;
   color: #fff;
 }
 
@@ -319,6 +335,12 @@ h1 {
   opacity: 0;
 }
 
+/*폰트관련 공통 */
+
+.font_fff{
+  transition: color 0.5s;
+  color: #fff;  
+}
 .strong_font {
   font-weight: 500;
 }
@@ -326,6 +348,10 @@ h1 {
 .point_color{
   color: #8d8cce ; /*#00bbff */
   font-weight: 500;
+}
+/*밑줄 */
+.bottom_line_fff{
+  border-bottom: 1px solid #fff  !important;
 }
 
 /*edu bar */
@@ -349,6 +375,8 @@ h1 {
 
 /*모바일사이즈 */
 @media (max-width: 600px) {
+  /*패럴록스 */
+
   
 
   /* common css */
@@ -554,6 +582,7 @@ h1 {
     border-bottom: 1px solid #797979;
     align-items: center;
   }
+  
 
   .scroll_top {
     position: fixed;
@@ -880,6 +909,9 @@ h1 {
 
 
 
+
+
+
   /*아코디언 */
   .v-expansion-panels{
    margin: 35px 0 0;
@@ -962,6 +994,12 @@ bottom: 35px;
 
 
 @media (min-width: 1099px) {
+/*패럴록스 */
+  /* .v-img__img, .v-img__picture, .v-img__gradient, .v-img__placeholder, .v-img__error{
+    width: 80%  !important;
+    height: 56% !important;
+
+  } */
 
   /* common css */
   body,
