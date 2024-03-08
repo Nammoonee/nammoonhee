@@ -1,39 +1,14 @@
 <template>
   <v-container>
-    <section id="section_portfolio_worked">
+    
       <div class="portfolio_worked_wrap">
-        <div class="strong_font sub_title">실무 작업물</div>
+ 
 
-        <v-chip-group
-          color="white"
-          mandatory
-          v-model="selectedTab2"
-          align-with-title
-        >
-          <v-chip @click="changeTab2(0)" :class="{ active: selectedTab2 === 0 }"
-            >여행플랫폼 웹배너</v-chip
-          >
-          <v-chip @click="changeTab2(1)" :class="{ active: selectedTab2 === 1 }"
-            >SNS카드뉴스</v-chip
-          >
-          <v-chip @click="changeTab2(2)" :class="{ active: selectedTab2 === 2 }"
-            >G마켓 포스터</v-chip
-          >
-          <v-chip @click="changeTab2(3)" :class="{ active: selectedTab2 === 3 }"
-            >쇼핑몰 합성&누끼</v-chip
-          >
-          <v-chip @click="changeTab2(4)" :class="{ active: selectedTab2 === 4 }"
-            >상세페이지</v-chip
-          >
-          <v-chip @click="changeTab2(5)" :class="{ active: selectedTab2 === 5 }"
-            >인쇄물</v-chip
-          >
-        </v-chip-group>
 
         <div class="image_slide_margin2">
           <div v-if="selectedTab2 === 0 || selectedTab2 === null">
            <!--글씨넣을거면여기에-->
-           1. 메인 배너
+           1. 군청 뉴스
 
 
 
@@ -66,7 +41,7 @@
 
            
              <!--글씨넣을거면여기에-->
-             2. 추천여행 배너
+             2. 코로나 안전수칙
 
 
 
@@ -95,7 +70,7 @@
 
 
              <!--글씨넣을거면여기에-->
-             3. 맛집 배너
+             3. 군청홍보
 
            
 
@@ -124,7 +99,7 @@
             </div>
 
                   <!--글씨넣을거면여기에-->
-                  4. 중간 배너
+                  4. 이벤트
 
            
 
@@ -153,7 +128,7 @@
 </div>
 
   <!--글씨넣을거면여기에-->
-  5. 하단 배너
+  5. 세로형
 
            
 
@@ -234,9 +209,7 @@
 
 
           </div>
-          <div v-else-if="selectedTab2 === 1">
-            <PortfolioSNS />
-          </div>
+          <div v-else-if="selectedTab2 === 1">2</div>
           <div v-else-if="selectedTab2 === 2">3</div>
           <div v-else-if="selectedTab2 === 3">4</div>
 
@@ -245,35 +218,25 @@
           <div v-else-if="selectedTab2 === 5">6</div>
         </div>
       </div>
-    </section>
+
   </v-container>
 </template>
 
 <script>
-import PortfolioSNS from './PortfolioSNS.vue';
 export default {
-  components: {
-PortfolioSNS
-  },
   data: () => ({
     chipSize: "x-small",
     isDisabled: false,
     selectedTab2: 0,
     images: [
-      { src: "./images/tai/top/1.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/tai/top/2.jpg", alt: "난지캠핑장ppt2" },
-      { src: "./images/tai/top/3.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/tai/top/4.jpg", alt: "난지캠핑장ppt2" },
+      { src: "./images/card_news/1.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/card_news/2.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/card_news/3.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/card_news/4.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/card_news/5.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/card_news/6.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/card_news/7.jpg", alt: "난지캠핑장ppt1" },
 
-      { src: "./images/vietnam_banner/top/1.jpg", alt: "난지캠핑장ppt3" },
-      { src: "./images/vietnam_banner/top/2.jpg", alt: "난지캠핑장ppt4" },
-      { src: "./images/vietnam_banner/top/3.jpg", alt: "난지캠핑장ppt5" },
-
-      { src: "./images/tteonaja_banner/top/1.jpg", alt: "난지캠핑장ppt6" },
-      { src: "./images/tteonaja_banner/top/2.jpg", alt: "난지캠핑장ppt7" },
-      { src: "./images/tteonaja_banner/top/3.jpg", alt: "난지캠핑장ppt8" },
-      { src: "./images/tteonaja_banner/top/4.jpg", alt: "난지캠핑장ppt8" },
-      { src: "./images/tteonaja_banner/top/5.jpg", alt: "난지캠핑장ppt8" },
 
 
 
@@ -281,20 +244,12 @@ PortfolioSNS
     ],
   
     images2: [
-    { src: "./images/tteonaja_banner/top/11.jpg", alt: "난지캠핑장ppt9" },
-
-    { src: "./images/tai/top/11.png", alt: "난지캠핑장ppt1" },
-      { src: "./images/tai/top/22.jpg", alt: "난지캠핑장ppt2" },
-      { src: "./images/tai/top/33.jpg", alt: "난지캠핑장ppt3" },
-      { src: "./images/tai/top/44.jpg", alt: "난지캠핑장ppt10" },
-      { src: "./images/tai/top/55.jpg", alt: "난지캠핑장ppt10" },
-
-  
-      { src: "./images/tteonaja_banner/top/22.jpg", alt: "난지캠핑장ppt10" },
-
-      { src: "./images/vietnam_banner/top/11.jpg", alt: "난지캠핑장ppt10" },
-      { src: "./images/vietnam_banner/top/22.jpg", alt: "난지캠핑장ppt10" },
-      { src: "./images/vietnam_banner/top/33.jpg", alt: "난지캠핑장ppt10" },
+    { src: "./images/card_news/corona/1.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/card_news/corona/2.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/card_news/corona/3.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/card_news/corona/4.jpg", alt: "난지캠핑장ppt1" },
+   
+    
     
       // 두번째이미지슬라이드
     ],
@@ -709,13 +664,10 @@ PortfolioSNS
 
 @media (max-width: 600px) {
  
-  #section_portfolio_worked {
-    padding: 0 12px 50px;
-    box-sizing: border-box;
-  }
+ 
   .portfolio_worked_wrap {
-    padding: 25px 0 0 0;
-    border-top: 1px solid #79797935;
+
+ 
   }
 
   .sub_title {
