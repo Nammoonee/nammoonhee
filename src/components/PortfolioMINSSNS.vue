@@ -2,205 +2,182 @@
   <v-container>
     <div class="portfolio_worked_wrap">
       <div class="image_slide_margin2">
-     
-          <div class="sns_container">
-            <div class="sns1">
-              <!--글씨넣을거면여기에-->
-              1. 군청 뉴스
-
-              <!--여기가 이미지 슬라이드1-->
-              <div class="slider">
-                <div
-                  class="slide"
-                  v-for="(image, index) in images"
-                  :key="index"
-                  v-show="currentIndex === index"
-                  @mousedown="handleMouseDown"
-                  @mousemove="handleMouseMove"
-                  @mouseup="handleMouseUp"
-                >
-                  <img
-                    class="slide_img_box"
-                    :src="image.src"
-                    :alt="image.alt"
-                  />
-                </div>
-              </div>
-              <div class="prev_next_btn_wrap">
-                <v-btn color="grey-darken-2" class="btn_prev" @click="prevSlide"
-                  ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
-                >
-                <v-btn color="grey-darken-2" class="btn_next" @click="nextSlide"
-                  ><v-icon class="btn_next_mdi"
-                    >mdi-chevron-right</v-icon
-                  ></v-btn
-                >
+       
+       
+ <div class="sns_container">
+        <div class="sns1">
+            <!--글씨넣을거면여기에-->
+            1. 여행 정보
+         
+            <!--여기가 이미지 슬라이드1-->
+            <div class="slider">
+              <div
+                class="slide"
+                v-for="(image, index) in images"
+                :key="index"
+                v-show="currentIndex === index"
+                @mousedown="handleMouseDown"
+                @mousemove="handleMouseMove"
+                @mouseup="handleMouseUp"
+              >
+                <img class="slide_img_box" :src="image.src" :alt="image.alt" />
               </div>
             </div>
-
-            <div class="sns2">
-              <!--글씨넣을거면여기에-->
-              2. 코로나 정책
-
-              <!--여기가 이미지 슬라이드2-->
-              <div class="slider">
-                <div
-                  class="slide"
-                  v-for="(image, index) in images2"
-                  :key="index"
-                  v-show="currentIndex2 === index"
-                  @mousedown="handleMouseDown2"
-                  @mousemove="handleMouseMove2"
-                  @mouseup="handleMouseUp2"
-                >
-                  <img
-                    class="slide_img_box"
-                    :src="image.src"
-                    :alt="image.alt"
-                  />
-                </div>
-              </div>
-              <div class="prev_next_btn_wrap">
-                <v-btn
-                  color="grey-darken-2"
-                  class="btn_prev"
-                  @click="prevSlide2"
-                  ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
-                >
-                <v-btn
-                  color="grey-darken-2"
-                  class="btn_next"
-                  @click="nextSlide2"
-                  ><v-icon class="btn_next_mdi"
-                    >mdi-chevron-right</v-icon
-                  ></v-btn
-                >
+            <div class="prev_next_btn_wrap">
+              <v-btn color="grey-darken-2" class="btn_prev" @click="prevSlide"
+                ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
+              >
+              <v-btn color="grey-darken-2" class="btn_next" @click="nextSlide"
+                ><v-icon class="btn_next_mdi">mdi-chevron-right</v-icon></v-btn
+              >
+            </div>
+        </div>
+  
+     <div class="sns2">
+             <!--글씨넣을거면여기에-->
+             2. 교통수단 정보
+       
+             <!--여기가 이미지 슬라이드2-->
+             <div class="slider">
+               <div
+                 class="slide"
+                 v-for="(image, index) in images2"
+                 :key="index"
+                 v-show="currentIndex2 === index"
+                 @mousedown="handleMouseDown2"
+                 @mousemove="handleMouseMove2"
+                 @mouseup="handleMouseUp2"
+               >
+                 <img class="slide_img_box" :src="image.src" :alt="image.alt" />
+               </div>
+             </div>
+             <div class="prev_next_btn_wrap">
+               <v-btn color="grey-darken-2" class="btn_prev" @click="prevSlide2"
+                 ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
+               >
+               <v-btn color="grey-darken-2" class="btn_next" @click="nextSlide2"
+                 ><v-icon class="btn_next_mdi">mdi-chevron-right</v-icon></v-btn
+               >
+             </div>
+     </div>
+  
+  <div class="sns3">
+            <!--글씨넣을거면여기에-->
+            3. 관광지 정보
+   
+            <!--여기가 이미지 슬라이드3-->
+            <div class="slider">
+              <div
+                class="slide"
+                v-for="(image, index) in images3"
+                :key="index"
+                v-show="currentIndex3 === index"
+                @mousedown="handleMouseDown3"
+                @mousemove="handleMouseMove3"
+                @mouseup="handleMouseUp3"
+              >
+                <img class="slide_img_box" :src="image.src" :alt="image.alt" />
               </div>
             </div>
-
-            <div class="sns3">
-              <!--글씨넣을거면여기에-->
-              3. 군 · 관광지 홍보
-
-              <!--여기가 이미지 슬라이드3-->
-              <div class="slider">
-                <div
-                  class="slide"
-                  v-for="(image, index) in images3"
-                  :key="index"
-                  v-show="currentIndex3 === index"
-                  @mousedown="handleMouseDown3"
-                  @mousemove="handleMouseMove3"
-                  @mouseup="handleMouseUp3"
-                >
-                  <img
-                    class="slide_img_box"
-                    :src="image.src"
-                    :alt="image.alt"
-                  />
-                </div>
-              </div>
-              <div class="prev_next_btn_wrap">
-                <v-btn
-                  color="grey-darken-2"
-                  class="btn_prev"
-                  @click="prevSlide3"
-                  ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
-                >
-                <v-btn
-                  color="grey-darken-2"
-                  class="btn_next"
-                  @click="nextSlide3"
-                  ><v-icon class="btn_next_mdi"
-                    >mdi-chevron-right</v-icon
-                  ></v-btn
-                >
-              </div>
+            <div class="prev_next_btn_wrap">
+              <v-btn color="grey-darken-2" class="btn_prev" @click="prevSlide3"
+                ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
+              >
+              <v-btn color="grey-darken-2" class="btn_next" @click="nextSlide3"
+                ><v-icon class="btn_next_mdi">mdi-chevron-right</v-icon></v-btn
+              >
             </div>
-
-            <div class="sns4">
-              <!--글씨넣을거면여기에-->
-              4. 이벤트
-
-              <!--여기가 이미지 슬라이드4-->
-              <div class="slider">
-                <div
-                  class="slide"
-                  v-for="(image, index) in images4"
-                  :key="index"
-                  v-show="currentIndex4 === index"
-                  @mousedown="handleMouseDown4"
-                  @mousemove="handleMouseMove4"
-                  @mouseup="handleMouseUp4"
-                >
-                  <img
-                    class="slide_img_box"
-                    :src="image.src"
-                    :alt="image.alt"
-                  />
-                </div>
-              </div>
-              <div class="prev_next_btn_wrap">
-                <v-btn
-                  color="grey-darken-2"
-                  class="btn_prev"
-                  @click="prevSlide4"
-                  ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
-                >
-                <v-btn
-                  color="grey-darken-2"
-                  class="btn_next"
-                  @click="nextSlide4"
-                  ><v-icon class="btn_next_mdi"
-                    >mdi-chevron-right</v-icon
-                  ></v-btn
-                >
-              </div>
-            </div>
-
-            <div class="sns5">
-              <!--글씨넣을거면여기에-->
-              5. 세로형
-
-              <!--여기가 이미지 슬라이드5-->
-              <div class="slider">
-                <div
-                  class="slide"
-                  v-for="(image, index) in images5"
-                  :key="index"
-                  v-show="currentIndex5 === index"
-                  @mousedown="handleMouseDown5"
-                  @mousemove="handleMouseMove5"
-                  @mouseup="handleMouseUp5"
-                  @touchstart="handleTouchStart5"
-                  @touchmove="handleTouchMove5"
-                  @touchend="handleTouchEnd5"
-                >
-                  <img
-                    class="slide_img_box"
-                    :src="image.src"
-                    :alt="image.alt"
-                  />
-                </div>
-              </div>
-              <div class="prev_next_btn_wrap">
-                <v-btn
-                  color="grey-darken-2"
-                  class="btn_prev"
-                  @click="prevSlide5"
-                  ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
-                >
-                <v-btn
-                  color="grey-darken-2"
-                  class="btn_next"
-                  @click="nextSlide5"
-                  ><v-icon class="btn_next_mdi"
-                    >mdi-chevron-right</v-icon
-                  ></v-btn
-                >
-              </div>
-            </div>
-          </div>
+  </div>
+  
+     <div class="sns4">
+             <!--글씨넣을거면여기에-->
+             4. 이벤트
+       
+             <!--여기가 이미지 슬라이드4-->
+             <div class="slider">
+               <div
+                 class="slide"
+                 v-for="(image, index) in images4"
+                 :key="index"
+                 v-show="currentIndex4 === index"
+                 @mousedown="handleMouseDown4"
+                 @mousemove="handleMouseMove4"
+                 @mouseup="handleMouseUp4"
+               >
+                 <img class="slide_img_box" :src="image.src" :alt="image.alt" />
+               </div>
+             </div>
+             <div class="prev_next_btn_wrap">
+               <v-btn color="grey-darken-2" class="btn_prev" @click="prevSlide4"
+                 ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
+               >
+               <v-btn color="grey-darken-2" class="btn_next" @click="nextSlide4"
+                 ><v-icon class="btn_next_mdi">mdi-chevron-right</v-icon></v-btn
+               >
+             </div>
+     </div>
+  
+     <div class="sns5">
+             <!--글씨넣을거면여기에-->
+             5. 세로형
+       
+             <!--여기가 이미지 슬라이드5-->
+             <div class="slider">
+               <div
+                 class="slide"
+                 v-for="(image, index) in images5"
+                 :key="index"
+                 v-show="currentIndex5 === index"
+                 @mousedown="handleMouseDown5"
+                 @mousemove="handleMouseMove5"
+                 @mouseup="handleMouseUp5"
+                 @touchstart="handleTouchStart5"
+                 @touchmove="handleTouchMove5"
+                 @touchend="handleTouchEnd5"
+               >
+                 <img class="slide_img_box" :src="image.src" :alt="image.alt" />
+               </div>
+             </div>
+             <div class="prev_next_btn_wrap">
+               <v-btn color="grey-darken-2" class="btn_prev" @click="prevSlide5"
+                 ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
+               >
+               <v-btn color="grey-darken-2" class="btn_next" @click="nextSlide5"
+                 ><v-icon class="btn_next_mdi">mdi-chevron-right</v-icon></v-btn
+               >
+             </div>
+     </div>
+       <div class="sns6">
+             <!--글씨넣을거면여기에-->
+             6. 세로형
+       
+             <!--여기가 이미지 슬라이드6-->
+             <div class="slider">
+               <div
+                 class="slide"
+                 v-for="(image, index) in images6"
+                 :key="index"
+                 v-show="currentIndex6 === index"
+                 @mousedown="handleMouseDown6"
+                 @mousemove="handleMouseMove6"
+                 @mouseup="handleMouseUp6"
+                 @touchstart="handleTouchStart6"
+                 @touchmove="handleTouchMove6"
+                 @touchend="handleTouchEnd6"
+               >
+                 <img class="slide_img_box" :src="image.src" :alt="image.alt" />
+               </div>
+             </div>
+             <div class="prev_next_btn_wrap">
+               <v-btn color="grey-darken-2" class="btn_prev" @click="prevSlide6"
+                 ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
+               >
+               <v-btn color="grey-darken-2" class="btn_next" @click="nextSlide6"
+                 ><v-icon class="btn_next_mdi">mdi-chevron-right</v-icon></v-btn
+               >
+             </div>
+     </div>
+ </div>
 
           <div class="icon_text_con_box">
             <div class="icon_text_wrap">
@@ -216,8 +193,9 @@
                   />
                 </svg>
               </div>
-              군청으로부터 정책 자료를 받아 한눈에 이해하기 쉽도록 요약하고
-              카드뉴스로 디자인한 후 공식 계정에 업로드했습니다.
+              여행정보 등의 컨텐츠를 기획하고 가독성 좋게 디자인해 공식 계정에 업로드했습니다.
+
+
             </div>
 
             <div class="icon_text_wrap">
@@ -236,10 +214,10 @@
               Photoshop
             </div>
           </div>
-    
+        </div>
     
       </div>
-    </div>
+   
   </v-container>
 </template>
 
@@ -248,35 +226,81 @@ export default {
   data: () => ({
     chipSize: "x-small",
     isDisabled: false,
-
+ 
     images: [
-      { src: "./images/card_news/1.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/2.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/3.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/4.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/5.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/6.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/7.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/8.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/9.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/10.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/11.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/12.jpg", alt: "난지캠핑장ppt1" },
+
+      { src: "./images/tteonaja/info/1.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/2.jpg", alt: "난지캠핑장ppt1" },
+
+
+          { src: "./images/tteonaja/info/christmas/1.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/christmas/2.jpg", alt: "난지캠핑장ppt1" },
+       { src: "./images/tteonaja/info/christmas/3.jpg", alt: "난지캠핑장ppt1" },
+
+      { src: "./images/tteonaja/info/usim/1.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/usim/2.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/usim/3.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/usim/4.jpg", alt: "난지캠핑장ppt1" },
+
+      { src: "./images/tteonaja/info/holiday/01.jpg", alt: "난지캠핑장ppt1" },     
+      { src: "./images/tteonaja/info/holiday/02.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/holiday/09.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/holiday/10.jpg", alt: "난지캠핑장ppt1" },
+         { src: "./images/tteonaja/info/holiday/1.jpg", alt: "난지캠핑장ppt1" },
+            { src: "./images/tteonaja/info/holiday/2.jpg", alt: "난지캠핑장ppt1" },
+
+            
+               { src: "./images/tteonaja/info/mask/1.jpg", alt: "난지캠핑장ppt1" },
+           { src: "./images/tteonaja/info/mask/2.jpg", alt: "난지캠핑장ppt1" },
+
+      { src: "./images/tteonaja/info/money/01.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/money/02.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/money/03.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/money/04.jpg", alt: "난지캠핑장ppt1" },
+
+         { src: "./images/tteonaja/info/corona/a.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/info/corona/b.jpg", alt: "난지캠핑장ppt1" },
+         { src: "./images/tteonaja/info/corona/c.jpg", alt: "난지캠핑장ppt1" },
+            { src: "./images/tteonaja/info/corona/1.jpg", alt: "난지캠핑장ppt1" },
+
+  
 
       // 첫번째이미지슬라이드
     ],
 
     images2: [
-      { src: "./images/card_news/corona/5.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/corona/6.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/corona/7.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/corona/8.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/corona/9.jpg", alt: "난지캠핑장ppt1" },
+         { src: "./images/tteonaja/texi/grab/0.jpg", alt: "난지캠핑장ppt1" },
+        { src: "./images/tteonaja/texi/grab/1.jpg", alt: "난지캠핑장ppt1" },
+         { src: "./images/tteonaja/texi/grab/2.jpg", alt: "난지캠핑장ppt1" },
+          { src: "./images/tteonaja/texi/grab/3.jpg", alt: "난지캠핑장ppt1" },
+         { src: "./images/tteonaja/texi/grab/4.jpg", alt: "난지캠핑장ppt1" },
 
-      { src: "./images/card_news/corona/1.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/corona/2.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/corona/3.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/corona/4.jpg", alt: "난지캠핑장ppt1" },
+        { src: "./images/tteonaja/texi/texi/01.jpg", alt: "난지캠핑장ppt1" },
+          { src: "./images/tteonaja/texi/texi/02.jpg", alt: "난지캠핑장ppt1" },
+            { src: "./images/tteonaja/texi/texi/03.jpg", alt: "난지캠핑장ppt1" },
+
+               { src: "./images/tteonaja/texi/tricycle/1.jpg", alt: "난지캠핑장ppt1" },
+         { src: "./images/tteonaja/texi/tricycle/2.jpg", alt: "난지캠핑장ppt1" },
+          { src: "./images/tteonaja/texi/tricycle/3.jpg", alt: "난지캠핑장ppt1" },
+                  { src: "./images/tteonaja/texi/tricycle/5.jpg", alt: "난지캠핑장ppt1" },
+
+{ src: "./images/tteonaja/texi/airport/01.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/airport/02.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/airport/03.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/airport/04.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/airport/05.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/airport/06.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/airport/07.jpg", alt: "난지캠핑장ppt1" },
+
+{ src: "./images/tteonaja/texi/manila_airport/1-1.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/manila_airport/2.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/manila_airport/3.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/manila_airport/4.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/manila_airport/5.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/manila_airport/6.jpg", alt: "난지캠핑장ppt1" },
+{ src: "./images/tteonaja/texi/manila_airport/7.jpg", alt: "난지캠핑장ppt1" },
+
+            
 
       // 두번째이미지슬라이드
     ],
@@ -307,19 +331,26 @@ export default {
     ],
 
     images5: [
-      { src: "./images/card_news/vertical/1.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/vertical/2.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/vertical/3.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/vertical/4.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/vertical/5.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/vertical/6.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/vertical/7.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/vertical/8.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/vertical/9.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/food/a.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/food/a.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/food/c.jpg", alt: "난지캠핑장ppt1" },
+
+      { src: "./images/tteonaja/food/1.jpg", alt: "난지캠핑장ppt1" },
+       { src: "./images/tteonaja/food/2.jpg", alt: "난지캠핑장ppt1" },
+       { src: "./images/tteonaja/food/3.jpg", alt: "난지캠핑장ppt1" },
+       { src: "./images/tteonaja/food/4.jpg", alt: "난지캠핑장ppt1" },
+       { src: "./images/tteonaja/food/5.jpg", alt: "난지캠핑장ppt1" },
+
 
       // 5번째이미지슬라이드
     ],
+           images6: [
+     { src: "./images/tteonaja/vertical/1.jpg", alt: "난지캠핑장ppt1" },
+      { src: "./images/tteonaja/vertical/2.jpg", alt: "난지캠핑장ppt1" },
+          { src: "./images/tteonaja/vertical/3.jpg", alt: "난지캠핑장ppt1" },
 
+      // 6번째이미지슬라이드
+    ],
 
     dragging: false,
     startX: 0,
@@ -328,6 +359,7 @@ export default {
     currentIndex3: 0,
     currentIndex4: 0,
     currentIndex5: 0,
+      currentIndex6: 0,
   }),
 
   methods: {
@@ -598,7 +630,58 @@ export default {
     },
     //여기까지 슬라이드5
 
-   
+       handleMouseDown6(event) {
+      this.dragging = true;
+      this.startX = event.clientX;
+    },
+    handleMouseMove6(event) {
+      if (this.dragging) {
+        const deltaX = event.clientX - this.startX;
+        if (deltaX > 20) {
+          // 드래그 거리가 20px 이상일 때
+          this.prevSlide6();
+          this.dragging = false; // 드래그 후 재설정
+        } else if (deltaX < -20) {
+          // 드래그 거리가 -20px 이상일 때
+          this.nextSlide6();
+          this.dragging = false; // 드래그 후 재설정
+        }
+      }
+    },
+    handleMouseUp6() {
+      this.dragging = false;
+    },
+    // 터치 이벤트 핸들러
+    handleTouchStart6(event) {
+      this.dragging = true;
+      this.startX = event.touches[0].clientX;
+    },
+    handleTouchMove6(event) {
+      if (this.dragging) {
+        const deltaX = event.touches[0].clientX - this.startX;
+        if (deltaX > 20) {
+          // 드래그 거리가 20px 이상일 때
+          this.prevSlide6();
+          this.dragging = false; // 드래그 후 재설정
+        } else if (deltaX < -20) {
+          // 드래그 거리가 -20px 이상일 때
+          this.nextSlide6();
+          this.dragging = false; // 드래그 후 재설정
+        }
+      }
+    },
+    handleTouchEnd6() {
+      this.dragging = false;
+    },
+
+    prevSlide6() {
+      this.currentIndex6=
+        (this.currentIndex6 - 1 + this.images6.length) % this.images6.length;
+    },
+    nextSlide6() {
+      this.currentIndex6 = (this.currentIndex6 + 1) % this.images6.length;
+    },
+    //여기까지 슬라이드6
   },
 };
 </script>
@@ -703,10 +786,10 @@ export default {
   }
 
   /*이미지슬라이드 */
-  .sns_container {
+  .sns_container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+     grid-template-columns: repeat(2, 1fr); 
+  gap: 10px;
   }
   .image_slide_margin {
     margin: 35px 0 0px;
@@ -795,10 +878,10 @@ export default {
     width: 100%;
   }
 
-  .sns_container {
+   .sns_container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+     grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;
   }
 }
 </style>

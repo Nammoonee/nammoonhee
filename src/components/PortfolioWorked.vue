@@ -14,10 +14,10 @@
             >여행플랫폼 웹배너</v-chip
           >
           <v-chip @click="changeTab2(1)" :class="{ active: selectedTab2 === 1 }"
-            >SNS카드뉴스</v-chip
+            >여행플랫폼 SNS</v-chip
           >
           <v-chip @click="changeTab2(2)" :class="{ active: selectedTab2 === 2 }"
-            >G마켓 포스터</v-chip
+            >SNS 카드뉴스</v-chip
           >
           <v-chip @click="changeTab2(3)" :class="{ active: selectedTab2 === 3 }"
             >쇼핑몰 합성&누끼</v-chip
@@ -235,9 +235,11 @@
 
           </div>
           <div v-else-if="selectedTab2 === 1">
-            <PortfolioSNS />
+            <PortfolioMINSSNS />
           </div>
-          <div v-else-if="selectedTab2 === 2">3</div>
+          <div v-else-if="selectedTab2 === 2">
+             <PortfolioSNS />
+          </div>
           <div v-else-if="selectedTab2 === 3">4</div>
 
           <div v-else-if="selectedTab2 === 4">5</div>
@@ -250,9 +252,11 @@
 </template>
 
 <script>
+import PortfolioMINSSNS from './PortfolioMINSSNS.vue';
 import PortfolioSNS from './PortfolioSNS.vue';
 export default {
   components: {
+  PortfolioMINSSNS,
 PortfolioSNS
   },
   data: () => ({
@@ -773,10 +777,16 @@ PortfolioSNS
 /*태블릿 */
 
 @media (min-width: 601px) {
-  #section_portfolio {
-    padding: 70px 30px;
+  #section_portfolio_worked {
+    padding: 0 30px 70px;
     box-sizing: border-box;
   }
+  .portfolio_worked_wrap {
+    padding: 30px 0 0 0;
+    border-top: 1px solid #79797935;
+  }
+
+
 
   .sub_title {
     margin: 35px 0 10px 0;
