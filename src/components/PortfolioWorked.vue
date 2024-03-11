@@ -716,6 +716,7 @@ PortfolioPrint
 /*모바일 */
 
 @media (max-width: 600px) {
+
  
   #section_portfolio_worked {
     padding: 0 12px 50px;

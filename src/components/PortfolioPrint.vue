@@ -5,10 +5,45 @@
        
        
  <div class="sns_container">
+
+
+
+
+  
         <div class="sns1">
             <!--글씨넣을거면여기에-->
-            1. 여행 정보
-            <img src="./images/print/gmarket.jpg" alt="">
+            <div class="icon_text_wrap">
+              <div class="icon_box">
+              <v-icon>mdi-numeric-1-box</v-icon>
+              </div>
+              텀블러 장려 포스터
+            </div>
+
+           <div class="poster">
+             <img src="./images/print/gmarket.jpg" alt="">
+           </div>
+<div class="poster_info">
+  
+              <h4>
+                <div class="text_vertical_line">지마켓 텀블러 장려 포스터</div>
+  임직원은 환경보호를 위해 텀블러를 이용해주세요!
+              </h4>
+  
+  
+              <div>
+                지인의 부탁으로 텀블러 이용 장려 포스터를 제작했습니다.
+  
+  임직원 아이콘, 텀블러를 아이콘을 사용해 텍스트를 읽지 않더라도
+  어떤 내용인지 금방 알 수 있고 지마켓 브랜드 색상과
+  어우러져 조화로운 배너를 제작했습니다.
+              </div>
+  
+          <div class="real_wrap">
+                <div class="real">
+                  <img src="./images/print/gmarket_small.jpg" alt="">
+                </div>
+          </div>
+</div>
         
          
         
@@ -17,9 +52,37 @@
         </div>
   
      <div class="sns2">
-             <!--글씨넣을거면여기에-->
-             2. 교통수단 정보
-       
+            <!--글씨넣을거면여기에-->
+            <div class="icon_text_wrap">
+              <div class="icon_box">
+              <v-icon>mdi-numeric-1-box</v-icon>
+              </div>
+              전시 배너 디자인
+            </div>
+
+           <div class="poster">
+             <img src="./images/print/bubble.jpg" alt="">
+           </div>
+<div class="poster_info">
+  
+              <h4>
+                <div class="text_vertical_line">전시 배너 디자인</div>
+  진열대에 배치할 상품정보 배너
+              </h4>
+  
+  
+              <div>
+               2019 Osaka Beauty world에 참여하는 '제논'이라는 브랜드의 화장품 홍보 배너를 제작했습니다.
+               일본과 국내의 여러 뷰티 및 코스매틱 브랜드들이 참여하는 행사에서 한눈에 알아보기 쉽고 간결한 배너를 제작해달라는 요청을 받았습니다.
+               아이콘을 통해 촉촉함, 풍성한 거품, 천연원료 사용을 부각시켜 깨끗하면서 자연친화적인 컨셉을 표현했습니다.
+              </div>
+  
+          <div class="real_wrap">
+                <div class="real">
+                  <img class="bubble_small" src="./images/print/bubble_small.jpg" alt="">
+                </div>
+          </div>
+</div>
     
 
 
@@ -27,20 +90,35 @@
   
   <div class="sns3">
             <!--글씨넣을거면여기에-->
-            3. 관광지 정보
+            <div class="icon_text_wrap">
+              <div class="icon_box">
+              <v-icon>mdi-numeric-3-box</v-icon>
+              </div>
+           관광지 정보
+            </div>
    
 
   </div>
   
      <div class="sns4">
              <!--글씨넣을거면여기에-->
-             4. 자사 여행상품
+             <div class="icon_text_wrap">
+              <div class="icon_box">
+              <v-icon>mdi-numeric-4-box</v-icon>
+              </div>
+              자사 여행상품
+            </div>
 
      </div>
   
      <div class="sns5">
              <!--글씨넣을거면여기에-->
-             5. 먹거리 안내
+             <div class="icon_text_wrap">
+              <div class="icon_box">
+              <v-icon>mdi-numeric-5-box</v-icon>
+              </div>
+              먹거리 안내
+            </div>
        
 
 
@@ -51,6 +129,13 @@
              6. 세로형
 
      </div>
+
+
+
+
+
+
+
  </div>
 
           <div class="icon_text_con_box">
@@ -117,16 +202,84 @@ export default {
   margin-left: 4px;
 }
 
-.sns1 img{
-  width: 100%;
+.poster{
   border-radius: 8px;
+  overflow: hidden;
+  /* border: 1px solid rgba(121, 121, 121, 0.253); */
+}
+.poster img{
+  width: 100%;
+
+ 
 
 }
+
+
 /*모바일 */
 
 @media (max-width: 600px) {
-  .portfolio_worked_wrap {
+  .poster{
+    margin-top: 25px;
+
   }
+
+  .poster_info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+
+  }
+  .text_vertical_line::after{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    margin-left: 8px;
+    position: relative;
+    top: 2px;
+  bottom: 0; 
+  background: #000
+}
+.real_wrap{
+  display: flex;
+  justify-content: flex-end;
+}
+.real{
+    width: 300px;
+  height: 220px;
+    
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 0;
+   
+  }
+  .real img{
+    width: 120%;
+    position: relative;
+    
+    right: 28px;
+    bottom: 36px;
+  }
+  .real .bubble_small{
+    width: 119%;
+    position: relative;
+    right: 12px;
+    bottom: -9px;
+  }
+  .mdi-numeric-1-box::before,
+  .mdi-numeric-2-box::before,
+  .mdi-numeric-3-box::before,
+  .mdi-numeric-4-box::before,
+  .mdi-numeric-5-box::before   {
+    font-size: 80%;
+    color: #797979;
+  }
+
+
 
   .sub_title {
     margin-bottom: 5px;
@@ -172,6 +325,61 @@ export default {
 /*태블릿 */
 
 @media (min-width: 601px) {
+  .sns_container{
+display: grid;
+grid-template-columns: repeat(2, 1fr); 
+  gap: 10px;
+}
+
+.poster_info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 35px;
+
+  }
+  .text_vertical_line::after{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    margin-left: 8px;
+    position: relative;
+    top: 2px;
+  bottom: 0; 
+  background: #000
+}
+.real_wrap{
+  display: flex;
+  justify-content: flex-end;
+}
+.real{
+    width: 300px;
+  height: 220px;
+    
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 0;
+   
+  }
+  .real img{
+    width: 120%;
+    position: relative;
+    
+    right: 28px;
+    bottom: 36px;
+  }
+  .mdi-numeric-1-box::before,
+  .mdi-numeric-2-box::before,
+  .mdi-numeric-3-box::before,
+  .mdi-numeric-4-box::before,
+  .mdi-numeric-5-box::before   {
+    font-size: 80%;
+    color: #797979;
+  }
   #section_portfolio {
     padding: 70px 30px;
     box-sizing: border-box;
@@ -261,10 +469,6 @@ export default {
     width: 100%;
   }
 
-   .sns_container{
-    display: grid;
-     grid-template-columns: repeat(3, 1fr); 
-  gap: 15px;
-  }
+
 }
 </style>
