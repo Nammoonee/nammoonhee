@@ -244,7 +244,9 @@
 
           <div v-else-if="selectedTab2 === 4">5</div>
 
-          <div v-else-if="selectedTab2 === 5">6</div>
+          <div v-else-if="selectedTab2 === 5">
+          <PortfolioPrint />
+          </div>
         </div>
       </div>
     </section>
@@ -254,10 +256,12 @@
 <script>
 import PortfolioMINSSNS from './PortfolioMINSSNS.vue';
 import PortfolioSNS from './PortfolioSNS.vue';
+import PortfolioPrint from './PortfolioPrint.vue';
 export default {
   components: {
   PortfolioMINSSNS,
-PortfolioSNS
+PortfolioSNS,
+PortfolioPrint
   },
   data: () => ({
     chipSize: "x-small",

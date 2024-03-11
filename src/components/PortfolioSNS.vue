@@ -246,7 +246,7 @@
 <script>
 export default {
   data: () => ({
-    chipSize: "x-small",
+
     isDisabled: false,
 
     images: [

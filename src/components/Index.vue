@@ -65,10 +65,13 @@ export default {
 <style scoped>
 h4{
   color: #fff;
+  text-shadow: 1px 1px 14px #000;
+  
 }
 
 .main_ment{
   color: #fff;
+  text-shadow: 1px 1px 14px #000;
  
 }
 

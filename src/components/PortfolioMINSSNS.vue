@@ -91,7 +91,7 @@
   
      <div class="sns4">
              <!--글씨넣을거면여기에-->
-             4. 이벤트
+             4. 자사 여행상품
        
              <!--여기가 이미지 슬라이드4-->
              <div class="slider">
@@ -119,7 +119,7 @@
   
      <div class="sns5">
              <!--글씨넣을거면여기에-->
-             5. 세로형
+             5. 먹거리 안내
        
              <!--여기가 이미지 슬라이드5-->
              <div class="slider">
@@ -224,7 +224,7 @@
 <script>
 export default {
   data: () => ({
-    chipSize: "x-small",
+ 
     isDisabled: false,
  
     images: [
@@ -306,26 +306,49 @@ export default {
     ],
 
     images3: [
-      { src: "./images/card_news/note/1.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/2.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/3.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/4.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/5.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/6.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/7.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/8.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/9.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/10.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/11.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/note/12.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/natran/1.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/natran/2.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/natran/3.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/natran/10.jpg", alt: "난지캠핑장ppt1" },
+
+    { src: "./images/tteonaja/travel/boracay/1.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/boracay/2.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/boracay/3.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/boracay/4.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/boracay/5.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/boracay/10.jpg", alt: "난지캠핑장ppt1" },
+    
+
+    { src: "./images/tteonaja/travel/pucuok/1.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/pucuok/2.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/pucuok/3.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/travel/pucuok/4.jpg", alt: "난지캠핑장ppt1" },
+
+    { src: "./images/tteonaja/travel/pucuok/01.jpg", alt: "난지캠핑장ppt1" },
+
+    
+    
 
       // 세번째이미지슬라이드
     ],
 
     images4: [
-      { src: "./images/card_news/event/1.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/event/2.jpg", alt: "난지캠핑장ppt1" },
-      { src: "./images/card_news/event/3.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture/1.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture/2.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture/3.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture/4.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture/5.jpg", alt: "난지캠핑장ppt1" },
+
+    { src: "./images/tteonaja/sell/signiture2/1.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture2/2.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture2/3.jpg", alt: "난지캠핑장ppt1" },
+
+    { src: "./images/tteonaja/sell/signiture3/1.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture3/2.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture3/3.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture3/4.jpg", alt: "난지캠핑장ppt1" },
+    { src: "./images/tteonaja/sell/signiture3/5.jpg", alt: "난지캠핑장ppt1" },
+
 
       // 네번째이미지슬라이드
     ],
