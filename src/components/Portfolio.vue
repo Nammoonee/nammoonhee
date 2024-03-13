@@ -1,5 +1,10 @@
 <template>
+     <v-parallax darken="0.1"
+    src="../../public/images/bg/bg1.jpg"
+  >
   <v-container>
+
+   
     <section id="section_portfolio">
     <h2>포트폴리오</h2>
 
@@ -358,6 +363,11 @@ Firebase에 호스팅해 로컬PC가 아닌 환경에서도 사이트를 열어�
 
     </section>
 
+ 
+
+
+
+
 
 
    <PortfolioWorked />
@@ -366,6 +376,7 @@ Firebase에 호스팅해 로컬PC가 아닌 환경에서도 사이트를 열어�
 
 
   </v-container>
+</v-parallax>
 </template>
 
 <script>
@@ -376,6 +387,7 @@ export default {
 PortfolioWorked
   },
   data: () => ({
+    scrollY: 0,
     chipSize: 'x-small' ,
     isDisabled: false,
     selectedTab: 0, // 초기값을 0으로 설정
@@ -429,8 +441,12 @@ PortfolioWorked
   }),
   mounted() {
     window.addEventListener('resize', this.handleResize);
+    window.addEventListener('scroll', this.handleScroll);
     this.handleResize(); // 초기에 한 번 호출하여 현재 창 크기에 맞게 설정
   },
+  destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
   beforeDestroy() {
     window.removeEventListener('resize', this.handleResize);
   },
@@ -445,6 +461,9 @@ PortfolioWorked
       const screenWidth = window.innerWidth;
       this.chipSize = screenWidth <= 600 ? 'x-small' : 'small';
     },
+    handleScroll() {
+            this.scrollY = window.scrollY;
+        },
  
 
     changeTab(index) {
@@ -564,6 +583,8 @@ PortfolioWorked
 </script>
 
 <style scoped>
+
+
 
 .icon_text_wrap a{
   text-decoration: underline #797979

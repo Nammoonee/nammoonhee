@@ -1,18 +1,18 @@
 <template>
   <v-app>
     <v-main>
-      <h1  class="logo" @click="scrollTop" :class="{ hide: isHeaderHidden, font_fff: isScrolledWithinRange }"
+      <h1  class="logo" @click="scrollTop" :class="{ 'hide': isHeaderHidden, 'font_fff': isScrolledWithinRange }"
 >남문희<span class="logo_smile">:)</span></h1>
-      <v-app-bar id="header_align"  :class="{ hide: isHeaderHidden }">
-        <header id="header">
+      <v-app-bar id="header_align"  :class="{ 'hide': isHeaderHidden }">
+        <header id="header" :class="{ 'hide': isHeaderHidden}">
 
-          <div class="hamburger_wrap">
+          <div class="hamburger_wrap" :class="{ 'hide': isHeaderHidden}">
             <button class="hamburger" @click="drawer">
            <v-icon  :class="{ 'font_fff':  isScrolledWithinRange   }">mdi-menu</v-icon>
             </button>
             <transition name="fade">
 
-              <ul class="hamburger_drawer" v-if="isDrawerOpen"  :class="{ 'font_fff':  isScrolledWithinRange   }">
+              <ul class="hamburger_drawer" v-if="isDrawerOpen"  :class="{ 'hide': isHeaderHidden, 'font_fff':  isScrolledWithinRange   }">
                 <li @click="scrollTop">
     <div class="bottom_line"  :class="{ 'bottom_line_fff':  isScrolledWithinRange   }">HOME</div>
 </li>
@@ -222,7 +222,7 @@ button {
 .hide {
   opacity:0 !important;
   transition: opacity 0.3s ease;
-  text-indent: -9999px;
+  height: 0;
 }
 
 hr {
@@ -252,8 +252,10 @@ h1 {
   
 }
 
+
 .hamburger_drawer li{
   cursor: pointer;
+  
   /* font-weight: 500; */
 }
 
@@ -348,6 +350,9 @@ h1 {
   font-weight: 500;
 }
 /*밑줄 */
+.bottom_line{
+  border-bottom: 1px solid #000;
+}
 .bottom_line_fff{
   border-bottom: 1px solid #fff  !important;
 }
@@ -577,7 +582,7 @@ h1 {
   .bottom_line {
     height: 25px;
     display: flex;
-    border-bottom: 1px solid #797979;
+  
     align-items: center;
   }
   
@@ -818,7 +823,7 @@ h1 {
   .bottom_line {
     height: 25px;
     display: flex;
-    border-bottom: 1px solid #797979;
+   
     align-items: center;
   }
 
@@ -1074,7 +1079,7 @@ bottom: 35px;
 
   #header_align {
 
-   right: calc(50% - 514px) !important;
+   right: calc(50% - 510px) !important;
   }
 
 

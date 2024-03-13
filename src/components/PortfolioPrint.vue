@@ -12,31 +12,34 @@
   
         <div class="sns1">
             <!--글씨넣을거면여기에-->
-            <div class="icon_text_wrap">
-              <div class="icon_box">
-              <v-icon>mdi-numeric-1-box</v-icon>
+  <div>
+              <div class="icon_text_wrap">
+                <div class="icon_box">
+                <v-icon>mdi-numeric-1-box</v-icon>
+                </div>
+              지마켓 포스터
               </div>
-              텀블러 장려 포스터
-            </div>
-
-           <div class="poster">
-             <img src="./images/print/gmarket.jpg" alt="">
-           </div>
+    
+             <div class="poster">
+               <img src="./images/print/gmarket.jpg" alt="">
+             </div>
+  </div>
 <div class="poster_info">
   
-              <h4>
-                <div class="text_vertical_line">지마켓 텀블러 장려 포스터</div>
-  임직원은 환경보호를 위해 텀블러를 이용해주세요!
-              </h4>
-  
-  
-              <div>
-                지인의 부탁으로 텀블러 이용 장려 포스터를 제작했습니다.
-  
-  임직원 아이콘, 텀블러를 아이콘을 사용해 텍스트를 읽지 않더라도
-  어떤 내용인지 금방 알 수 있고 지마켓 브랜드 색상과
-  어우러져 조화로운 배너를 제작했습니다.
-              </div>
+       <div class="poster_info_text">
+               <h4>
+                 <div class="text_vertical_line">지마켓 텀블러 장려 포스터</div>
+        환경보호를 위해 텀블러를 이용해주세요!
+               </h4>
+        
+        
+               <div>
+                 지인의 부탁으로 텀블러 이용 장려 포스터를 제작했습니다.
+        
+        아이콘을 사용해 텍스트를 읽지 않더라도 주제를 한눈에 알 수 있고 지마켓 브랜드 색상과
+        조화로운 배너를 제작했습니다.
+               </div>
+       </div>
   
           <div class="real_wrap">
                 <div class="real">
@@ -50,32 +53,39 @@
 
 
         </div>
-  
-     <div class="sns2">
-            <!--글씨넣을거면여기에-->
-            <div class="icon_text_wrap">
-              <div class="icon_box">
-              <v-icon>mdi-numeric-1-box</v-icon>
-              </div>
-              전시 배너 디자인
-            </div>
 
-           <div class="poster">
-             <img src="./images/print/bubble.jpg" alt="">
-           </div>
+        <div class="sns2_wrap">
+        <div class="icon_text_wrap">
+                <div class="icon_box">
+                <v-icon>mdi-numeric-2-box</v-icon>
+                </div>
+                코스메틱 전시회 배너
+              </div>
+        <div class="sns2">
+            <!--글씨넣을거면여기에-->
+  <div class="item">
+        
+    
+             <div class="poster">
+              <img src="./images/print/bubble.jpg" alt="">
+             </div>
+  </div>
+
+
+
 <div class="poster_info">
   
-              <h4>
-                <div class="text_vertical_line">전시 배너 디자인</div>
-  진열대에 배치할 상품정보 배너
-              </h4>
-  
-  
-              <div>
-               2019 Osaka Beauty world에 참여하는 '제논'이라는 브랜드의 화장품 홍보 배너를 제작했습니다.
-               일본과 국내의 여러 뷰티 및 코스매틱 브랜드들이 참여하는 행사에서 한눈에 알아보기 쉽고 간결한 배너를 제작해달라는 요청을 받았습니다.
-               아이콘을 통해 촉촉함, 풍성한 거품, 천연원료 사용을 부각시켜 깨끗하면서 자연친화적인 컨셉을 표현했습니다.
-              </div>
+       <div class="poster_info_text">
+               <h4>
+                 <div class="text_vertical_line">전시 배너 디자인</div>
+                 진열대에 배치할 상품정보 배너
+               </h4>
+        
+        
+               <div>
+                2019 Osaka Beauty world에 참여하는 '제논'이라는 브랜드의 전시 배너를 제작했습니다. 국내외 여러 브랜드들이 참여하는 행사에서 간결하면서도 눈에 띄는게 중요하다고 생각해 아이콘을 통해 내용을 직관적으로 전달하고 깨끗함, 자연친화적인 컨셉을 표현했습니다.
+               </div>
+       </div>
   
           <div class="real_wrap">
                 <div class="real">
@@ -83,52 +93,20 @@
                 </div>
           </div>
 </div>
-    
+        
+         
+        
 
 
-     </div>
+        </div>
+
+      </div>
+
+      <PortfolioPrint2 />
   
-  <div class="sns3">
-            <!--글씨넣을거면여기에-->
-            <div class="icon_text_wrap">
-              <div class="icon_box">
-              <v-icon>mdi-numeric-3-box</v-icon>
-              </div>
-           관광지 정보
-            </div>
-   
 
-  </div>
   
-     <div class="sns4">
-             <!--글씨넣을거면여기에-->
-             <div class="icon_text_wrap">
-              <div class="icon_box">
-              <v-icon>mdi-numeric-4-box</v-icon>
-              </div>
-              자사 여행상품
-            </div>
 
-     </div>
-  
-     <div class="sns5">
-             <!--글씨넣을거면여기에-->
-             <div class="icon_text_wrap">
-              <div class="icon_box">
-              <v-icon>mdi-numeric-5-box</v-icon>
-              </div>
-              먹거리 안내
-            </div>
-       
-
-
-
-     </div>
-       <div class="sns6">
-             <!--글씨넣을거면여기에-->
-             6. 세로형
-
-     </div>
 
 
 
@@ -152,7 +130,7 @@
                   />
                 </svg>
               </div>
-              여행정보 등의 컨텐츠를 기획하고 가독성 좋게 디자인해 공식 계정에 업로드했습니다.
+             각 업체의 특성과 컨셉에 맞게 디자인하고 포토샵으로 작업시 인쇄물 크기에 따라 화질저하가 발생할 수 있기 때문에 어도비 일러스트레이션 CMYK로 작업했습니다.
 
 
             </div>
@@ -170,7 +148,7 @@
                   />
                 </svg>
               </div>
-              Photoshop
+              Photoshop, Illustrator
             </div>
           </div>
         </div>
@@ -181,7 +159,12 @@
 </template>
 
 <script>
+import PortfolioPrint2 from './PortfolioPrint2.vue';
+
 export default {
+    components: {
+      PortfolioPrint2
+  },
   data: () => ({
   
     isDisabled: false,
@@ -227,8 +210,13 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-top: 25px;
+    margin: 25px 0;
 
+  }
+  .poster_info_text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
   .text_vertical_line::after{
     content: '';
@@ -264,12 +252,7 @@ export default {
     right: 28px;
     bottom: 36px;
   }
-  .real .bubble_small{
-    width: 119%;
-    position: relative;
-    right: 12px;
-    bottom: -9px;
-  }
+
   .mdi-numeric-1-box::before,
   .mdi-numeric-2-box::before,
   .mdi-numeric-3-box::before,
@@ -324,19 +307,31 @@ export default {
 
 /*태블릿 */
 
+
 @media (min-width: 601px) {
-  .sns_container{
-display: grid;
-grid-template-columns: repeat(2, 1fr); 
-  gap: 10px;
+
+
+.sns1{
+  margin-bottom: 35px;
 }
+  .poster{
+    margin-top: 30px;
+
+  }
 
 .poster_info{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    justify-content: space-between;
     margin-top: 35px;
 
+  }
+  .poster_info_text{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 25px 0 0;
+  
   }
   .text_vertical_line::after{
     content: '';
@@ -423,6 +418,61 @@ grid-template-columns: repeat(2, 1fr);
   }
 }
 
+
+/*태블릿 추가 */
+@media (min-width: 900px) {
+
+  .sns1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+   
+    
+  }
+  .sns2_wrap{
+    margin: 70px 0;
+  }
+  .sns2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .item:first-child {
+    grid-row: 1; /* 첫 번째 아이템을 첫 번째 행으로 이동시킵니다. */
+    grid-column: 2; /* 첫 번째 아이템을 두 번째 열로 이동시킵니다. */
+}
+
+.item:last-child {
+    grid-row: 1; /* 두 번째 아이템을 두 번째 행으로 이동시킵니다. */
+    grid-column: 1; /* 두 번째 아이템을 첫 번째 열로 이동시킵니다. */
+}
+.sns2_grid{
+  /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+.icon_text_con_box{
+  margin-top: 35px;
+}
+
+  .sns2 .real img{
+    width: 116%;
+    position: relative;
+    right: 23px;
+    bottom: -3px;
+  }
+  .sns2 .poster_info{
+    margin-top: 30px;
+  }
+  .sns2 .poster_info_text{
+    margin: 0;
+
+  }
+  .sns2 .icon_text_wrap{
+    margin-bottom: 30px;
+  }
+
+}
 /*pc추가 */
 @media (min-width: 1024px) and (max-width: 1098px) {
   .icon_page_wrap {

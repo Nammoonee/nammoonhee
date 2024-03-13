@@ -1,5 +1,6 @@
 <template>
   <v-container>
+ 
     <section id="section_portfolio_worked">
       <div class="portfolio_worked_wrap">
         <div class="strong_font sub_title">실무 작업물</div>
@@ -249,8 +250,12 @@
           </div>
         </div>
       </div>
+    
+    
     </section>
+
   </v-container>
+
 </template>
 
 <script>
@@ -684,6 +689,10 @@ PortfolioPrint
 </script>
 
 <style scoped>
+  /* #section_portfolio_worked {
+ 
+    background: url('../../public/images/bg/1.png') right 0px bottom 0px / 35% no-repeat;
+  } */
 
 
 .icon_text_wrap a {
