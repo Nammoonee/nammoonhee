@@ -730,6 +730,7 @@ PortfolioPrint
   #section_portfolio_worked {
     padding: 0 12px 50px;
     box-sizing: border-box;
+   
   }
   .portfolio_worked_wrap {
     padding: 25px 0 0 0;
@@ -794,6 +795,10 @@ PortfolioPrint
   #section_portfolio_worked {
     padding: 0 30px 70px;
     box-sizing: border-box;
+    /* background-image: url(http://localhost:8080/img/bg1.15c83d24.jpg);
+    background-size: 100%;
+    background-position: 0 100px; */
+   
   }
   .portfolio_worked_wrap {
     padding: 30px 0 0 0;

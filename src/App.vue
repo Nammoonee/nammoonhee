@@ -237,10 +237,10 @@ hr {
 
 .v-progress-linear__background{
   opacity: 0.5;
-  background: #dbd5ad;
+  background: #79797966;
 }
 .v-progress-linear__determinate, .v-progress-linear__indeterminate{
-  background: linear-gradient(to right top, #c3c3ec, #8d8cce 60% ) ;
+  background: #797979 ;
 }
 
 
@@ -263,7 +263,7 @@ h1 {
 
 /*버튼들 컬러 */
 .sub_btn{
-  background: #8d8cce !important;
+  background: #797979 !important;
 }
 .v-slide-group__container{
   contain: none;
@@ -274,7 +274,7 @@ h1 {
  }
  .text-white {
     color: #fff !important;
-    background: linear-gradient(45deg, #ff873c, #ffac79 ) !important;
+    background: #000 !important;
 }
 
 .v-chip{
@@ -346,7 +346,7 @@ h1 {
 }
 
 .point_color{
-  color: #8d8cce ; /*#00bbff */
+  color: #797979 ; /*#00bbff */
   font-weight: 500;
 }
 /*밑줄 */

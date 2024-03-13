@@ -1,5 +1,5 @@
 <template>
-     <v-parallax darken="0.1"
+     <v-parallax
     src="../../public/images/bg/bg1.jpg"
   >
   <v-container>
@@ -583,6 +583,7 @@ PortfolioWorked
 </script>
 
 <style scoped>
+
 
 
 

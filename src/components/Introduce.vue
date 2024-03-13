@@ -332,7 +332,7 @@
            
   <v-timeline side="end" truncate-line="start"  :direction="timelineDirection">
     <v-timeline-item
-      dot-color="#dbd5ad"
+      dot-color="#79797966"
       size="x-small"
     >
       <div class="d-flex">
@@ -345,7 +345,7 @@
     </v-timeline-item>
 
     <v-timeline-item
-      dot-color="#8d8cce96"
+      dot-color="#797979"
       size="x-small"
     >
       <div class="d-flex">
@@ -358,7 +358,7 @@
     </v-timeline-item>
 
     <v-timeline-item
-      dot-color="#8d8cce96"
+      dot-color="#797979"
       size="x-small"
     >
       <div class="d-flex">
@@ -560,7 +560,7 @@ export default {
 <style scoped>
 
 .v-main{
-  background: #f9f9f9f0;
+  background: #fff;
 }
 
 

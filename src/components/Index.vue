@@ -78,11 +78,7 @@ h4{
 .profile{
   box-shadow: 4px 5px 14px 0px #00000094 ;
 }
-/* .v-main{
-  background: url('../../public/images/bg_leaf.jpg') no-repeat;
-  background-position: -50px 0;
-  background-size: 100%;  
-} */
+
   @keyframes fadeInOut{
         0%{
             opacity: 0;
@@ -96,10 +92,13 @@ h4{
     }
 
 
+
+
 .v-btn--size-default {
 
-    background: #ff8e48;
+    background: #797979;
     color: #fff;
+
     
   }
    
