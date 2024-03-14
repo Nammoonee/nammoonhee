@@ -1,4 +1,5 @@
 <template>
+  <v-main>
 <v-container>
   <section id="section_contact">
   <h2>
@@ -51,7 +52,7 @@
 
 </section>
 </v-container>
-
+</v-main>
   
 
   
@@ -115,13 +116,27 @@ export default {
 
 <style scoped>
 
+
+
+
 /*모바일 */
 
+
 @media (max-width: 600px) {
-  #section_contact{
-    padding: 50px 12px;
+  .v-main{
+
+  background: linear-gradient(to bottom, #eeeeee 84%, #ffffff 16%);
+   
+}
+
+#section_contact{  
+  padding: 50px 12px 320px;
     box-sizing: border-box;
+    
+    background: url('../../public/images/bg/bg3.png') center bottom / 495px auto no-repeat;
   }
+
+
 
 
 
@@ -180,9 +195,19 @@ background: #347DC6;
 
 /*태블릿 */
 @media (min-width: 601px) {
-   #section_contact{
-     padding: 70px 30px;
+
+  .v-main{
+  
+  background: linear-gradient(to bottom, #eeeeee 84%, #ffffff 16%);
+  } 
+
+
+
+   #section_contact{  
+    padding: 70px 30px 350px;
     box-sizing: border-box;
+    
+    background: url('../../public/images/bg/bg3.png') center bottom / 600px auto no-repeat;
   }
 
 
@@ -249,4 +274,11 @@ background: #347DC6;
 
 }
 
+/*pc */
+@media (min-width: 1024px) {
+   #section_contact{
+     padding: 70px 30px 400px;
+    box-sizing: border-box;
+  }
+}
 </style>

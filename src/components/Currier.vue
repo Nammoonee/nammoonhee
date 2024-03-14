@@ -775,7 +775,7 @@ export default {};
 
 <style scoped>
 .v-main{
-  background: #eceefb57;
+  background: #eeeeee57;
 }
 /*hr클래스 */
 /* .divider_line{
@@ -831,6 +831,7 @@ export default {};
   #section_currier{
      padding: 50px 12px ;
     box-sizing: border-box;
+    
   }
 /*타이틀 */
 .currier_title_wrap{
@@ -912,8 +913,9 @@ export default {};
 
 @media (max-width: 600px) {
   #section_currier{
-     padding: 50px 12px ;
+     padding: 50px 12px;
     box-sizing: border-box;
+ 
   }
 /*타이틀 */
 .currier_title_wrap{

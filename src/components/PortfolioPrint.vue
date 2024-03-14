@@ -102,10 +102,10 @@
                   <div class="icon_box">
                     <v-icon>mdi-numeric-3-box</v-icon>
                   </div>
-                  업체선정 맛집 스티커1
+                  맛집 스티커1
                 </div>
                 <div class="sticker_box">
-                  <img src="./images/print/philtour2.jpg" alt="">
+                  <img src="./images/print/philtour2.png" alt="">
                 </div>
           </div>
               <div class="sns4">
@@ -113,7 +113,7 @@
                   <div class="icon_box">
                     <v-icon>mdi-numeric-4-box</v-icon>
                   </div>
-                  업체선정 맛집 스티커2
+                  맛집 스티커2
                 </div>
                 <div class="sticker_box">
                   <img src="./images/print/philtour.jpg" alt="">

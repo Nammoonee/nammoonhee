@@ -19,15 +19,15 @@ export default {};
 </script>
 
 <style scoped>
-
+.v-main{
+ background: #373735;
+ padding: 0 !important;
+}
 
 
  
 /*모바일 */
-.v-main{
- background: #2b2a40;
- padding: 0 !important;
-}
+
 @media (max-width: 600px){
   .footer_bg{
     padding: 25px 0;

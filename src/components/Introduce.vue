@@ -560,7 +560,7 @@ export default {
 <style scoped>
 
 .v-main{
-  background: #fff;
+  background: #eeeeee57;
 }
 
 
