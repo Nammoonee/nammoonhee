@@ -598,7 +598,7 @@ h1 {
     height: 40px !important;
     border-radius: 50% !important;
     opacity: 0.4;
-    background: #8d8cce;
+    background: #797979;
     color: #fff !important;
     font-size: 12px;
   }
@@ -838,7 +838,7 @@ h1 {
     height: 40px !important;
     border-radius: 50% !important;
     opacity: 0.4;
-    background: #8d8cce;
+    background: #797979;
     color: #fff !important;
     font-size: 12px;
 

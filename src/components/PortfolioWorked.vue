@@ -20,12 +20,7 @@
           <v-chip @click="changeTab2(2)" :class="{ active: selectedTab2 === 2 }"
             >SNS 카드뉴스</v-chip
           >
-          <v-chip @click="changeTab2(3)" :class="{ active: selectedTab2 === 3 }"
-            >쇼핑몰 합성&누끼</v-chip
-          >
-          <v-chip @click="changeTab2(4)" :class="{ active: selectedTab2 === 4 }"
-            >상세페이지</v-chip
-          >
+  
           <v-chip @click="changeTab2(5)" :class="{ active: selectedTab2 === 5 }"
             >인쇄물</v-chip
           >
@@ -241,11 +236,9 @@
           <div v-else-if="selectedTab2 === 2">
              <PortfolioSNS />
           </div>
-          <div v-else-if="selectedTab2 === 3">4</div>
+    
 
-          <div v-else-if="selectedTab2 === 4">5</div>
-
-          <div v-else-if="selectedTab2 === 5">
+          <div v-else-if="selectedTab2 === 3">
           <PortfolioPrint />
           </div>
         </div>

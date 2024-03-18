@@ -96,7 +96,7 @@ h4{
 
 .v-btn--size-default {
 
-    background: #797979;
+    background: #000;
     color: #fff;
 
     
