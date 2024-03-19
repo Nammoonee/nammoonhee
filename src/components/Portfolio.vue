@@ -24,7 +24,33 @@
     <div class="image_slide_margin">
       <div v-if="selectedTab === 0 || selectedTab === null">
     
-        1<br>
+          <!--여기가 이미지 슬라이드-->
+      <div class="slider">
+          <div
+            class="slide"
+            v-for="(image, index) in images0"
+            :key="index"
+            v-show="currentIndex0 === index"
+            @mousedown="handleMouseDown0"
+            @mousemove="handleMouseMove0"
+            @mouseup="handleMouseUp0"
+            @touchstart="handleTouchStart0"
+  @touchmove="handleTouchMove0"
+  @touchend="handleTouchEnd0"
+          >
+            <img class="slide_img_box" :src="image.src" :alt="image.alt" />
+          </div>
+        </div>
+        <div class="prev_next_btn_wrap">
+          <v-btn color="grey-darken-2" class="btn_prev" @click="prevSlide0"
+            ><v-icon class="btn_prev_mdi">mdi-chevron-left</v-icon></v-btn
+          >
+          <v-btn color="grey-darken-2" class="btn_next" @click="nextSlide0"
+            ><v-icon class="btn_next_mdi">mdi-chevron-right</v-icon></v-btn
+          >
+        </div>
+
+
 
 
         <!--과제소개-->
@@ -94,7 +120,7 @@ Firebase에 호스팅해 로컬PC가 아닌 환경에서도 사이트를 열어�
 
   
     </div>
-    <a href="https://in2066.mycafe24.com/compose.index.html">사이트 바로가기</a>
+    <a href="https://portfol-ee841.web.app/">사이트 바로가기</a>
   </div>
 
 
@@ -336,7 +362,7 @@ Firebase에 호스팅해 로컬PC가 아닌 환경에서도 사이트를 열어�
 
   
     </div>
-    <a href="https://in2066.mycafe24.com/compose.index.html">사이트 바로가기</a>
+    <a href="https://nuriif.github.io/compose/html/">사이트 바로가기</a>
   </div>
 
 
@@ -391,6 +417,21 @@ PortfolioWorked
     chipSize: 'x-small' ,
     isDisabled: false,
     selectedTab: 0, // 초기값을 0으로 설정
+     images0: [
+      { src: "./images/ppt/1.jpg", alt: "포트폴리오사이트ppt" },
+      { src: "./images/ppt/2.jpg", alt: "포트폴리오사이트ppt" },
+        { src: "./images/ppt/3.jpg", alt: "포트폴리오사이트ppt" },
+          { src: "./images/ppt/5.jpg", alt: "포트폴리오사이트ppt" },
+            { src: "./images/ppt/6.jpg", alt: "포트폴리오사이트ppt" },
+              { src: "./images/ppt/7.jpg", alt: "포트폴리오사이트ppt" },
+                { src: "./images/ppt/8.jpg", alt: "포트폴리오사이트ppt" },
+                  { src: "./images/ppt/9.jpg", alt: "포트폴리오사이트ppt" },
+                 
+      
+     
+// 0번째이미지슬라이드
+    ],
+
     images: [
       { src: "./images/pofolgif/nanji_ppt_1.gif", alt: "난지캠핑장ppt1" },
       { src: "./images/pofolgif/nanji_ppt_2.jpeg", alt: "난지캠핑장ppt2" },
@@ -415,7 +456,7 @@ PortfolioWorked
       { src: "./images/pofolgif/nanji_ppt_21.gif", alt: "난지캠핑장ppt21" },
       // 첫번째이미지슬라이드(이미지 총20장)
     ],
-    selectedTab2: 0, 
+   
     images2: [
       { src: "./images/nanjigif/1.jpeg", alt: "컴포즈커피ppt1" },
       { src: "./images/nanjigif/2.jpeg", alt: "컴포즈커피ppt2" },
@@ -430,12 +471,17 @@ PortfolioWorked
       { src: "./images/nanjigif/11.gif", alt: "컴포즈커피ppt10" },
       { src: "./images/nanjigif/12.gif", alt: "컴포즈커피ppt10" },
       { src: "./images/nanjigif/13.jpeg", alt: "컴포즈커피ppt10" },
+      
      
 // 두번째이미지슬라이드
     ],
+
+
+
     
     dragging: false,
     startX: 0,
+    currentIndex0: 0,
     currentIndex: 0,
     currentIndex2: 0,
   }),
@@ -456,6 +502,7 @@ PortfolioWorked
         
       }
     ,
+
      handleResize() {
       // 현재 창의 너비를 확인하여 chipSize 업데이트
       const screenWidth = window.innerWidth;
@@ -469,6 +516,70 @@ PortfolioWorked
     changeTab(index) {
       this.selectedTab = index;      
     },
+
+
+
+
+    
+  
+    prevSlide0() {
+      this.currentIndex0 =
+        (this.currentIndex0 - 1 + this.images0.length) % this.images0.length;
+    },
+    nextSlide0() {
+      this.currentIndex0 = (this.currentIndex0 + 1) % this.images0.length;
+    },
+
+ 
+    handleMouseDown0(event) {
+      this.dragging = true;
+      this.startX = event.clientX;
+    },
+    handleMouseMove0(event) {
+    if (this.dragging) {
+    const deltaX = event.clientX - this.startX;
+    if (deltaX > 20) {
+      // 드래그 거리가 20px 이상일 때
+      this.prevSlide0();
+      this.dragging = false; // 드래그 후 재설정
+    } else if (deltaX < -20) {
+      // 드래그 거리가 -20px 이상일 때
+      this.nextSlide0();
+      this.dragging = false; // 드래그 후 재설정
+    }
+      }
+      
+    },
+     // 터치 이벤트 핸들러
+  handleTouchStart0(event) {
+    this.dragging = true;
+    this.startX = event.touches[0].clientX;
+  },
+  handleTouchMove0(event) {
+    if (this.dragging) {
+      const deltaX = event.touches[0].clientX - this.startX;
+      if (deltaX > 20) {
+        // 드래그 거리가 20px 이상일 때
+        this.prevSlide0();
+        this.dragging = false; // 드래그 후 재설정
+      } else if (deltaX < -20) {
+        // 드래그 거리가 -20px 이상일 때
+        this.nextSlide0();
+        this.dragging = false; // 드래그 후 재설정
+      }
+    }
+  },
+  handleTouchEnd0() {
+    this.dragging = false;
+  },
+    handleMouseUp0() {
+      this.dragging = false;
+    },
+  
+
+
+
+
    
     handleMouseDown(event) {
       this.dragging = true;
@@ -524,6 +635,10 @@ PortfolioWorked
 
 
 
+
+
+
+
     prevSlide2() {
       this.currentIndex2 =
         (this.currentIndex2 - 1 + this.images2.length) % this.images2.length;
@@ -532,9 +647,7 @@ PortfolioWorked
       this.currentIndex2 = (this.currentIndex2 + 1) % this.images2.length;
     },
 
-     changeTab2(index) {     
-       this.selectedTab2 = index;
-    },
+  
     handleMouseDown2(event) {
       this.dragging = true;
       this.startX = event.clientX;
@@ -552,6 +665,7 @@ PortfolioWorked
       this.dragging = false; // 드래그 후 재설정
     }
       }
+      
     },
      // 터치 이벤트 핸들러
   handleTouchStart2(event) {
@@ -579,6 +693,12 @@ PortfolioWorked
       this.dragging = false;
     },
   },
+
+
+
+
+
+
 };
 </script>
 
