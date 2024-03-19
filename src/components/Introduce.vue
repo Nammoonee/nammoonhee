@@ -121,7 +121,7 @@
                   <div class="gage_box">
                     <div class="skill_icon_wrap">
                       <div class="skill_icon">
-                        <v-badge color="info" content="+">
+                       
                           <svg
                             class="mb-3"
                             width="50"
@@ -182,7 +182,7 @@
                               </linearGradient>
                             </defs>
                           </svg>
-                        </v-badge>
+                        
                       </div>
 
                       <v-progress-linear
@@ -199,7 +199,7 @@
                   <div class="gage_box">
                     <div class="skill_icon_wrap">
                        <div class="skill_icon">
-                        <v-badge color="info" content="+">
+                       
                          <svg class="mb-3" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M48.8636 1.13635H1.13635V48.8636H48.8636V1.13635Z" fill="url(#paint0_radial_51_86)"/>
 <path d="M50 50H0V0H50V50ZM2.27273 47.7273H47.7273V2.27273H2.27273V47.7273Z" fill="#F47521"/>
@@ -220,7 +220,7 @@
 </defs>
 </svg>
 
-                        </v-badge>
+                      
                       </div>
                     <v-progress-linear  class="mb-3"
                       rounded
@@ -235,7 +235,7 @@
                   <div class="gage_box">
                      <div class="skill_icon_wrap">
                        <div class="skill_icon">
-                        <v-badge color="info" content="+">
+                       
                           <svg class="mb-3" width="34" height="50" viewBox="0 0 34 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.33333 49.9999C12.9333 49.9999 16.6667 46.2666 16.6667 41.6666V33.3333H8.33333C3.73333 33.3333 0 37.0666 0 41.6666C0 46.2666 3.73333 49.9999 8.33333 49.9999Z" fill="#0ACF83"/>
 <path d="M0 25C0 20.4 3.73333 16.6666 8.33333 16.6666H16.6667V33.3333H8.33333C3.73333 33.3333 0 29.6 0 25Z" fill="#A259FF"/>
@@ -244,7 +244,7 @@
 <path d="M33.3333 25C33.3333 29.6 29.6 33.3333 25 33.3333C20.4 33.3333 16.6666 29.6 16.6666 25C16.6666 20.4 20.4 16.6666 25 16.6666C29.6 16.6666 33.3333 20.4 33.3333 25Z" fill="#1ABCFE"/>
 </svg>
 
-                        </v-badge>
+                     
                       </div>
                     <v-progress-linear class="mb-3"
                       rounded
@@ -260,14 +260,14 @@
                   <div class="gage_box">
                     <div class="skill_icon_wrap">
                        <div class="skill_icon">
-                        <v-badge color="info" content="+">
+                        
                         <svg class="mb-3" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M42.7766 45.1391L25.0016 50L7.22656 45.1391L3.125 0H46.8781L42.7766 45.1391Z" fill="#E44D26"/>
 <path d="M25 3.125V46.4844L39.425 42.2L43.2625 3.125H25Z" fill="#FF6C39"/>
 <path d="M38.0672 9.375H11.8859L12.5 15.625L13.4672 26.5625H30.4734L29.9187 32.7875L25 34.3594L20.0891 32.7875L19.7625 29.6875H13.7547L14.4719 37.4797L25 40.6094L35.5125 37.4781L37.0594 20.3125H19.1437L18.7531 15.625H37.5L38.0672 9.375Z" fill="white"/>
 </svg>
 
-                        </v-badge>
+                      
                       </div>
                     <v-progress-linear class="mb-3"
                       rounded
@@ -281,14 +281,14 @@
                   <div class="gage_box">
                           <div class="skill_icon_wrap">
                        <div class="skill_icon">
-                        <v-badge color="info" content="+">
+                       
                         <svg class="mb-3" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M42.7766 45.1391L25.0016 50L7.22656 45.1391L3.125 0H46.8781L42.7766 45.1391Z" fill="#1F62AE"/>
 <path d="M25 3.125V46.4844L39.425 42.2L43.2625 3.125H25Z" fill="#347DC6"/>
 <path d="M38.0672 9.375H11.8859L12.5 15.625H25L12.8906 20.2969L13.4672 26.5625H30.4719L29.9344 32.8125L25 34.3594L20.0953 32.7875L19.5828 29.6875H13.7547L14.4719 37.4797L25 40.6094L35.5125 37.4781L37.0609 20.2969H25.0406L37.5 15.625L38.0672 9.375Z" fill="white"/>
 </svg>
 
-                        </v-badge>
+                      
                       </div>
                     <v-progress-linear class="mb-3"
                       rounded
@@ -303,14 +303,14 @@
                   <div class="gage_box">
                       <div class="skill_icon_wrap">
                        <div class="skill_icon">
-                        <v-badge color="info" content="+">
+                      
                        <svg class="mb-3" width="58" height="50" viewBox="0 0 58 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M29.2345 13.7409L21.5051 0H10.4409L29.2345 33.4109L48.0281 0H36.964L29.2345 13.7409Z" fill="black"/>
 <path d="M47.2967 0L28.8663 31.9216L10.4359 0H0L28.8663 50L57.7326 0H47.2967Z" fill="#49BD85"/>
 </svg>
 
 
-                        </v-badge>
+                    
                       </div>
                     <v-progress-linear class="mb-3"
                       rounded
