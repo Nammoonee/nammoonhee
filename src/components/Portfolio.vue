@@ -362,7 +362,7 @@ Firebase에 호스팅해 로컬PC가 아닌 환경에서도 사이트를 열어�
 
   
     </div>
-    <a href="https://nuriif.github.io/compose/html/">사이트 바로가기</a>
+    <a href="https://nammoonee.github.io/compose/html/">사이트 바로가기</a>
   </div>
 
 
