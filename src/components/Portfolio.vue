@@ -418,14 +418,14 @@ PortfolioWorked
     isDisabled: false,
     selectedTab: 0, // 초기값을 0으로 설정
      images0: [
-      { src: "./images/ppt/1.jpg", alt: "포트폴리오사이트ppt" },
-      { src: "./images/ppt/2.jpg", alt: "포트폴리오사이트ppt" },
-        { src: "./images/ppt/3.jpg", alt: "포트폴리오사이트ppt" },
-          { src: "./images/ppt/5.jpg", alt: "포트폴리오사이트ppt" },
-            { src: "./images/ppt/6.jpg", alt: "포트폴리오사이트ppt" },
-              { src: "./images/ppt/7.jpg", alt: "포트폴리오사이트ppt" },
-                { src: "./images/ppt/8.jpg", alt: "포트폴리오사이트ppt" },
-                  { src: "./images/ppt/9.jpg", alt: "포트폴리오사이트ppt" },
+      { src: "./images/ppt/1.gif", alt: "포트폴리오사이트ppt" },
+      { src: "./images/ppt/2.gif", alt: "포트폴리오사이트ppt" },
+        { src: "./images/ppt/3.gif", alt: "포트폴리오사이트ppt" },
+          { src: "./images/ppt/5.gif", alt: "포트폴리오사이트ppt" },
+            { src: "./images/ppt/6.gif", alt: "포트폴리오사이트ppt" },
+              { src: "./images/ppt/7.gif", alt: "포트폴리오사이트ppt" },
+                { src: "./images/ppt/8.gif", alt: "포트폴리오사이트ppt" },
+                  { src: "./images/ppt/10.gif", alt: "포트폴리오사이트ppt" },
                  
       
      
